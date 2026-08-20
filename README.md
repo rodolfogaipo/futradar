@@ -1,7 +1,10 @@
 # FUT RADAR
 
-Painel informativo de futebol (Atlético-MG, América-MG, Cruzeiro + tabela do
-Brasileirão Série A). Sem apostas, sem odds — só estatísticas.
+Painel informativo de futebol: próximos jogos, resultados recentes e tabelas
+das 12 competições do plano gratuito da football-data.org (Copa do Mundo,
+Champions League, Bundesliga, Eredivisie, Brasileirão, La Liga, Ligue 1,
+Championship, Primeira Liga, Eurocopa, Serie A, Premier League).
+Sem apostas, sem odds — só dados.
 
 ## Como os dados chegam no app
 
