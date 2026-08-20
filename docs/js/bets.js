@@ -15,6 +15,7 @@ const STORAGE_KEY = 'futradar_apostas_v2';
 
 let painelData = null;
 let jogoSelecionado = null; // jogo escolhido no seletor, antes de salvar
+let tipoApostaSelecionado = null; // mandante / empate / visitante
 
 async function carregarPainelData() {
   try {
@@ -222,8 +223,47 @@ function renderJogoSelecionadoResumo(jogo) {
     </div>`;
 }
 
+// Time com maior chance de vencer, pra destacar em verde. Se o empate
+// for a maior probabilidade das três, não destaca nenhum time.
+function calcularFavorito(p) {
+  const maior = Math.max(p.mandante, p.empate, p.visitante);
+  if (p.empate === maior) return null;
+  return p.mandante > p.visitante ? 'mandante' : 'visitante';
+}
+
+function renderOpcoesTipoAposta(jogo) {
+  if (!jogo) {
+    return `
+      <div class="tipo-aposta-opcoes">
+        <button type="button" class="tipo-opcao" disabled>Mandante</button>
+        <button type="button" class="tipo-opcao" disabled>Empate</button>
+        <button type="button" class="tipo-opcao" disabled>Visitante</button>
+      </div>`;
+  }
+  const favorito = calcularFavorito(jogo.probabilidades);
+  const opcoes = [
+    { tipo: 'mandante', label: jogo.mandante },
+    { tipo: 'empate', label: 'Empate' },
+    { tipo: 'visitante', label: jogo.visitante },
+  ];
+  return `
+    <div class="tipo-aposta-opcoes">
+      ${opcoes
+        .map(
+          (o) => `
+        <button type="button"
+          class="tipo-opcao ${favorito === o.tipo ? 'favorito' : ''} ${tipoApostaSelecionado === o.tipo ? 'active' : ''}"
+          data-tipo="${o.tipo}">
+          ${o.label}
+        </button>`
+        )
+        .join('')}
+    </div>`;
+}
+
 function renderFormNovaAposta() {
   const jogo = jogoSelecionado;
+  const podeSubmeter = !!(jogo && tipoApostaSelecionado);
   return `
     <div class="app-card aposta-form">
       <h3 class="section-title" style="margin-top:0">Nova aposta</h3>
@@ -236,22 +276,13 @@ function renderFormNovaAposta() {
       <div id="seletor-jogo-wrap" hidden>${renderSeletorDeJogo()}</div>
 
       <form id="form-nova-aposta" style="margin-top:14px">
-        <div class="form-row">
-          <label class="campo-form">Aposta em
-            <div class="select-wrap">
-              <select name="tipoAposta" required>
-                <option value="mandante">Vitória do mandante${jogo ? ' (' + jogo.mandante + ')' : ''}</option>
-                <option value="empate">Empate</option>
-                <option value="visitante">Vitória do visitante${jogo ? ' (' + jogo.visitante + ')' : ''}</option>
-              </select>
-            </div>
-          </label>
-        </div>
-        <div class="form-row">
+        <label class="campo-label">Aposta em</label>
+        ${renderOpcoesTipoAposta(jogo)}
+        <div class="form-row" style="margin-top:12px">
           <label class="campo-form">Valor apostado (R$)<input type="number" name="valor" step="0.01" min="0.01" required></label>
           <label class="campo-form">Odd<input type="number" name="odd" step="0.01" min="1.01" required></label>
         </div>
-        <button type="submit" class="btn-primary" ${!jogo ? 'disabled' : ''}>Adicionar aposta</button>
+        <button type="submit" id="btn-salvar-aposta" class="btn-primary" ${!podeSubmeter ? 'disabled' : ''}>Adicionar aposta</button>
       </form>
     </div>`;
 }
@@ -323,7 +354,19 @@ async function renderApostas() {
     btn.addEventListener('click', () => {
       const id = btn.dataset.id;
       jogoSelecionado = (painelData.analises || []).find((a) => a.id === id) || null;
+      tipoApostaSelecionado = null; // troca de jogo reseta a escolha de tipo
       renderApostas();
+    });
+  });
+
+  root.querySelectorAll('.tipo-opcao').forEach((btn) => {
+    if (btn.disabled) return;
+    btn.addEventListener('click', () => {
+      tipoApostaSelecionado = btn.dataset.tipo;
+      root.querySelectorAll('.tipo-opcao').forEach((b) => b.classList.remove('active'));
+      btn.classList.add('active');
+      const btnSalvar = document.getElementById('btn-salvar-aposta');
+      if (btnSalvar) btnSalvar.disabled = !(jogoSelecionado && tipoApostaSelecionado);
     });
   });
 
@@ -331,7 +374,7 @@ async function renderApostas() {
   if (form) {
     form.addEventListener('submit', (e) => {
       e.preventDefault();
-      if (!jogoSelecionado) return;
+      if (!jogoSelecionado || !tipoApostaSelecionado) return;
       const fd = new FormData(e.target);
       const jogo = jogoSelecionado;
       const nova = {
@@ -343,7 +386,7 @@ async function renderApostas() {
         visitante: jogo.visitante,
         mandanteEscudo: jogo.mandanteEscudo,
         visitanteEscudo: jogo.visitanteEscudo,
-        tipoAposta: fd.get('tipoAposta'),
+        tipoAposta: tipoApostaSelecionado,
         valor: parseFloat(fd.get('valor')),
         odd: parseFloat(fd.get('odd')),
         resultado: 'pendente',
@@ -353,6 +396,7 @@ async function renderApostas() {
       atuais.push(nova);
       salvarApostas(atuais);
       jogoSelecionado = null;
+      tipoApostaSelecionado = null;
       renderApostas();
     });
   }

@@ -615,6 +615,41 @@ button, select, input {
   margin-bottom: 12px;
 }
 
+.tipo-aposta-opcoes {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.tipo-opcao {
+  flex: 1;
+  background: var(--bg-elevated);
+  border: 1.5px solid var(--border);
+  color: var(--text);
+  border-radius: var(--radius-sm);
+  padding: 12px 6px;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+  line-height: 1.3;
+}
+
+.tipo-opcao:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.tipo-opcao.favorito {
+  color: var(--green-bright);
+}
+
+.tipo-opcao.active {
+  border-color: var(--green);
+  background: rgba(61, 220, 101, 0.16);
+  box-shadow: 0 0 0 1px var(--green) inset;
+}
+
 .form-row select, .form-row input, .aposta-form select {
   background: var(--bg-elevated);
   border: 1px solid var(--border);
