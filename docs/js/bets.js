@@ -90,6 +90,60 @@ function graduarTodasPendentes() {
   return atualizadas;
 }
 
+function exportarApostas() {
+  const apostas = carregarApostas();
+  const blob = new Blob([JSON.stringify(apostas, null, 2)], { type: 'application/json' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  const hoje = new Date().toISOString().slice(0, 10);
+  a.href = url;
+  a.download = `fut-radar-apostas-${hoje}.json`;
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+}
+
+function importarApostasDeArquivo(file) {
+  const reader = new FileReader();
+  reader.onload = (e) => {
+    try {
+      const importadas = JSON.parse(e.target.result);
+      if (!Array.isArray(importadas)) throw new Error('formato inválido');
+
+      const atuais = carregarApostas();
+      const idsAtuais = new Set(atuais.map((a) => a.id));
+      let novas = 0;
+
+      for (const imp of importadas) {
+        if (imp && imp.id && !idsAtuais.has(imp.id)) {
+          atuais.push(imp);
+          idsAtuais.add(imp.id);
+          novas++;
+        }
+      }
+
+      salvarApostas(atuais);
+      alert(`Importação concluída: ${novas} aposta(s) nova(s) adicionada(s) (as que já existiam foram ignoradas, sem duplicar).`);
+      renderApostas();
+    } catch (err) {
+      alert('Não foi possível ler esse arquivo. Confirme que é um .json exportado pelo próprio FUT RADAR.');
+    }
+  };
+  reader.readAsText(file);
+}
+
+function renderBotoesExportImport() {
+  return `
+    <div class="export-import-row">
+      <button type="button" id="btn-exportar" class="btn-secundario btn-metade">⬇ Exportar</button>
+      <label class="btn-secundario btn-metade btn-arquivo">
+        ⬆ Importar
+        <input type="file" id="input-importar" accept="application/json,.json" hidden>
+      </label>
+    </div>`;
+}
+
 function calcularEstatisticas(apostas) {
   const resolvidas = apostas.filter((a) => a.resultado === 'ganhou' || a.resultado === 'perdeu');
   const pendentes = apostas.filter((a) => a.resultado === 'pendente').length;
@@ -333,14 +387,23 @@ async function renderApostas() {
 
   root.innerHTML = `
     <h2 class="section-title" style="margin-top:0">Seu desempenho</h2>
+    ${renderBotoesExportImport()}
     ${renderStatsCards(stats)}
     ${renderGraficoSaldo(apostas)}
     ${renderFormNovaAposta()}
     <h2 class="section-title">Histórico</h2>
     ${renderListaApostas(apostas)}
     <p class="apostas-legal">FUT RADAR não tem qualquer relação com casas de apostas — esta aba é só um registro
-      pessoal do que você apostou em outro lugar, guardado apenas neste navegador.</p>
+      pessoal do que você apostou em outro lugar, guardado apenas neste navegador. Use "Exportar" de vez em
+      quando pra não perder o histórico se trocar de celular ou limpar os dados do navegador.</p>
   `;
+
+  document.getElementById('btn-exportar')?.addEventListener('click', exportarApostas);
+  document.getElementById('input-importar')?.addEventListener('change', (e) => {
+    const file = e.target.files[0];
+    if (file) importarApostasDeArquivo(file);
+    e.target.value = '';
+  });
 
   const btnEscolher = document.getElementById('btn-escolher-jogo');
   const wrapSeletor = document.getElementById('seletor-jogo-wrap');

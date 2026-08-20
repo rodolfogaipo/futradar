@@ -615,6 +615,24 @@ button, select, input {
   margin-bottom: 12px;
 }
 
+.export-import-row {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.btn-metade {
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.btn-arquivo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
 .tipo-aposta-opcoes {
   display: flex;
   gap: 8px;
