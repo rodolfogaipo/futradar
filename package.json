@@ -1,0 +1,9 @@
+{
+  "name": "fut-radar",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Coletor de dados do FUT RADAR (roda via GitHub Actions)",
+  "scripts": {
+    "collect": "node scripts/collect.js"
+  }
+}
