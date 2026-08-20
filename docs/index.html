@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
 <title>FUT RADAR</title>
 <meta name="description" content="Painel informativo com dados e estatísticas de futebol.">
 
@@ -11,7 +11,10 @@
 <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
 <link rel="icon" type="image/png" sizes="512x512" href="icons/icon-512.png">
 <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
-<meta name="theme-color" content="#0a0f0d">
+<meta name="theme-color" content="#070b09">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="mobile-web-app-capable" content="yes">
 
 <link rel="stylesheet" href="css/style.css">
 </head>
@@ -19,40 +22,62 @@
 
 <header class="topbar">
   <div class="topbar-inner">
-    <img src="icons/logo-header-400.png" alt="FUT RADAR" class="brand-logo">
+    <img src="icons/logo-header-400.png" alt="" class="brand-logo">
     <div class="brand-text">
       <span class="brand-title">FUT RADAR</span>
-      <span class="brand-subtitle">Jogos, resultados e tabelas — sem apostas, só dados</span>
+      <span id="freshness" class="freshness">Carregando…</span>
     </div>
-    <button id="refresh-btn" class="refresh-btn" title="Atualizar dados">↻</button>
+    <button id="refresh-btn" class="refresh-btn" title="Atualizar dados" aria-label="Atualizar">
+      <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M17.65 6.35A7.95 7.95 0 0 0 12 4a8 8 0 1 0 7.75 10h-2.08A6 6 0 1 1 12 6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z"/></svg>
+    </button>
   </div>
-  <div id="freshness" class="freshness">Carregando dados...</div>
-
-  <nav class="tabs">
-    <button class="tab-btn active" data-tab="painel">Painel</button>
-    <button class="tab-btn" data-tab="apostas">Apostas</button>
-  </nav>
 </header>
 
 <main id="app">
-  <section id="tab-painel" class="tab-panel">
-    <div id="loading" class="loading">Buscando os dados mais recentes…</div>
-    <div id="content" class="content" hidden></div>
+  <section id="view-analises" class="view">
+    <div id="loading-analises" class="loading">Buscando os dados mais recentes…</div>
+    <div id="content-analises" class="content" hidden></div>
   </section>
 
-  <section id="tab-apostas" class="tab-panel" hidden>
-    <div id="apostas-root"></div>
+  <section id="view-proximos" class="view" hidden>
+    <div id="content-proximos" class="content"></div>
+  </section>
+
+  <section id="view-resultados" class="view" hidden>
+    <div id="content-resultados" class="content"></div>
+  </section>
+
+  <section id="view-tabelas" class="view" hidden>
+    <div id="content-tabelas" class="content"></div>
+  </section>
+
+  <section id="view-apostas" class="view" hidden>
+    <div id="apostas-root" class="content"></div>
   </section>
 </main>
 
-<footer class="footer">
-  <p>FUT RADAR é um painel informativo e não tem qualquer relação com casas de apostas.
-     As probabilidades combinam forma atual dos times, aproveitamento na competição
-     e histórico de confrontos diretos — não são odds de aposta nem garantia de resultado.
-     A aba Apostas é um registro pessoal de apostas feitas em casas externas, guardado
-     só no seu navegador — o FUT RADAR não processa nem intermedia apostas.</p>
-  <p class="source-credit">Dados: football-data.org</p>
-</footer>
+<nav class="bottom-nav">
+  <button class="nav-btn active" data-view="analises">
+    <svg viewBox="0 0 24 24" width="21" height="21"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="5" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="1.6" fill="currentColor"/></svg>
+    <span>Análises</span>
+  </button>
+  <button class="nav-btn" data-view="proximos">
+    <svg viewBox="0 0 24 24" width="21" height="21"><rect x="3.5" y="5" width="17" height="15" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M3.5 9.5h17" stroke="currentColor" stroke-width="1.6"/><path d="M8 3.2v3.6M16 3.2v3.6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    <span>Jogos</span>
+  </button>
+  <button class="nav-btn" data-view="resultados">
+    <svg viewBox="0 0 24 24" width="21" height="21"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M7.5 12.5l3 3 6-6.5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <span>Resultados</span>
+  </button>
+  <button class="nav-btn" data-view="tabelas">
+    <svg viewBox="0 0 24 24" width="21" height="21"><path d="M4 6h16M4 12h16M4 18h10" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+    <span>Tabelas</span>
+  </button>
+  <button class="nav-btn" data-view="apostas">
+    <svg viewBox="0 0 24 24" width="21" height="21"><rect x="3.5" y="6.5" width="17" height="12" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M3.5 10.5h17" stroke="currentColor" stroke-width="1.6"/><circle cx="16.5" cy="14.3" r="1.3" fill="currentColor"/></svg>
+    <span>Apostas</span>
+  </button>
+</nav>
 
 <script src="js/bets.js"></script>
 <script src="js/app.js"></script>
@@ -61,13 +86,13 @@
     navigator.serviceWorker.register('sw.js').catch(() => {});
   }
 
-  document.querySelectorAll('.tab-btn').forEach((btn) => {
+  document.querySelectorAll('.nav-btn').forEach((btn) => {
     btn.addEventListener('click', () => {
-      document.querySelectorAll('.tab-btn').forEach((b) => b.classList.remove('active'));
-      document.querySelectorAll('.tab-panel').forEach((p) => (p.hidden = true));
+      document.querySelectorAll('.nav-btn').forEach((b) => b.classList.remove('active'));
+      document.querySelectorAll('.view').forEach((v) => (v.hidden = true));
       btn.classList.add('active');
-      document.getElementById('tab-' + btn.dataset.tab).hidden = false;
-      if (btn.dataset.tab === 'apostas' && window.renderApostas) {
+      document.getElementById('view-' + btn.dataset.view).hidden = false;
+      if (btn.dataset.view === 'apostas' && window.renderApostas) {
         window.renderApostas();
       }
     });

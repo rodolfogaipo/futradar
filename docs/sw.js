@@ -1,4 +1,4 @@
-const CACHE_NAME = 'fut-radar-v1';
+const CACHE_NAME = 'fut-radar-v2';
 const SHELL_FILES = [
   './',
   './index.html',

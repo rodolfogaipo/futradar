@@ -225,7 +225,7 @@ function renderJogoSelecionadoResumo(jogo) {
 function renderFormNovaAposta() {
   const jogo = jogoSelecionado;
   return `
-    <div class="aposta-form">
+    <div class="app-card aposta-form">
       <h3 class="section-title" style="margin-top:0">Nova aposta</h3>
 
       <label class="campo-label">Jogo</label>
@@ -237,17 +237,19 @@ function renderFormNovaAposta() {
 
       <form id="form-nova-aposta" style="margin-top:14px">
         <div class="form-row">
-          <label>Aposta em
-            <select name="tipoAposta" required ${!jogo ? 'disabled' : ''}>
-              <option value="mandante">Vitória do mandante${jogo ? ' (' + jogo.mandante + ')' : ''}</option>
-              <option value="empate">Empate</option>
-              <option value="visitante">Vitória do visitante${jogo ? ' (' + jogo.visitante + ')' : ''}</option>
-            </select>
+          <label class="campo-form">Aposta em
+            <div class="select-wrap">
+              <select name="tipoAposta" required>
+                <option value="mandante">Vitória do mandante${jogo ? ' (' + jogo.mandante + ')' : ''}</option>
+                <option value="empate">Empate</option>
+                <option value="visitante">Vitória do visitante${jogo ? ' (' + jogo.visitante + ')' : ''}</option>
+              </select>
+            </div>
           </label>
         </div>
         <div class="form-row">
-          <label>Valor apostado (R$)<input type="number" name="valor" step="0.01" min="0.01" required></label>
-          <label>Odd<input type="number" name="odd" step="0.01" min="1.01" required></label>
+          <label class="campo-form">Valor apostado (R$)<input type="number" name="valor" step="0.01" min="0.01" required></label>
+          <label class="campo-form">Odd<input type="number" name="odd" step="0.01" min="1.01" required></label>
         </div>
         <button type="submit" class="btn-primary" ${!jogo ? 'disabled' : ''}>Adicionar aposta</button>
       </form>
@@ -270,7 +272,7 @@ function renderListaApostas(apostas) {
       const lucroClasse = lucro === null ? '' : lucro >= 0 ? 'positivo' : 'negativo';
 
       return `
-        <div class="aposta-row">
+        <div class="app-card aposta-row">
           <div class="aposta-info">
             <div class="aposta-titulo">
               ${crestImg(a.mandanteEscudo)} ${a.mandante} x ${a.visitante} ${crestImg(a.visitanteEscudo)}
@@ -305,6 +307,8 @@ async function renderApostas() {
     ${renderFormNovaAposta()}
     <h2 class="section-title">Histórico</h2>
     ${renderListaApostas(apostas)}
+    <p class="apostas-legal">FUT RADAR não tem qualquer relação com casas de apostas — esta aba é só um registro
+      pessoal do que você apostou em outro lugar, guardado apenas neste navegador.</p>
   `;
 
   const btnEscolher = document.getElementById('btn-escolher-jogo');

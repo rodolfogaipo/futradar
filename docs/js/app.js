@@ -1,12 +1,9 @@
 // docs/js/app.js
 // Lê docs/data/data.json (gerado pelo coletor via GitHub Actions) e
-// desenha o painel: próximos jogos, resultados recentes e tabelas das
-// 12 competições. Não faz nenhuma chamada externa.
+// preenche as abas: Análises, Jogos, Resultados e Tabelas.
 
 const DATA_URL = 'data/data.json';
 
-const loadingEl = document.getElementById('loading');
-const contentEl = document.getElementById('content');
 const freshnessEl = document.getElementById('freshness');
 const refreshBtn = document.getElementById('refresh-btn');
 
@@ -20,44 +17,16 @@ function formatDateTime(iso) {
 
 function timeAgo(iso) {
   const diffH = (Date.now() - new Date(iso).getTime()) / 1000 / 60 / 60;
-  if (diffH < 1) return 'há menos de 1 hora';
+  if (diffH < 1) return 'agora há pouco';
   if (diffH < 24) return `há ${Math.floor(diffH)}h`;
-  return `há ${Math.floor(diffH / 24)} dia(s)`;
+  return `há ${Math.floor(diffH / 24)}d`;
 }
 
-function renderMatchRow(m, showScore) {
-  const score = showScore
-    ? `<span class="score">${m.placarMandante ?? '-'} x ${m.placarVisitante ?? '-'}</span>`
-    : `<span class="match-time">${formatDateTime(m.data)}</span>`;
-
-  return `
-    <div class="match-row">
-      <span class="comp-tag">${m.competicao}</span>
-      <div class="match-line">
-        <span class="team">
-          ${m.mandanteEscudo ? `<img class="team-crest" src="${m.mandanteEscudo}" alt="" loading="lazy">` : ''}
-          ${m.mandante}
-        </span>
-        ${score}
-        <span class="team team-right">
-          ${m.visitante}
-          ${m.visitanteEscudo ? `<img class="team-crest" src="${m.visitanteEscudo}" alt="" loading="lazy">` : ''}
-        </span>
-      </div>
-    </div>`;
+function crestImg(url) {
+  return url ? `<img class="team-crest" src="${url}" alt="" loading="lazy">` : '<span class="crest-ph"></span>';
 }
 
-function groupByDate(matches) {
-  const groups = {};
-  for (const m of matches) {
-    const day = new Date(m.data).toLocaleDateString('pt-BR', {
-      weekday: 'long', day: '2-digit', month: '2-digit',
-    });
-    groups[day] = groups[day] || [];
-    groups[day].push(m);
-  }
-  return groups;
-}
+// ---------- Análise de confrontos ----------
 
 function renderProbBars(p) {
   return `
@@ -82,57 +51,113 @@ function renderProbBars(p) {
 
 function renderAnaliseCard(a) {
   return `
-    <div class="team-block">
-      <div class="team-block-header">
-        <span class="team-name">
-          ${a.mandanteEscudo ? `<img class="team-crest" src="${a.mandanteEscudo}" alt="" loading="lazy">` : ''}
-          ${a.mandante} x ${a.visitante}
-          ${a.visitanteEscudo ? `<img class="team-crest" src="${a.visitanteEscudo}" alt="" loading="lazy">` : ''}
-        </span>
+    <div class="app-card analise-card">
+      <div class="card-top-row">
         <span class="comp-tag">${a.competicao}</span>
+        <span class="match-time">${formatDateTime(a.data)}</span>
       </div>
-      <div class="match-meta">${formatDateTime(a.data)}</div>
+      <div class="confronto-teams">
+        <div class="confronto-team">
+          ${crestImg(a.mandanteEscudo)}
+          <span>${a.mandante}</span>
+        </div>
+        <span class="vs">×</span>
+        <div class="confronto-team">
+          ${crestImg(a.visitanteEscudo)}
+          <span>${a.visitante}</span>
+        </div>
+      </div>
       ${renderProbBars(a.probabilidades)}
       <p class="analise-obs">${a.obs}</p>
     </div>`;
 }
 
-function renderAnalisesSection(analises) {
-  if (!analises || analises.length === 0) {
-    return `<h2 class="section-title">Análise de confrontos</h2><p class="empty-msg">Nenhuma análise disponível ainda.</p>`;
+function renderAnalises(data) {
+  const el = document.getElementById('content-analises');
+  const loadingEl = document.getElementById('loading-analises');
+  loadingEl.hidden = true;
+  el.hidden = false;
+
+  let html = '';
+  if (data.avisos?.length) {
+    html += `<div class="warning-box">${data.avisos.join('<br>')}</div>`;
   }
-  return `
-    <h2 class="section-title">Análise de confrontos (jogos de hoje / mais próximos)</h2>
-    ${analises.map(renderAnaliseCard).join('')}`;
+  const analises = data.analises || [];
+  if (analises.length === 0) {
+    html += '<p class="empty-msg">Nenhuma análise disponível ainda.</p>';
+  } else {
+    html += `<p class="view-intro">${analises.length} confronto(s) sendo acompanhado(s) — somem da lista quando o jogo termina.</p>`;
+    html += analises.map(renderAnaliseCard).join('');
+  }
+  el.innerHTML = html;
 }
 
-function renderMatchesSection(title, matches, showScore) {
+// ---------- Próximos jogos / Resultados ----------
+
+function renderMatchCard(m, showScore) {
+  const right = showScore
+    ? `<span class="score">${m.placarMandante ?? '-'} · ${m.placarVisitante ?? '-'}</span>`
+    : `<span class="match-time">${formatDateTime(m.data)}</span>`;
+
+  return `
+    <div class="app-card jogo-card">
+      <div class="card-top-row">
+        <span class="comp-tag">${m.competicao}</span>
+        ${!showScore ? '' : `<span class="match-time">${formatDateTime(m.data)}</span>`}
+      </div>
+      <div class="jogo-linha">
+        <div class="jogo-time">${crestImg(m.mandanteEscudo)}<span>${m.mandante}</span></div>
+        ${right}
+        <div class="jogo-time jogo-time-right"><span>${m.visitante}</span>${crestImg(m.visitanteEscudo)}</div>
+      </div>
+    </div>`;
+}
+
+function groupByDate(matches) {
+  const groups = {};
+  for (const m of matches) {
+    const day = new Date(m.data).toLocaleDateString('pt-BR', { weekday: 'long', day: '2-digit', month: '2-digit' });
+    groups[day] = groups[day] || [];
+    groups[day].push(m);
+  }
+  return groups;
+}
+
+function renderMatchesInto(elId, matches, showScore, emptyMsg) {
+  const el = document.getElementById(elId);
   if (!matches || matches.length === 0) {
-    return `<h2 class="section-title">${title}</h2><p class="empty-msg">Nenhum jogo encontrado nesse período.</p>`;
+    el.innerHTML = `<p class="empty-msg">${emptyMsg}</p>`;
+    return;
   }
   const groups = groupByDate(matches);
-  let html = `<h2 class="section-title">${title}</h2>`;
+  let html = '';
   for (const [day, dayMatches] of Object.entries(groups)) {
     html += `<div class="day-group"><div class="day-label">${day}</div>`;
-    html += dayMatches.map((m) => renderMatchRow(m, showScore)).join('');
+    html += dayMatches.map((m) => renderMatchCard(m, showScore)).join('');
     html += `</div>`;
   }
-  return html;
+  el.innerHTML = html;
+}
+
+// ---------- Tabelas ----------
+
+function standingRowClass(row, total) {
+  if (row.posicao <= 4) return 'zona-classificacao';
+  if (row.posicao > total - 4) return 'zona-rebaixamento';
+  return '';
 }
 
 function renderStandingsTable(comp) {
   if (!comp.tabela || comp.tabela.length === 0) {
-    return `<p class="empty-msg">Tabela não disponível no momento (competição pode estar fora de temporada ou em fase de grupos/mata-mata).</p>`;
+    return `<p class="empty-msg">Tabela não disponível no momento (fora de temporada ou em fase de grupos/mata-mata).</p>`;
   }
+  const total = comp.tabela.length;
   const rows = comp.tabela
     .map(
       (row) => `
-        <tr>
+        <tr class="${standingRowClass(row, total)}">
           <td>${row.posicao}</td>
-          <td class="team-cell">
-            ${row.escudo ? `<img class="team-crest" src="${row.escudo}" alt="" loading="lazy">` : ''}
-            ${row.time}
-          </td>
+          <td class="team-cell">${crestImg(row.escudo)}<span>${row.time}</span></td>
           <td>${row.pontos}</td>
           <td>${row.jogos}</td>
           <td>${row.saldoGols > 0 ? '+' : ''}${row.saldoGols}</td>
@@ -141,14 +166,18 @@ function renderStandingsTable(comp) {
     .join('');
 
   return `
-    <table class="standings-table">
-      <thead><tr><th>#</th><th>Time</th><th>Pts</th><th>J</th><th>SG</th></tr></thead>
-      <tbody>${rows}</tbody>
-    </table>`;
+    <div class="table-scroll">
+      <table class="standings-table">
+        <thead><tr><th>#</th><th>Time</th><th>Pts</th><th>J</th><th>SG</th></tr></thead>
+        <tbody>${rows}</tbody>
+      </table>
+    </div>`;
 }
 
-function renderCompetitionsAccordion(competicoes) {
-  let html = '<h2 class="section-title">Tabelas</h2><div class="accordion">';
+function renderTabelas(data) {
+  const el = document.getElementById('content-tabelas');
+  const competicoes = data.competicoes || [];
+  let html = '<div class="accordion">';
   competicoes.forEach((comp, i) => {
     html += `
       <div class="accordion-item">
@@ -162,16 +191,14 @@ function renderCompetitionsAccordion(competicoes) {
       </div>`;
   });
   html += '</div>';
-  return html;
-}
+  el.innerHTML = html;
 
-function attachAccordionEvents() {
-  document.querySelectorAll('.accordion-header').forEach((btn) => {
+  el.querySelectorAll('.accordion-header').forEach((btn) => {
     btn.addEventListener('click', () => {
       const body = document.getElementById(`acc-body-${btn.dataset.idx}`);
       const isHidden = body.hidden;
-      document.querySelectorAll('.accordion-body').forEach((b) => (b.hidden = true));
-      document.querySelectorAll('.chevron').forEach((c) => (c.textContent = '▾'));
+      el.querySelectorAll('.accordion-body').forEach((b) => (b.hidden = true));
+      el.querySelectorAll('.chevron').forEach((c) => (c.textContent = '▾'));
       if (isHidden) {
         body.hidden = false;
         btn.querySelector('.chevron').textContent = '▴';
@@ -180,47 +207,40 @@ function attachAccordionEvents() {
   });
 }
 
-function render(data) {
-  let html = '';
+// ---------- Carregamento geral ----------
 
-  if (data.avisos && data.avisos.length > 0) {
-    html += `<div class="warning-box">${data.avisos.join('<br>')}</div>`;
-  }
-
-  html += renderAnalisesSection(data.analises);
-  html += renderMatchesSection('Próximos jogos (7 dias)', data.proximosJogos, false);
-  html += renderMatchesSection('Resultados recentes (7 dias)', data.resultadosRecentes, true);
-  html += renderCompetitionsAccordion(data.competicoes || []);
-
-  contentEl.innerHTML = html;
-  loadingEl.hidden = true;
-  contentEl.hidden = false;
-  attachAccordionEvents();
-
-  freshnessEl.textContent = `Atualizado ${timeAgo(data.geradoEm)} (${formatDateTime(data.geradoEm)})`;
+function renderAll(data) {
+  renderAnalises(data);
+  renderMatchesInto('content-proximos', data.proximosJogos, false, 'Nenhum jogo encontrado nos próximos dias.');
+  renderMatchesInto('content-resultados', data.resultadosRecentes, true, 'Nenhum resultado recente encontrado.');
+  renderTabelas(data);
+  freshnessEl.textContent = `Atualizado ${timeAgo(data.geradoEm)}`;
 }
 
 async function load(forceFresh) {
-  loadingEl.hidden = false;
-  contentEl.hidden = true;
   try {
     const url = forceFresh ? `${DATA_URL}?t=${Date.now()}` : DATA_URL;
     const res = await fetch(url, { cache: forceFresh ? 'no-store' : 'default' });
     if (!res.ok) throw new Error('data.json não encontrado');
     const data = await res.json();
-    render(data);
+    renderAll(data);
   } catch (err) {
-    loadingEl.hidden = true;
-    contentEl.hidden = false;
-    contentEl.innerHTML = `
+    document.getElementById('loading-analises').hidden = true;
+    const el = document.getElementById('content-analises');
+    el.hidden = false;
+    el.innerHTML = `
       <div class="warning-box">
         Ainda não há dados coletados. Isso é normal na primeira execução —
         o GitHub Actions precisa rodar pelo menos uma vez (veja o README
         do repositório para o passo a passo).
       </div>`;
+    freshnessEl.textContent = 'Sem dados ainda';
   }
 }
 
-refreshBtn.addEventListener('click', () => load(true));
+refreshBtn.addEventListener('click', () => {
+  refreshBtn.classList.add('spinning');
+  load(true).finally(() => setTimeout(() => refreshBtn.classList.remove('spinning'), 500));
+});
 
 load(false);
