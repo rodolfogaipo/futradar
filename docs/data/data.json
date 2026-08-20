@@ -1,0 +1,13 @@
+{
+  "geradoEm": "2026-08-20T19:36:44.471Z",
+  "temporada": 2026,
+  "fonte": "API-Football (api-sports.io)",
+  "times": {},
+  "tabela": [],
+  "avisos": [
+    "Não foi possível atualizar a tabela do Brasileirão nesta coleta.",
+    "Não foi possível atualizar os dados de Atlético Mineiro nesta coleta.",
+    "Não foi possível atualizar os dados de America Mineiro nesta coleta.",
+    "Não foi possível atualizar os dados de Cruzeiro nesta coleta."
+  ]
+}
