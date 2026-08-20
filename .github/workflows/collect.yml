@@ -1,0 +1,39 @@
+name: Coletar dados do FUT RADAR
+
+on:
+  schedule:
+    - cron: '0 */3 * * *'
+  workflow_dispatch: {}
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/**'
+      - '.github/workflows/collect.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Baixar o repositório
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Rodar coletor
+        env:
+          API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
+        run: node scripts/collect.js
+
+      - name: Salvar dados coletados no repositório
+        run: |
+          git config user.name "fut-radar-bot"
+          git config user.email "actions@github.com"
+          git add docs/data/data.json scripts/config-ids.json
+          git diff --staged --quiet || git commit -m "Atualiza dados do FUT RADAR [automático]"
+          git push
