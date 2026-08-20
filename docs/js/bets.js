@@ -353,7 +353,7 @@ async function renderApostas() {
   root.querySelectorAll('.jogo-opcao').forEach((btn) => {
     btn.addEventListener('click', () => {
       const id = btn.dataset.id;
-      jogoSelecionado = (painelData.analises || []).find((a) => a.id === id) || null;
+      jogoSelecionado = (painelData.analises || []).find((a) => String(a.id) === String(id)) || null;
       tipoApostaSelecionado = null; // troca de jogo reseta a escolha de tipo
       renderApostas();
     });
