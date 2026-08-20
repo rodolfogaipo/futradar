@@ -1,40 +1,50 @@
 // scripts/collect.js
 //
-// Coletor de dados do FUT RADAR.
-// Roda dentro do GitHub Actions (não no navegador), então não tem
-// problema de CORS nem de bloqueio de acesso. Usa a API gratuita
-// API-Football (https://www.api-football.com/) — plano free dá 100
-// requisições por dia, o que é mais que suficiente pra rodar esse
-// coletor a cada poucas horas.
+// Coletor de dados do FUT RADAR — versão 2.
 //
-// A chave da API fica guardada como "secret" no GitHub
-// (API_FOOTBALL_KEY), nunca aparece no código nem no navegador do usuário.
+// A primeira versão usava a API-Football, mas descobrimos (via erro real
+// retornado pela própria API) que o plano gratuito dela só dá acesso a
+// temporadas antigas (2022-2024) e bloqueia o parâmetro de "próximos
+// jogos". Ou seja: não servia pra dados atuais.
+//
+// Trocamos para a football-data.org, que tem um plano gratuito de
+// verdade com dados da temporada atual do Brasileirão Série A
+// (competição "BSA"). Limite: 10 requisições por minuto.
 
 const fs = require('fs');
 const path = require('path');
 
-const API_HOST = 'v3.football.api-sports.io';
-const API_BASE = `https://${API_HOST}`;
-const API_KEY = process.env.API_FOOTBALL_KEY;
+const API_BASE = 'https://api.football-data.org/v4';
+const API_TOKEN = process.env.FOOTBALL_DATA_TOKEN;
+const COMPETITION = 'BSA'; // Campeonato Brasileiro Série A
 
 const CONFIG_PATH = path.join(__dirname, 'config-ids.json');
 const OUTPUT_PATH = path.join(__dirname, '..', 'docs', 'data', 'data.json');
 
 // Times que o Rodolfo acompanha, em ordem de prioridade.
-// (Atlético-MG é a prioridade máxima)
+// "match": trechos (sem acento, minúsculo) usados pra achar o time certo
+// dentro da lista de times do Brasileirão vinda da API.
 const TEAMS = [
-  { key: 'atletico-mg', name: 'Atlético Mineiro', country: 'Brazil' },
-  { key: 'america-mg', name: 'America Mineiro', country: 'Brazil' },
-  { key: 'cruzeiro', name: 'Cruzeiro', country: 'Brazil' },
+  { key: 'atletico-mg', name: 'Atlético Mineiro', match: ['atletico mineiro', 'atletico-mg'] },
+  { key: 'america-mg', name: 'América Mineiro', match: ['america mineiro', 'america-mg', 'america futebol clube'] },
+  { key: 'cruzeiro', name: 'Cruzeiro', match: ['cruzeiro'] },
 ];
 
-const LEAGUE_NAME = 'Serie A';
-const LEAGUE_COUNTRY = 'Brazil';
-
-if (!API_KEY) {
-  console.error('ERRO: variável de ambiente API_FOOTBALL_KEY não foi definida.');
+if (!API_TOKEN) {
+  console.error('ERRO: variável de ambiente FOOTBALL_DATA_TOKEN não foi definida.');
   console.error('No GitHub, isso vem do secret configurado no repositório.');
   process.exit(1);
+}
+
+function normalize(str) {
+  return str
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, ''); // remove acentos
+}
+
+function sleep(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
 async function apiGet(endpoint, params) {
@@ -44,20 +54,21 @@ async function apiGet(endpoint, params) {
   });
 
   const res = await fetch(url, {
-    headers: {
-      'x-apisports-key': API_KEY,
-    },
+    headers: { 'X-Auth-Token': API_TOKEN },
   });
 
-  if (!res.ok) {
-    throw new Error(`Falha na API (${res.status}) em ${endpoint}: ${await res.text()}`);
+  if (res.status === 429) {
+    console.warn('  Limite de requisições por minuto atingido, aguardando 20s...');
+    await sleep(20000);
+    return apiGet(endpoint, params);
   }
 
-  const json = await res.json();
-  if (json.errors && Object.keys(json.errors).length > 0) {
-    throw new Error(`API retornou erro em ${endpoint}: ${JSON.stringify(json.errors)}`);
+  if (!res.ok) {
+    const body = await res.text();
+    throw new Error(`Falha na API (${res.status}) em ${endpoint}: ${body}`);
   }
-  return json.response;
+
+  return res.json();
 }
 
 function loadConfig() {
@@ -71,217 +82,175 @@ function saveConfig(config) {
   fs.writeFileSync(CONFIG_PATH, JSON.stringify(config, null, 2));
 }
 
-// Resolve e guarda em cache o ID da liga (Brasileirão Série A) e o ID
-// de cada time, pra não precisar adivinhar números nem gastar
-// requisições procurando isso toda vez.
-async function resolveIds(config) {
-  let changed = false;
-
-  if (!config.leagueId) {
-    console.log('Buscando ID da liga (Brasileirão Série A)...');
-    const leagues = await apiGet('/leagues', { name: LEAGUE_NAME, country: LEAGUE_COUNTRY });
-    const match = leagues.find((l) => l.league.type === 'League') || leagues[0];
-    if (!match) throw new Error('Não encontrei a liga Brasileirão Série A na API.');
-    config.leagueId = match.league.id;
-    console.log(`  -> league_id = ${config.leagueId}`);
-    changed = true;
+// Resolve e guarda em cache o ID de cada time, buscando na lista oficial
+// de times do Brasileirão (evita adivinhar número ou nome exato).
+async function resolveTeamIds(config) {
+  if (config.teamIds && Object.keys(config.teamIds).length === TEAMS.length) {
+    return config;
   }
+
+  console.log('Buscando lista de times do Brasileirão Série A...');
+  const data = await apiGet(`/competitions/${COMPETITION}/teams`);
+  const allTeams = data.teams || [];
 
   config.teamIds = config.teamIds || {};
   for (const team of TEAMS) {
-    if (!config.teamIds[team.key]) {
-      console.log(`Buscando ID do time: ${team.name}...`);
-      const teams = await apiGet('/teams', { name: team.name, country: team.country });
-      if (!teams || teams.length === 0) {
-        console.warn(`  -> AVISO: não encontrei "${team.name}" na API. Vou pular esse time.`);
-        continue;
-      }
-      config.teamIds[team.key] = teams[0].team.id;
-      console.log(`  -> team_id = ${config.teamIds[team.key]}`);
-      changed = true;
+    if (config.teamIds[team.key]) continue;
+    const found = allTeams.find((t) => {
+      const n = normalize(t.name);
+      const short = normalize(t.shortName || '');
+      return team.match.some((m) => n.includes(m) || short.includes(m));
+    });
+    if (!found) {
+      console.warn(`  AVISO: não encontrei "${team.name}" na lista de times.`);
+      continue;
     }
+    config.teamIds[team.key] = found.id;
+    console.log(`  -> ${team.name}: id ${found.id} (${found.name})`);
   }
 
-  if (changed) saveConfig(config);
+  saveConfig(config);
   return config;
 }
 
-// Descobre a temporada correta (a API usa o ano de início da temporada).
-async function resolveSeason(leagueId) {
-  const info = await apiGet('/leagues', { id: leagueId });
-  const seasons = info[0]?.seasons || [];
-  const current = seasons.find((s) => s.current);
-  return current ? current.year : new Date().getFullYear();
-}
-
-// Estimativa simples e transparente baseada só na forma recente
-// (últimos 5 jogos). NÃO é odds de casa de aposta, é só uma leitura
-// estatística de momento de cada time, deixada bem clara na interface.
-function formScore(recentFixtures, teamId) {
-  if (!recentFixtures || recentFixtures.length === 0) return null;
+function formScore(matches, teamId) {
+  const finished = matches.filter((m) => m.status === 'FINISHED');
+  if (finished.length === 0) return null;
   let points = 0;
-  let count = 0;
-  for (const f of recentFixtures) {
-    const isHome = f.teams.home.id === teamId;
-    const homeGoals = f.goals.home;
-    const awayGoals = f.goals.away;
-    if (homeGoals === null || awayGoals === null) continue;
-    count++;
+  for (const m of finished) {
+    const isHome = m.homeTeam.id === teamId;
+    const homeGoals = m.score.fullTime.home;
+    const awayGoals = m.score.fullTime.away;
     const teamGoals = isHome ? homeGoals : awayGoals;
     const oppGoals = isHome ? awayGoals : homeGoals;
     if (teamGoals > oppGoals) points += 3;
     else if (teamGoals === oppGoals) points += 1;
   }
-  if (count === 0) return null;
-  return points / (count * 3); // 0..1
+  return points / (finished.length * 3); // 0..1
 }
 
-function estimateProbabilities(formA, formB) {
-  // Se só temos a forma de um dos lados, usa ela sozinha como referência.
-  const a = formA === null ? 0.45 : formA;
-  const b = formB === null ? 0.45 : formB;
-
-  const total = a + b;
-  let winA = total > 0 ? a / total : 0.4;
-  let winB = total > 0 ? b / total : 0.4;
-
-  // Empate: quanto mais parecida a forma dos dois times, maior a
-  // chance de empate (heurística simples, não é modelo estatístico real).
-  const closeness = 1 - Math.abs(a - b);
-  const drawShare = 0.18 + closeness * 0.14; // entre ~18% e ~32%
-
-  const remaining = 1 - drawShare;
-  winA = winA * remaining;
-  winB = winB * remaining;
-  const draw = 1 - winA - winB;
-
-  return {
-    vitoria: Math.round(winA * 100),
-    empate: Math.round(draw * 100),
-    derrota: Math.round(winB * 100),
-  };
-}
-
-function formLetters(recentFixtures, teamId) {
-  return recentFixtures
-    .filter((f) => f.goals.home !== null && f.goals.away !== null)
-    .map((f) => {
-      const isHome = f.teams.home.id === teamId;
-      const teamGoals = isHome ? f.goals.home : f.goals.away;
-      const oppGoals = isHome ? f.goals.away : f.goals.home;
+function formLetters(matches, teamId) {
+  return matches
+    .filter((m) => m.status === 'FINISHED')
+    .map((m) => {
+      const isHome = m.homeTeam.id === teamId;
+      const teamGoals = isHome ? m.score.fullTime.home : m.score.fullTime.away;
+      const oppGoals = isHome ? m.score.fullTime.away : m.score.fullTime.home;
       if (teamGoals > oppGoals) return 'V';
       if (teamGoals === oppGoals) return 'E';
       return 'D';
     });
 }
 
-async function collectTeamData(team, teamId, season) {
+// Estimativa simples e transparente baseada na forma recente do time
+// (últimos 5 jogos). NÃO é odds de casa de aposta.
+function estimateProbabilities(form) {
+  const f = form === null ? 0.45 : form; // 0.45 = neutro, sem dados suficientes
+  let vitoria = 15 + f * 55; // 15% a 70%
+  let derrota = 15 + (1 - f) * 40; // 15% a 55%
+  let empate = 100 - vitoria - derrota;
+  if (empate < 12) {
+    const falta = 12 - empate;
+    vitoria -= falta / 2;
+    derrota -= falta / 2;
+    empate = 12;
+  }
+  return {
+    vitoria: Math.round(vitoria),
+    empate: Math.round(empate),
+    derrota: Math.round(derrota),
+  };
+}
+
+async function collectTeamData(team, teamId) {
   console.log(`Coletando dados de ${team.name}...`);
 
-  const [nextFixtures, lastFixtures] = await Promise.all([
-    apiGet('/fixtures', { team: teamId, next: 3 }),
-    apiGet('/fixtures', { team: teamId, last: 5 }),
+  const [nextData, lastData] = await Promise.all([
+    apiGet(`/teams/${teamId}/matches`, { status: 'SCHEDULED', limit: 3 }),
+    apiGet(`/teams/${teamId}/matches`, { status: 'FINISHED', limit: 5 }),
   ]);
 
-  const form = formScore(lastFixtures, teamId);
-  const letters = formLetters(lastFixtures, teamId);
+  const form = formScore(lastData.matches || [], teamId);
+  const letters = formLetters(lastData.matches || [], teamId);
+  const probabilidades = estimateProbabilities(form);
 
-  const upcoming = [];
-  for (const fixture of nextFixtures) {
-    const isHome = fixture.teams.home.id === teamId;
-    const opponent = isHome ? fixture.teams.away : fixture.teams.home;
-
-    // Tenta pegar a forma recente do adversário também, se ele for
-    // um time conhecido nosso; senão usa só a forma do nosso time.
-    let opponentForm = null;
-    try {
-      const oppLast = await apiGet('/fixtures', { team: opponent.id, last: 5 });
-      opponentForm = formScore(oppLast, opponent.id);
-    } catch (e) {
-      console.warn(`  Não consegui pegar forma do adversário (${opponent.name}): ${e.message}`);
-    }
-
-    const probabilidades = estimateProbabilities(
-      isHome ? form : opponentForm,
-      isHome ? opponentForm : form
-    );
-
-    upcoming.push({
-      data: fixture.fixture.date,
+  const upcoming = (nextData.matches || []).map((m) => {
+    const isHome = m.homeTeam.id === teamId;
+    const opponent = isHome ? m.awayTeam : m.homeTeam;
+    return {
+      data: m.utcDate,
       local: isHome ? 'casa' : 'fora',
       adversario: opponent.name,
-      adversarioEscudo: opponent.logo,
-      competicao: fixture.league.name,
-      estadio: fixture.fixture.venue?.name || null,
+      adversarioEscudo: opponent.crest,
+      competicao: m.competition?.name || 'Brasileirão Série A',
+      estadio: m.venue || null,
       probabilidades,
-    });
-  }
+    };
+  });
 
   return {
     nome: team.name,
-    forma: letters, // ex: ["V","V","E","D","V"]
+    forma: letters,
     proximosJogos: upcoming,
   };
 }
 
-async function collectStandings(leagueId, season) {
-  const data = await apiGet('/standings', { league: leagueId, season });
-  const table = data[0]?.league?.standings?.[0] || [];
+async function collectStandings() {
+  const data = await apiGet(`/competitions/${COMPETITION}/standings`);
+  const table = data.standings?.find((s) => s.type === 'TOTAL')?.table || [];
   return table.map((row) => ({
-    posicao: row.rank,
+    posicao: row.position,
     time: row.team.name,
-    escudo: row.team.logo,
+    escudo: row.team.crest,
     pontos: row.points,
-    jogos: row.all.played,
-    vitorias: row.all.win,
-    empates: row.all.draw,
-    derrotas: row.all.lose,
-    saldoGols: row.goalsDiff,
+    jogos: row.playedGames,
+    vitorias: row.won,
+    empates: row.draw,
+    derrotas: row.lost,
+    saldoGols: row.goalDifference,
   }));
 }
 
 async function main() {
-  console.log('=== FUT RADAR — coleta de dados ===');
+  console.log('=== FUT RADAR — coleta de dados (football-data.org) ===');
   let config = loadConfig();
-  config = await resolveIds(config);
-
-  const season = await resolveSeason(config.leagueId);
-  console.log(`Temporada atual: ${season}`);
+  config = await resolveTeamIds(config);
 
   const result = {
     geradoEm: new Date().toISOString(),
-    temporada: season,
-    fonte: 'API-Football (api-sports.io)',
+    temporada: new Date().getFullYear(),
+    fonte: 'football-data.org',
     times: {},
     tabela: [],
     avisos: [],
   };
 
   try {
-    result.tabela = await collectStandings(config.leagueId, season);
+    result.tabela = await collectStandings();
   } catch (e) {
     console.warn(`Falha ao coletar a tabela: ${e.message}`);
     result.avisos.push('Não foi possível atualizar a tabela do Brasileirão nesta coleta.');
   }
 
+  await sleep(1500); // respeita o limite de requisições/minuto
+
   for (const team of TEAMS) {
     const teamId = config.teamIds[team.key];
     if (!teamId) {
-      result.avisos.push(`Time "${team.name}" não encontrado na API — verifique o nome.`);
+      result.avisos.push(`Time "${team.name}" não encontrado na API.`);
       continue;
     }
     try {
-      result.times[team.key] = await collectTeamData(team, teamId, season);
+      result.times[team.key] = await collectTeamData(team, teamId);
     } catch (e) {
       console.warn(`Falha ao coletar dados de ${team.name}: ${e.message}`);
       result.avisos.push(`Não foi possível atualizar os dados de ${team.name} nesta coleta.`);
     }
+    await sleep(1500);
   }
 
   fs.mkdirSync(path.dirname(OUTPUT_PATH), { recursive: true });
 
-  // Se a coleta inteira falhou (times vazio) mantém o arquivo antigo
-  // em vez de sobrescrever com dado vazio.
   const hasAnyData = Object.keys(result.times).length > 0 || result.tabela.length > 0;
   if (!hasAnyData && fs.existsSync(OUTPUT_PATH)) {
     console.warn('Nenhum dado novo coletado — mantendo o data.json anterior.');

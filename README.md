@@ -3,12 +3,14 @@
 Painel informativo de futebol (Atlético-MG, América-MG, Cruzeiro + tabela do
 Brasileirão Série A). Sem apostas, sem odds — só estatísticas.
 
-## Como os dados chegam no app (sem scraping quebrando toda hora)
+## Como os dados chegam no app
 
-Os sites de esportes (Globo Esporte, Flashscore etc.) bloqueiam esse tipo de
-acesso automatizado e boa parte usa JavaScript pesado — por isso o app usa a
-**API-Football**, que é gratuita (100 requisições por dia no plano free, mais
-que suficiente pra esse projeto).
+Testamos duas fontes até achar uma que funciona de verdade com dados atuais:
+- Scraping direto de sites (Globo Esporte etc.): **bloqueado**, não dá.
+- API-Football (primeira tentativa): o plano gratuito só libera temporadas
+  antigas (2022-2024), não a atual — inútil pro nosso caso.
+- **football-data.org** (versão atual): plano gratuito de verdade, com dados
+  da temporada corrente do Brasileirão Série A. É essa que o app usa.
 
 O fluxo é o mesmo do Trem de Notícias:
 1. Um robô (GitHub Actions) roda a cada 3 horas, busca os dados na API e salva
@@ -18,28 +20,35 @@ O fluxo é o mesmo do Trem de Notícias:
 
 ## Passo a passo pra deixar funcionando (uma vez só)
 
-### 1. Pegar a chave gratuita da API-Football
-1. Acesse **https://dashboard.api-football.com/register**
-2. Crie uma conta gratuita (plano Free).
-3. No painel, copie sua **API Key**.
+### 1. Pegar o token gratuito da football-data.org
+1. Acesse **https://www.football-data.org/client/register**
+2. Preenche o cadastro (nome, e-mail, senha) — é grátis, sem cartão.
+3. Confirma o e-mail se pedir.
+4. No painel (`football-data.org/client/dashboard`), copia o **"Your API
+   Token"** (uma sequência de letras e números).
 
-### 2. Adicionar a chave como "secret" no repositório
+### 2. Adicionar o token como "secret" no repositório
 1. No GitHub, entre no repositório → **Settings** → **Secrets and variables** → **Actions**.
 2. Clique em **New repository secret**.
-3. Nome: `API_FOOTBALL_KEY`
-4. Valor: cole a chave copiada no passo 1.
+3. Nome: `FOOTBALL_DATA_TOKEN`
+4. Valor: cole o token copiado no passo 1.
 5. Salve.
+
+(Se você já tinha criado um secret chamado `API_FOOTBALL_KEY` da tentativa
+anterior, pode deixar ou apagar — ele não é mais usado.)
 
 ### 3. Habilitar permissão de escrita para o Actions
 1. **Settings** → **Actions** → **General**.
 2. Em "Workflow permissions", marque **Read and write permissions**.
 3. Salve.
+(Se você já fez isso antes, não precisa repetir.)
 
-### 4. Subir os arquivos
-Suba todo o conteúdo desta pasta para o repositório (upload direto pelo
-GitHub, do jeito que você já faz nos outros projetos).
+### 4. Subir/atualizar os arquivos
+Suba todo o conteúdo desta pasta para o repositório. Se o repositório já
+existe, é só subir os arquivos de novo — o GitHub substitui os que mudaram
+(o `scripts/collect.js` é o principal que mudou nesta versão).
 
-### 5. Habilitar o GitHub Pages
+### 5. Habilitar o GitHub Pages (se ainda não fez)
 1. **Settings** → **Pages**.
 2. Em "Source", selecione **Deploy from a branch**.
 3. Branch: `main`, pasta: **/docs**.
@@ -49,8 +58,7 @@ GitHub, do jeito que você já faz nos outros projetos).
 1. Vá na aba **Actions** do repositório.
 2. Clique no workflow **"Coletar dados do FUT RADAR"**.
 3. Clique em **Run workflow** → **Run workflow** de novo pra confirmar.
-4. Espere terminar (ícone verde ✔️). Isso cria o `docs/data/data.json` com
-   dados reais pela primeira vez.
+4. Espere terminar (ícone verde ✔️).
 
 Depois disso, ele roda sozinho a cada 3 horas — não precisa mexer em nada.
 
@@ -74,7 +82,7 @@ fut-radar/
 
 ## Sobre as porcentagens exibidas
 
-São uma estimativa simples baseada na forma recente dos dois times (últimos
+São uma estimativa simples baseada na forma recente de cada time (últimos
 5 jogos). Não é odds de casa de aposta, não usa dinheiro real e não deve ser
 usada como orientação de aposta — é só uma leitura estatística de momento,
 deixado bem claro na própria tela do app.
