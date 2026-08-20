@@ -34,9 +34,15 @@ function renderMatchRow(m, showScore) {
     <div class="match-row">
       <span class="comp-tag">${m.competicao}</span>
       <div class="match-line">
-        <span class="team">${m.mandante}</span>
+        <span class="team">
+          ${m.mandanteEscudo ? `<img class="team-crest" src="${m.mandanteEscudo}" alt="" loading="lazy">` : ''}
+          ${m.mandante}
+        </span>
         ${score}
-        <span class="team">${m.visitante}</span>
+        <span class="team team-right">
+          ${m.visitante}
+          ${m.visitanteEscudo ? `<img class="team-crest" src="${m.visitanteEscudo}" alt="" loading="lazy">` : ''}
+        </span>
       </div>
     </div>`;
 }
@@ -78,7 +84,11 @@ function renderAnaliseCard(a) {
   return `
     <div class="team-block">
       <div class="team-block-header">
-        <span class="team-name">${a.mandante} x ${a.visitante}</span>
+        <span class="team-name">
+          ${a.mandanteEscudo ? `<img class="team-crest" src="${a.mandanteEscudo}" alt="" loading="lazy">` : ''}
+          ${a.mandante} x ${a.visitante}
+          ${a.visitanteEscudo ? `<img class="team-crest" src="${a.visitanteEscudo}" alt="" loading="lazy">` : ''}
+        </span>
         <span class="comp-tag">${a.competicao}</span>
       </div>
       <div class="match-meta">${formatDateTime(a.data)}</div>
@@ -92,7 +102,7 @@ function renderAnalisesSection(analises) {
     return `<h2 class="section-title">Análise de confrontos</h2><p class="empty-msg">Nenhuma análise disponível ainda.</p>`;
   }
   return `
-    <h2 class="section-title">Análise de confrontos (sorteio a cada coleta)</h2>
+    <h2 class="section-title">Análise de confrontos (jogos de hoje / mais próximos)</h2>
     ${analises.map(renderAnaliseCard).join('')}`;
 }
 
@@ -119,7 +129,10 @@ function renderStandingsTable(comp) {
       (row) => `
         <tr>
           <td>${row.posicao}</td>
-          <td class="team-cell">${row.time}</td>
+          <td class="team-cell">
+            ${row.escudo ? `<img class="team-crest" src="${row.escudo}" alt="" loading="lazy">` : ''}
+            ${row.time}
+          </td>
           <td>${row.pontos}</td>
           <td>${row.jogos}</td>
           <td>${row.saldoGols > 0 ? '+' : ''}${row.saldoGols}</td>

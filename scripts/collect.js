@@ -65,6 +65,36 @@ function shuffle(arr) {
   return a;
 }
 
+// Prioriza os jogos de hoje; só completa com os dias seguintes (mais
+// próximos primeiro) se não tiver jogos suficientes hoje. Dentro de um
+// mesmo dia, sorteia quais entram (se tiver mais jogos que o necessário).
+function selecionarPartidasProximas(matches, qtd) {
+  const ordenados = [...matches].sort((a, b) => new Date(a.data) - new Date(b.data));
+
+  const grupos = [];
+  let diaAtual = null;
+  for (const m of ordenados) {
+    const dia = m.data.slice(0, 10);
+    if (dia !== diaAtual) {
+      grupos.push({ dia, itens: [] });
+      diaAtual = dia;
+    }
+    grupos[grupos.length - 1].itens.push(m);
+  }
+
+  const selecionadas = [];
+  for (const grupo of grupos) {
+    if (selecionadas.length >= qtd) break;
+    const faltam = qtd - selecionadas.length;
+    if (grupo.itens.length <= faltam) {
+      selecionadas.push(...grupo.itens);
+    } else {
+      selecionadas.push(...shuffle(grupo.itens).slice(0, faltam));
+    }
+  }
+  return selecionadas;
+}
+
 function clamp(n, min, max) {
   return Math.max(min, Math.min(max, n));
 }
@@ -391,6 +421,17 @@ function montarObservacao({ mandanteInfo, visitanteInfo, h2h }) {
   return `Cálculo considerando forma atual, aproveitamento na competição e ${partes.join(', ')}.`;
 }
 
+// Carrega o data.json da coleta anterior, se existir — usado pra manter
+// as análises já sorteadas até o jogo realmente acontecer.
+function carregarDadosAnteriores() {
+  if (!fs.existsSync(OUTPUT_PATH)) return null;
+  try {
+    return JSON.parse(fs.readFileSync(OUTPUT_PATH, 'utf8'));
+  } catch (e) {
+    return null;
+  }
+}
+
 async function main() {
   console.log('=== FUT RADAR — coleta de dados ===');
 
@@ -443,8 +484,29 @@ async function main() {
   }
   await sleep(6500);
 
-  // 3) Sorteia partidas e calcula a probabilidade combinada.
-  const sorteadas = shuffle(result.proximosJogos).slice(0, QTD_PARTIDAS_SORTEADAS);
+  // 3) Acumula análises: mantém as anteriores que ainda não terminaram
+  // (considerando o horário estimado de término, não só o de início) e
+  // sempre sorteia mais 6 jogos NOVOS a cada rodada, priorizando os mais
+  // próximos — a lista só cresce, pra ter o máximo de comparações
+  // possível. Teto de segurança pra não crescer pra sempre.
+  const MAX_ANALISES_ACUMULADAS = 150;
+  const DURACAO_ESTIMADA_JOGO_MS = 2.5 * 60 * 60 * 1000; // 2h30 (jogo + acréscimos + margem)
+
+  const anterior = carregarDadosAnteriores();
+  const agora = new Date();
+
+  const analisesPersistidas = (anterior?.analises || []).filter((a) => {
+    const estimativaFim = new Date(new Date(a.data).getTime() + DURACAO_ESTIMADA_JOGO_MS);
+    return estimativaFim > agora;
+  });
+  const idsJaAnalisados = new Set(analisesPersistidas.map((a) => a.id));
+
+  console.log(`Análises mantidas da coleta anterior (ainda não terminaram): ${analisesPersistidas.length}`);
+
+  const candidatos = result.proximosJogos.filter((m) => !idsJaAnalisados.has(m.id));
+  const sorteadas = selecionarPartidasProximas(candidatos, QTD_PARTIDAS_SORTEADAS);
+
+  const novasAnalises = [];
   for (const match of sorteadas) {
     try {
       console.log(`Analisando: ${match.mandante} x ${match.visitante}...`);
@@ -478,12 +540,16 @@ async function main() {
 
       const probabilidades = calcularProbabilidade({ mandanteInfo, visitanteInfo, h2h });
       const obs = montarObservacao({ mandanteInfo, visitanteInfo, h2h });
-      result.analises.push({ ...match, probabilidades, obs });
+      novasAnalises.push({ ...match, probabilidades, obs });
     } catch (e) {
       console.warn(`  Falha ao analisar ${match.mandante} x ${match.visitante}: ${e.message}`);
     }
     await sleep(6500);
   }
+
+  result.analises = [...analisesPersistidas, ...novasAnalises]
+    .sort((a, b) => new Date(a.data) - new Date(b.data))
+    .slice(0, MAX_ANALISES_ACUMULADAS);
 
   fs.mkdirSync(path.dirname(OUTPUT_PATH), { recursive: true });
 

@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>FUT RADAR</title>
-<meta name="description" content="Painel informativo com dados e estatísticas de futebol — Atlético-MG, América-MG e Cruzeiro.">
+<meta name="description" content="Painel informativo com dados e estatísticas de futebol.">
 
 <link rel="manifest" href="manifest.json">
 <link rel="icon" type="image/x-icon" href="icons/favicon.ico">
@@ -27,25 +27,51 @@
     <button id="refresh-btn" class="refresh-btn" title="Atualizar dados">↻</button>
   </div>
   <div id="freshness" class="freshness">Carregando dados...</div>
+
+  <nav class="tabs">
+    <button class="tab-btn active" data-tab="painel">Painel</button>
+    <button class="tab-btn" data-tab="apostas">Apostas</button>
+  </nav>
 </header>
 
 <main id="app">
-  <div id="loading" class="loading">Buscando os dados mais recentes…</div>
-  <div id="content" class="content" hidden></div>
+  <section id="tab-painel" class="tab-panel">
+    <div id="loading" class="loading">Buscando os dados mais recentes…</div>
+    <div id="content" class="content" hidden></div>
+  </section>
+
+  <section id="tab-apostas" class="tab-panel" hidden>
+    <div id="apostas-root"></div>
+  </section>
 </main>
 
 <footer class="footer">
   <p>FUT RADAR é um painel informativo e não tem qualquer relação com casas de apostas.
      As probabilidades combinam forma atual dos times, aproveitamento na competição
-     e histórico de confrontos diretos — não são odds de aposta nem garantia de resultado.</p>
+     e histórico de confrontos diretos — não são odds de aposta nem garantia de resultado.
+     A aba Apostas é um registro pessoal de apostas feitas em casas externas, guardado
+     só no seu navegador — o FUT RADAR não processa nem intermedia apostas.</p>
   <p class="source-credit">Dados: football-data.org</p>
 </footer>
 
+<script src="js/bets.js"></script>
 <script src="js/app.js"></script>
 <script>
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('sw.js').catch(() => {});
   }
+
+  document.querySelectorAll('.tab-btn').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.tab-btn').forEach((b) => b.classList.remove('active'));
+      document.querySelectorAll('.tab-panel').forEach((p) => (p.hidden = true));
+      btn.classList.add('active');
+      document.getElementById('tab-' + btn.dataset.tab).hidden = false;
+      if (btn.dataset.tab === 'apostas' && window.renderApostas) {
+        window.renderApostas();
+      }
+    });
+  });
 </script>
 </body>
 </html>
