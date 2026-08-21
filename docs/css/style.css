@@ -615,6 +615,41 @@ button, select, input {
   margin-bottom: 12px;
 }
 
+.marcar-manual {
+  background: rgba(240, 201, 74, 0.1);
+  border: 1px solid #5c451f;
+  border-radius: 10px;
+  padding: 8px 10px;
+  margin-top: 8px;
+}
+
+.marcar-manual-label {
+  font-size: 10px;
+  color: var(--yellow);
+  display: block;
+  margin-bottom: 6px;
+}
+
+.marcar-manual-btns {
+  display: flex;
+  gap: 6px;
+}
+
+.btn-mini {
+  flex: 1;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  color: var(--text);
+  border-radius: 8px;
+  padding: 6px 4px;
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn-mini-ganhou { border-color: var(--green); color: var(--green-bright); }
+.btn-mini-perdeu { border-color: var(--red); color: var(--red); }
+
 .export-import-row {
   display: flex;
   gap: 8px;

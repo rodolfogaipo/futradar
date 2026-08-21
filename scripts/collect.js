@@ -153,7 +153,7 @@ async function collectUpcoming() {
 
 async function collectRecent() {
   const data = await apiGet('/matches', {
-    dateFrom: dateStr(-6),
+    dateFrom: dateStr(-9),
     dateTo: dateStr(0),
     status: 'FINISHED',
   });
@@ -162,8 +162,8 @@ async function collectRecent() {
 
 // Retorna a tabela completa (com campo "form" cru da API, não convertido
 // ainda) e também já monta a versão formatada pra exibição no app.
-async function collectStandingsRaw(code) {
-  const data = await apiGet(`/competitions/${code}/standings`);
+async function collectStandingsRaw(code, season) {
+  const data = await apiGet(`/competitions/${code}/standings`, season ? { season } : undefined);
   const total = data.standings?.find((s) => s.type === 'TOTAL');
   if (!total) return null;
   return total.table; // linhas cruas da API: position, team, points, form, ...
@@ -203,13 +203,35 @@ function standingScore(position, totalTeams) {
 }
 
 // Busca a linha da tabela de um time dentro do "banco" de tabelas já
-// coletadas (sem gastar requisição nova).
-function findTeamRow(standingsByComp, competitionCode, teamId) {
+// coletadas (sem gastar requisição nova). Se a temporada atual ainda
+// não começou (0 jogos pra todo mundo — abertura de campeonato), usa a
+// tabela FINAL da temporada passada como referência de nível do time,
+// em vez de tratar como "sem dado nenhum".
+function findTeamRow(standingsByComp, standingsAnterioresByComp, competitionCode, teamId) {
   const table = standingsByComp[competitionCode];
   if (!table) return null;
   const totalTeams = table.length;
   const row = table.find((r) => r.team.id === teamId);
   if (!row) return null;
+
+  const temporadaComecou = table.some((r) => r.playedGames > 0);
+
+  if (!temporadaComecou) {
+    const tabelaAnterior = standingsAnterioresByComp[competitionCode];
+    const rowAnterior = tabelaAnterior?.find((r) => r.team.id === teamId);
+    if (rowAnterior) {
+      return {
+        posicao: rowAnterior.position,
+        totalTeams: tabelaAnterior.length,
+        formScore: formScoreFromString(rowAnterior.form),
+        deTemporadaAnterior: true,
+      };
+    }
+    // Time subiu de divisão / não disputou a competição na temporada
+    // anterior — não tem posição de referência ainda.
+    return null;
+  }
+
   return {
     posicao: row.position,
     totalTeams,
@@ -350,13 +372,14 @@ function calcularProbabilidade({ mandanteInfo, visitanteInfo, h2h }) {
   // aproveitamento/posição na competição específica (ou aproveitamento
   // na fase certa da competição, pra copas com mata-mata).
   function forca(info) {
-    if (!info || info.formScore == null) return 0.5; // sem NENHUM dado em lugar nenhum: neutro (raríssimo)
+    if (!info) return 0.5; // sem NENHUM dado em lugar nenhum: neutro (raríssimo)
     const forma = info.formScore;
     if (info.posicao) {
       const posicao = standingScore(info.posicao, info.totalTeams);
+      if (forma == null) return posicao; // só temos posição, mas isso já é sinal real
       return forma * 0.5 + posicao * 0.5;
     }
-    return forma;
+    return forma ?? 0.5;
   }
 
   let sMandante = clamp(forca(mandanteInfo) + VANTAGEM_MANDANTE, 0, 1);
@@ -394,7 +417,7 @@ function calcularProbabilidade({ mandanteInfo, visitanteInfo, h2h }) {
 function montarObservacao({ mandanteInfo, visitanteInfo, h2h }) {
   const partes = [];
   if (mandanteInfo?.posicao && !mandanteInfo?.ehNivelGeral) {
-    partes.push(`mandante em ${mandanteInfo.posicao}º lugar na competição`);
+    partes.push(`mandante em ${mandanteInfo.posicao}º lugar${mandanteInfo.deTemporadaAnterior ? ' na temporada passada (essa ainda não começou)' : ' na competição'}`);
   } else if (mandanteInfo?.ehNivelGeral) {
     partes.push(`mandante estreando nessa fase/competição — usado o nível geral do time (últimos jogos e posição no campeonato nacional, ${mandanteInfo.amostra} jogo(s) analisados)`);
   } else if (mandanteInfo?.faseAnalisada) {
@@ -404,7 +427,7 @@ function montarObservacao({ mandanteInfo, visitanteInfo, h2h }) {
     partes.push(nota);
   }
   if (visitanteInfo?.posicao && !visitanteInfo?.ehNivelGeral) {
-    partes.push(`visitante em ${visitanteInfo.posicao}º lugar`);
+    partes.push(`visitante em ${visitanteInfo.posicao}º lugar${visitanteInfo.deTemporadaAnterior ? ' na temporada passada (essa ainda não começou)' : ''}`);
   } else if (visitanteInfo?.ehNivelGeral) {
     partes.push(`visitante estreando nessa fase/competição — usado o nível geral do time (últimos jogos e posição no campeonato nacional, ${visitanteInfo.amostra} jogo(s) analisados)`);
   } else if (visitanteInfo?.faseAnalisada) {
@@ -448,6 +471,9 @@ async function main() {
   // 1) Tabelas primeiro — usadas tanto pra seção "Tabelas" quanto como
   // base gratuita de forma/posição pro cálculo de probabilidade.
   const standingsByComp = {};
+  const standingsAnterioresByComp = {};
+  const anoAtual = new Date().getFullYear();
+
   for (const comp of COMPETITIONS) {
     try {
       console.log(`Buscando tabela: ${comp.nome}...`);
@@ -455,6 +481,20 @@ async function main() {
       if (rawTable) {
         standingsByComp[comp.code] = rawTable;
         result.competicoes.push({ codigo: comp.code, nome: comp.nome, tabela: formatStandingsForApp(rawTable) });
+
+        // Abertura de temporada (ninguém jogou ainda)? Busca a tabela
+        // FINAL da temporada passada como referência de nível dos times.
+        const temporadaComecou = rawTable.some((r) => r.playedGames > 0);
+        if (!temporadaComecou) {
+          try {
+            console.log(`  Temporada de ${comp.nome} ainda não começou — buscando temporada anterior como referência...`);
+            await sleep(6500);
+            const tabelaAnterior = await collectStandingsRaw(comp.code, anoAtual - 1);
+            if (tabelaAnterior) standingsAnterioresByComp[comp.code] = tabelaAnterior;
+          } catch (e) {
+            console.warn(`  Falha ao buscar temporada anterior de ${comp.nome}: ${e.message}`);
+          }
+        }
       } else {
         result.competicoes.push({ codigo: comp.code, nome: comp.nome, tabela: [] });
       }
@@ -512,8 +552,8 @@ async function main() {
       console.log(`Analisando: ${match.mandante} x ${match.visitante}...`);
       const h2h = await collectHeadToHead(match);
 
-      let mandanteInfo = findTeamRow(standingsByComp, match.competicaoCodigo, match.mandanteId);
-      let visitanteInfo = findTeamRow(standingsByComp, match.competicaoCodigo, match.visitanteId);
+      let mandanteInfo = findTeamRow(standingsByComp, standingsAnterioresByComp, match.competicaoCodigo, match.mandanteId);
+      let visitanteInfo = findTeamRow(standingsByComp, standingsAnterioresByComp, match.competicaoCodigo, match.visitanteId);
 
       // Sem tabela única (Copa do Mundo, Champions, Eurocopa)? Busca o
       // aproveitamento do time na fase certa (grupos ou mata-mata).
@@ -526,15 +566,18 @@ async function main() {
         await sleep(6500);
       }
 
-      // Time estreando na competição/fase (nunca jogou antes)? Usa o
+      // Time estreando na competição/fase (nunca jogou antes)? Busca o
       // nível geral dele (aproveitamento recente em qualquer competição
-      // + posição no campeonato nacional dele, se disponível).
+      // + posição no campeonato nacional dele) — só substitui se achar
+      // algo melhor, nunca descarta um dado válido que já tínhamos.
       if (!mandanteInfo || mandanteInfo.formScore === null) {
-        mandanteInfo = await collectNivelGeralDoTime(match.mandanteId, standingsByComp);
+        const fallback = await collectNivelGeralDoTime(match.mandanteId, standingsByComp);
+        if (fallback) mandanteInfo = fallback;
         await sleep(6500);
       }
       if (!visitanteInfo || visitanteInfo.formScore === null) {
-        visitanteInfo = await collectNivelGeralDoTime(match.visitanteId, standingsByComp);
+        const fallback = await collectNivelGeralDoTime(match.visitanteId, standingsByComp);
+        if (fallback) visitanteInfo = fallback;
         await sleep(6500);
       }
 

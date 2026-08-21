@@ -341,6 +341,14 @@ function renderFormNovaAposta() {
     </div>`;
 }
 
+// Se o jogo já devia ter acabado (mais de 3h desde o início) e a
+// coleta ainda não trouxe o placar, libera marcar manualmente — pra
+// não ficar pendente pra sempre esperando a próxima coleta.
+function jogoProvavelmenteFinalizado(dataIso) {
+  const kickoff = new Date(dataIso).getTime();
+  return Date.now() - kickoff > 3 * 60 * 60 * 1000;
+}
+
 function renderListaApostas(apostas) {
   if (apostas.length === 0) {
     return '<p class="empty-msg">Nenhuma aposta registrada ainda.</p>';
@@ -356,6 +364,19 @@ function renderListaApostas(apostas) {
       const lucroTxt = lucro === null ? 'Pendente' : formatMoeda(lucro);
       const lucroClasse = lucro === null ? '' : lucro >= 0 ? 'positivo' : 'negativo';
 
+      const podeMarcarManual = a.resultado === 'pendente' && jogoProvavelmenteFinalizado(a.data);
+      const marcarManualHtml = podeMarcarManual
+        ? `
+        <div class="marcar-manual" data-id="${a.id}">
+          <span class="marcar-manual-label">Jogo já deve ter acabado. Marcar:</span>
+          <div class="marcar-manual-btns">
+            <button type="button" class="btn-mini btn-mini-ganhou" data-id="${a.id}" data-resultado="ganhou">Ganhou</button>
+            <button type="button" class="btn-mini btn-mini-perdeu" data-id="${a.id}" data-resultado="perdeu">Perdeu</button>
+            <button type="button" class="btn-mini" data-id="${a.id}" data-resultado="anulada">Anulada</button>
+          </div>
+        </div>`
+        : '';
+
       return `
         <div class="app-card aposta-row">
           <div class="aposta-info">
@@ -364,6 +385,7 @@ function renderListaApostas(apostas) {
             </div>
             <div class="aposta-meta">${formatDataCurta(a.data)} · ${a.competicao} · apostou em: ${rotuloTipo[a.tipoAposta]}</div>
             <div class="aposta-meta">Valor: ${formatMoeda(a.valor)} · Odd: ${a.odd.toFixed(2)} · Retorno possível: ${formatMoeda(retorno)}${a.placarFinal ? ' · Placar final: ' + a.placarFinal : ''}</div>
+            ${marcarManualHtml}
           </div>
           <div class="aposta-acoes">
             <span class="lucro-tag ${lucroClasse}">${lucroTxt}</span>
@@ -471,6 +493,21 @@ async function renderApostas() {
       const atuais = carregarApostas().filter((a) => a.id !== id);
       salvarApostas(atuais);
       renderApostas();
+    });
+  });
+
+  root.querySelectorAll('[data-resultado]').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const id = btn.dataset.id;
+      const resultado = btn.dataset.resultado;
+      const atuais = carregarApostas();
+      const idx = atuais.findIndex((a) => a.id === id);
+      if (idx >= 0) {
+        atuais[idx].resultado = resultado;
+        atuais[idx].marcadoManualmente = true;
+        salvarApostas(atuais);
+        renderApostas();
+      }
     });
   });
 }
