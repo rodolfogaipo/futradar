@@ -28,11 +28,11 @@ function crestImg(url) {
 
 // ---------- Análise de confrontos ----------
 
-function renderProbBars(p) {
+function renderProbBars(p, nomeMandante, nomeVisitante) {
   return `
     <div class="prob-bars">
       <div class="prob-row">
-        <span class="prob-label">Mandante</span>
+        <span class="prob-label" title="${nomeMandante}">${nomeMandante}</span>
         <div class="prob-track"><div class="prob-fill vitoria" style="width:${p.mandante}%"></div></div>
         <span class="prob-value">${p.mandante}%</span>
       </div>
@@ -42,7 +42,7 @@ function renderProbBars(p) {
         <span class="prob-value">${p.empate}%</span>
       </div>
       <div class="prob-row">
-        <span class="prob-label">Visitante</span>
+        <span class="prob-label" title="${nomeVisitante}">${nomeVisitante}</span>
         <div class="prob-track"><div class="prob-fill derrota" style="width:${p.visitante}%"></div></div>
         <span class="prob-value">${p.visitante}%</span>
       </div>
@@ -67,7 +67,7 @@ function renderAnaliseCard(a) {
           <span>${a.visitante}</span>
         </div>
       </div>
-      ${renderProbBars(a.probabilidades)}
+      ${renderProbBars(a.probabilidades, a.mandante, a.visitante)}
       <p class="analise-obs">${a.obs}</p>
     </div>`;
 }

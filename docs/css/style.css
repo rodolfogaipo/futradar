@@ -313,9 +313,12 @@ button, select, input {
 }
 
 .prob-label {
-  width: 62px;
+  width: 92px;
   color: var(--text-dim);
   flex-shrink: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .prob-track {

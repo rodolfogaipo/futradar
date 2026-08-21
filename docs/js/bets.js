@@ -355,7 +355,11 @@ function renderListaApostas(apostas) {
   }
   const ordenadas = [...apostas].sort((a, b) => new Date(b.data) - new Date(a.data));
 
-  const rotuloTipo = { mandante: 'Mandante', empate: 'Empate', visitante: 'Visitante' };
+  function rotuloDaAposta(a) {
+    if (a.tipoAposta === 'mandante') return a.mandante;
+    if (a.tipoAposta === 'visitante') return a.visitante;
+    return 'Empate';
+  }
 
   const linhas = ordenadas
     .map((a) => {
@@ -364,11 +368,12 @@ function renderListaApostas(apostas) {
       const lucroTxt = lucro === null ? 'Pendente' : formatMoeda(lucro);
       const lucroClasse = lucro === null ? '' : lucro >= 0 ? 'positivo' : 'negativo';
 
-      const podeMarcarManual = a.resultado === 'pendente' && jogoProvavelmenteFinalizado(a.data);
+      const podeMarcarManual = a.resultado === 'pendente';
+      const jaDeveriaTerAcabado = jogoProvavelmenteFinalizado(a.data);
       const marcarManualHtml = podeMarcarManual
         ? `
         <div class="marcar-manual" data-id="${a.id}">
-          <span class="marcar-manual-label">Jogo já deve ter acabado. Marcar:</span>
+          <span class="marcar-manual-label">${jaDeveriaTerAcabado ? 'Jogo já deve ter acabado. Marcar:' : 'Marcar resultado manualmente:'}</span>
           <div class="marcar-manual-btns">
             <button type="button" class="btn-mini btn-mini-ganhou" data-id="${a.id}" data-resultado="ganhou">Ganhou</button>
             <button type="button" class="btn-mini btn-mini-perdeu" data-id="${a.id}" data-resultado="perdeu">Perdeu</button>
@@ -383,7 +388,7 @@ function renderListaApostas(apostas) {
             <div class="aposta-titulo">
               ${crestImg(a.mandanteEscudo)} ${a.mandante} x ${a.visitante} ${crestImg(a.visitanteEscudo)}
             </div>
-            <div class="aposta-meta">${formatDataCurta(a.data)} · ${a.competicao} · apostou em: ${rotuloTipo[a.tipoAposta]}</div>
+            <div class="aposta-meta">${formatDataCurta(a.data)} · ${a.competicao} · apostou em: ${rotuloDaAposta(a)}</div>
             <div class="aposta-meta">Valor: ${formatMoeda(a.valor)} · Odd: ${a.odd.toFixed(2)} · Retorno possível: ${formatMoeda(retorno)}${a.placarFinal ? ' · Placar final: ' + a.placarFinal : ''}</div>
             ${marcarManualHtml}
           </div>
