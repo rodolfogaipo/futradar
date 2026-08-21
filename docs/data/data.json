@@ -1,52 +1,20 @@
 {
-  "geradoEm": "2026-08-21T18:06:11.783Z",
+  "geradoEm": "2026-08-21T19:16:23.158Z",
   "fonte": "football-data.org",
   "proximosJogos": [
     {
-      "id": 559715,
-      "data": "2026-08-21T18:45:00Z",
+      "id": 561784,
+      "data": "2026-08-22T11:30:00Z",
       "status": "TIMED",
       "stage": "REGULAR_SEASON",
-      "competicao": "Ligue 1",
-      "competicaoCodigo": "FL1",
-      "mandante": "Olympique de Marseille",
-      "mandanteId": 516,
-      "mandanteEscudo": "https://crests.football-data.org/516.png",
-      "visitante": "RC Strasbourg Alsace",
-      "visitanteId": 576,
-      "visitanteEscudo": "https://crests.football-data.org/576.png",
-      "placarMandante": null,
-      "placarVisitante": null
-    },
-    {
-      "id": 560542,
-      "data": "2026-08-21T19:00:00Z",
-      "status": "TIMED",
-      "stage": "REGULAR_SEASON",
-      "competicao": "Premier League",
-      "competicaoCodigo": "PL",
-      "mandante": "Arsenal FC",
-      "mandanteId": 57,
-      "mandanteEscudo": "https://crests.football-data.org/57.png",
-      "visitante": "Coventry City FC",
-      "visitanteId": 1076,
-      "visitanteEscudo": "https://crests.football-data.org/1076.png",
-      "placarMandante": null,
-      "placarVisitante": null
-    },
-    {
-      "id": 564647,
-      "data": "2026-08-21T19:00:00Z",
-      "status": "TIMED",
-      "stage": "REGULAR_SEASON",
-      "competicao": "Primera Division",
-      "competicaoCodigo": "PD",
-      "mandante": "Real Betis Balompié",
-      "mandanteId": 90,
-      "mandanteEscudo": "https://crests.football-data.org/90.png",
-      "visitante": "Real Sociedad de Fútbol",
-      "visitanteId": 92,
-      "visitanteEscudo": "https://crests.football-data.org/92.png",
+      "competicao": "Championship",
+      "competicaoCodigo": "ELC",
+      "mandante": "Millwall FC",
+      "mandanteId": 384,
+      "mandanteEscudo": "https://crests.football-data.org/384.png",
+      "visitante": "Norwich City FC",
+      "visitanteId": 68,
+      "visitanteEscudo": "https://crests.football-data.org/68.png",
       "placarMandante": null,
       "placarVisitante": null
     },
@@ -63,22 +31,6 @@
       "visitante": "Manchester United FC",
       "visitanteId": 66,
       "visitanteEscudo": "https://crests.football-data.org/66.png",
-      "placarMandante": null,
-      "placarVisitante": null
-    },
-    {
-      "id": 561784,
-      "data": "2026-08-22T11:30:00Z",
-      "status": "TIMED",
-      "stage": "REGULAR_SEASON",
-      "competicao": "Championship",
-      "competicaoCodigo": "ELC",
-      "mandante": "Millwall FC",
-      "mandanteId": 384,
-      "mandanteEscudo": "https://crests.football-data.org/384.png",
-      "visitante": "Norwich City FC",
-      "visitanteId": 68,
-      "visitanteEscudo": "https://crests.football-data.org/68.png",
       "placarMandante": null,
       "placarVisitante": null
     },
@@ -115,70 +67,6 @@
       "placarVisitante": null
     },
     {
-      "id": 560545,
-      "data": "2026-08-22T14:00:00Z",
-      "status": "TIMED",
-      "stage": "REGULAR_SEASON",
-      "competicao": "Premier League",
-      "competicaoCodigo": "PL",
-      "mandante": "Nottingham Forest FC",
-      "mandanteId": 351,
-      "mandanteEscudo": "https://crests.football-data.org/351.png",
-      "visitante": "Leeds United FC",
-      "visitanteId": 341,
-      "visitanteEscudo": "https://crests.football-data.org/341.png",
-      "placarMandante": null,
-      "placarVisitante": null
-    },
-    {
-      "id": 561774,
-      "data": "2026-08-22T14:00:00Z",
-      "status": "TIMED",
-      "stage": "REGULAR_SEASON",
-      "competicao": "Championship",
-      "competicaoCodigo": "ELC",
-      "mandante": "Swansea City AFC",
-      "mandanteId": 72,
-      "mandanteEscudo": "https://crests.football-data.org/72.png",
-      "visitante": "Sheffield United FC",
-      "visitanteId": 356,
-      "visitanteEscudo": "https://crests.football-data.org/356.png",
-      "placarMandante": null,
-      "placarVisitante": null
-    },
-    {
-      "id": 561778,
-      "data": "2026-08-22T14:00:00Z",
-      "status": "TIMED",
-      "stage": "REGULAR_SEASON",
-      "competicao": "Championship",
-      "competicaoCodigo": "ELC",
-      "mandante": "Preston North End FC",
-      "mandanteId": 1081,
-      "mandanteEscudo": "https://crests.football-data.org/1081.png",
-      "visitante": "Wolverhampton Wanderers FC",
-      "visitanteId": 76,
-      "visitanteEscudo": "https://crests.football-data.org/76.png",
-      "placarMandante": null,
-      "placarVisitante": null
-    },
-    {
-      "id": 561780,
-      "data": "2026-08-22T14:00:00Z",
-      "status": "TIMED",
-      "stage": "REGULAR_SEASON",
-      "competicao": "Championship",
-      "competicaoCodigo": "ELC",
-      "mandante": "Blackburn Rovers FC",
-      "mandanteId": 59,
-      "mandanteEscudo": "https://crests.football-data.org/59.png",
-      "visitante": "Middlesbrough FC",
-      "visitanteId": 343,
-      "visitanteEscudo": "https://crests.football-data.org/343.png",
-      "placarMandante": null,
-      "placarVisitante": null
-    },
-    {
       "id": 561782,
       "data": "2026-08-22T14:00:00Z",
       "status": "TIMED",
@@ -211,6 +99,38 @@
       "placarVisitante": null
     },
     {
+      "id": 561778,
+      "data": "2026-08-22T14:00:00Z",
+      "status": "TIMED",
+      "stage": "REGULAR_SEASON",
+      "competicao": "Championship",
+      "competicaoCodigo": "ELC",
+      "mandante": "Preston North End FC",
+      "mandanteId": 1081,
+      "mandanteEscudo": "https://crests.football-data.org/1081.png",
+      "visitante": "Wolverhampton Wanderers FC",
+      "visitanteId": 76,
+      "visitanteEscudo": "https://crests.football-data.org/76.png",
+      "placarMandante": null,
+      "placarVisitante": null
+    },
+    {
+      "id": 561774,
+      "data": "2026-08-22T14:00:00Z",
+      "status": "TIMED",
+      "stage": "REGULAR_SEASON",
+      "competicao": "Championship",
+      "competicaoCodigo": "ELC",
+      "mandante": "Swansea City AFC",
+      "mandanteId": 72,
+      "mandanteEscudo": "https://crests.football-data.org/72.png",
+      "visitante": "Sheffield United FC",
+      "visitanteId": 356,
+      "visitanteEscudo": "https://crests.football-data.org/356.png",
+      "placarMandante": null,
+      "placarVisitante": null
+    },
+    {
       "id": 560546,
       "data": "2026-08-22T14:00:00Z",
       "status": "TIMED",
@@ -227,50 +147,18 @@
       "placarVisitante": null
     },
     {
-      "id": 561775,
+      "id": 561780,
       "data": "2026-08-22T14:00:00Z",
       "status": "TIMED",
       "stage": "REGULAR_SEASON",
       "competicao": "Championship",
       "competicaoCodigo": "ELC",
-      "mandante": "West Ham United FC",
-      "mandanteId": 563,
-      "mandanteEscudo": "https://crests.football-data.org/563.png",
-      "visitante": "Charlton Athletic FC",
-      "visitanteId": 348,
-      "visitanteEscudo": "https://crests.football-data.org/348.png",
-      "placarMandante": null,
-      "placarVisitante": null
-    },
-    {
-      "id": 561783,
-      "data": "2026-08-22T14:00:00Z",
-      "status": "TIMED",
-      "stage": "REGULAR_SEASON",
-      "competicao": "Championship",
-      "competicaoCodigo": "ELC",
-      "mandante": "Queens Park Rangers FC",
-      "mandanteId": 69,
-      "mandanteEscudo": "https://crests.football-data.org/69.png",
-      "visitante": "Bolton Wanderers FC",
-      "visitanteId": 60,
-      "visitanteEscudo": "https://crests.football-data.org/60.png",
-      "placarMandante": null,
-      "placarVisitante": null
-    },
-    {
-      "id": 561779,
-      "data": "2026-08-22T14:00:00Z",
-      "status": "TIMED",
-      "stage": "REGULAR_SEASON",
-      "competicao": "Championship",
-      "competicaoCodigo": "ELC",
-      "mandante": "Wrexham AFC",
-      "mandanteId": 404,
-      "mandanteEscudo": "https://crests.football-data.org/404.png",
-      "visitante": "Watford FC",
-      "visitanteId": 346,
-      "visitanteEscudo": "https://crests.football-data.org/346.png",
+      "mandante": "Blackburn Rovers FC",
+      "mandanteId": 59,
+      "mandanteEscudo": "https://crests.football-data.org/59.png",
+      "visitante": "Middlesbrough FC",
+      "visitanteId": 343,
+      "visitanteEscudo": "https://crests.football-data.org/343.png",
       "placarMandante": null,
       "placarVisitante": null
     },
@@ -291,18 +179,66 @@
       "placarVisitante": null
     },
     {
-      "id": 567283,
-      "data": "2026-08-22T14:30:00Z",
+      "id": 561783,
+      "data": "2026-08-22T14:00:00Z",
       "status": "TIMED",
       "stage": "REGULAR_SEASON",
-      "competicao": "Primeira Liga",
-      "competicaoCodigo": "PPL",
-      "mandante": "CS Marítimo",
-      "mandanteId": 5575,
-      "mandanteEscudo": "https://crests.football-data.org/5575.png",
-      "visitante": "Académico de Viseu FC",
-      "visitanteId": 5527,
-      "visitanteEscudo": "https://crests.football-data.org/5527.png",
+      "competicao": "Championship",
+      "competicaoCodigo": "ELC",
+      "mandante": "Queens Park Rangers FC",
+      "mandanteId": 69,
+      "mandanteEscudo": "https://crests.football-data.org/69.png",
+      "visitante": "Bolton Wanderers FC",
+      "visitanteId": 60,
+      "visitanteEscudo": "https://crests.football-data.org/60.png",
+      "placarMandante": null,
+      "placarVisitante": null
+    },
+    {
+      "id": 560545,
+      "data": "2026-08-22T14:00:00Z",
+      "status": "TIMED",
+      "stage": "REGULAR_SEASON",
+      "competicao": "Premier League",
+      "competicaoCodigo": "PL",
+      "mandante": "Nottingham Forest FC",
+      "mandanteId": 351,
+      "mandanteEscudo": "https://crests.football-data.org/351.png",
+      "visitante": "Leeds United FC",
+      "visitanteId": 341,
+      "visitanteEscudo": "https://crests.football-data.org/341.png",
+      "placarMandante": null,
+      "placarVisitante": null
+    },
+    {
+      "id": 561779,
+      "data": "2026-08-22T14:00:00Z",
+      "status": "TIMED",
+      "stage": "REGULAR_SEASON",
+      "competicao": "Championship",
+      "competicaoCodigo": "ELC",
+      "mandante": "Wrexham AFC",
+      "mandanteId": 404,
+      "mandanteEscudo": "https://crests.football-data.org/404.png",
+      "visitante": "Watford FC",
+      "visitanteId": 346,
+      "visitanteEscudo": "https://crests.football-data.org/346.png",
+      "placarMandante": null,
+      "placarVisitante": null
+    },
+    {
+      "id": 561775,
+      "data": "2026-08-22T14:00:00Z",
+      "status": "TIMED",
+      "stage": "REGULAR_SEASON",
+      "competicao": "Championship",
+      "competicaoCodigo": "ELC",
+      "mandante": "West Ham United FC",
+      "mandanteId": 563,
+      "mandanteEscudo": "https://crests.football-data.org/563.png",
+      "visitante": "Charlton Athletic FC",
+      "visitanteId": 348,
+      "visitanteEscudo": "https://crests.football-data.org/348.png",
       "placarMandante": null,
       "placarVisitante": null
     },
@@ -319,6 +255,22 @@
       "visitante": "AZ",
       "visitanteId": 682,
       "visitanteEscudo": "https://crests.football-data.org/682.png",
+      "placarMandante": null,
+      "placarVisitante": null
+    },
+    {
+      "id": 567283,
+      "data": "2026-08-22T14:30:00Z",
+      "status": "TIMED",
+      "stage": "REGULAR_SEASON",
+      "competicao": "Primeira Liga",
+      "competicaoCodigo": "PPL",
+      "mandante": "CS Marítimo",
+      "mandanteId": 5575,
+      "mandanteEscudo": "https://crests.football-data.org/5575.png",
+      "visitante": "Académico de Viseu FC",
+      "visitanteId": 5527,
+      "visitanteEscudo": "https://crests.football-data.org/5527.png",
       "placarMandante": null,
       "placarVisitante": null
     },
@@ -355,6 +307,22 @@
       "placarVisitante": null
     },
     {
+      "id": 558629,
+      "data": "2026-08-22T16:30:00Z",
+      "status": "TIMED",
+      "stage": "REGULAR_SEASON",
+      "competicao": "Serie A",
+      "competicaoCodigo": "SA",
+      "mandante": "Udinese Calcio",
+      "mandanteId": 115,
+      "mandanteEscudo": "https://crests.football-data.org/115.png",
+      "visitante": "Como 1907",
+      "visitanteId": 7397,
+      "visitanteEscudo": "https://crests.football-data.org/7397.png",
+      "placarMandante": null,
+      "placarVisitante": null
+    },
+    {
       "id": 558632,
       "data": "2026-08-22T16:30:00Z",
       "status": "TIMED",
@@ -383,22 +351,6 @@
       "visitante": "Tottenham Hotspur FC",
       "visitanteId": 73,
       "visitanteEscudo": "https://crests.football-data.org/73.png",
-      "placarMandante": null,
-      "placarVisitante": null
-    },
-    {
-      "id": 558629,
-      "data": "2026-08-22T16:30:00Z",
-      "status": "TIMED",
-      "stage": "REGULAR_SEASON",
-      "competicao": "Serie A",
-      "competicaoCodigo": "SA",
-      "mandante": "Udinese Calcio",
-      "mandanteId": 115,
-      "mandanteEscudo": "https://crests.football-data.org/115.png",
-      "visitante": "Como 1907",
-      "visitanteId": 7397,
-      "visitanteEscudo": "https://crests.football-data.org/7397.png",
       "placarMandante": null,
       "placarVisitante": null
     },
@@ -451,22 +403,6 @@
       "placarVisitante": null
     },
     {
-      "id": 558636,
-      "data": "2026-08-22T18:45:00Z",
-      "status": "TIMED",
-      "stage": "REGULAR_SEASON",
-      "competicao": "Serie A",
-      "competicaoCodigo": "SA",
-      "mandante": "Parma Calcio 1913",
-      "mandanteId": 112,
-      "mandanteEscudo": "https://crests.football-data.org/112.png",
-      "visitante": "Cagliari Calcio",
-      "visitanteId": 104,
-      "visitanteEscudo": "https://crests.football-data.org/104.png",
-      "placarMandante": null,
-      "placarVisitante": null
-    },
-    {
       "id": 559711,
       "data": "2026-08-22T18:45:00Z",
       "status": "TIMED",
@@ -511,6 +447,22 @@
       "visitante": "FC Lorient",
       "visitanteId": 525,
       "visitanteEscudo": "https://crests.football-data.org/525.png",
+      "placarMandante": null,
+      "placarVisitante": null
+    },
+    {
+      "id": 558636,
+      "data": "2026-08-22T18:45:00Z",
+      "status": "TIMED",
+      "stage": "REGULAR_SEASON",
+      "competicao": "Serie A",
+      "competicaoCodigo": "SA",
+      "mandante": "Parma Calcio 1913",
+      "mandanteId": 112,
+      "mandanteEscudo": "https://crests.football-data.org/112.png",
+      "visitante": "Cagliari Calcio",
+      "visitanteId": 104,
+      "visitanteEscudo": "https://crests.football-data.org/104.png",
       "placarMandante": null,
       "placarVisitante": null
     },
@@ -579,22 +531,6 @@
       "placarVisitante": null
     },
     {
-      "id": 564645,
-      "data": "2026-08-22T19:30:00Z",
-      "status": "TIMED",
-      "stage": "REGULAR_SEASON",
-      "competicao": "Primera Division",
-      "competicaoCodigo": "PD",
-      "mandante": "RCD Espanyol de Barcelona",
-      "mandanteId": 80,
-      "mandanteEscudo": "https://crests.football-data.org/80.png",
-      "visitante": "Real Madrid CF",
-      "visitanteId": 86,
-      "visitanteEscudo": "https://crests.football-data.org/86.png",
-      "placarMandante": null,
-      "placarVisitante": null
-    },
-    {
       "id": 567275,
       "data": "2026-08-22T19:30:00Z",
       "status": "TIMED",
@@ -607,6 +543,22 @@
       "visitante": "FC Alverca",
       "visitanteId": 7822,
       "visitanteEscudo": "https://crests.football-data.org/7822.png",
+      "placarMandante": null,
+      "placarVisitante": null
+    },
+    {
+      "id": 564645,
+      "data": "2026-08-22T19:30:00Z",
+      "status": "TIMED",
+      "stage": "REGULAR_SEASON",
+      "competicao": "Primera Division",
+      "competicaoCodigo": "PD",
+      "mandante": "RCD Espanyol de Barcelona",
+      "mandanteId": 80,
+      "mandanteEscudo": "https://crests.football-data.org/80.png",
+      "visitante": "Real Madrid CF",
+      "visitanteId": 86,
+      "visitanteEscudo": "https://crests.football-data.org/86.png",
       "placarMandante": null,
       "placarVisitante": null
     },
@@ -691,18 +643,18 @@
       "placarVisitante": null
     },
     {
-      "id": 560549,
+      "id": 560548,
       "data": "2026-08-23T13:00:00Z",
       "status": "TIMED",
       "stage": "REGULAR_SEASON",
       "competicao": "Premier League",
       "competicaoCodigo": "PL",
-      "mandante": "Brighton & Hove Albion FC",
-      "mandanteId": 397,
-      "mandanteEscudo": "https://crests.football-data.org/397.png",
-      "visitante": "Aston Villa FC",
-      "visitanteId": 58,
-      "visitanteEscudo": "https://crests.football-data.org/58.png",
+      "mandante": "Manchester City FC",
+      "mandanteId": 65,
+      "mandanteEscudo": "https://crests.football-data.org/65.png",
+      "visitante": "AFC Bournemouth",
+      "visitanteId": 1044,
+      "visitanteEscudo": "https://crests.football-data.org/bournemouth.png",
       "placarMandante": null,
       "placarVisitante": null
     },
@@ -723,18 +675,18 @@
       "placarVisitante": null
     },
     {
-      "id": 560548,
+      "id": 560549,
       "data": "2026-08-23T13:00:00Z",
       "status": "TIMED",
       "stage": "REGULAR_SEASON",
       "competicao": "Premier League",
       "competicaoCodigo": "PL",
-      "mandante": "Manchester City FC",
-      "mandanteId": 65,
-      "mandanteEscudo": "https://crests.football-data.org/65.png",
-      "visitante": "AFC Bournemouth",
-      "visitanteId": 1044,
-      "visitanteEscudo": "https://crests.football-data.org/bournemouth.png",
+      "mandante": "Brighton & Hove Albion FC",
+      "mandanteId": 397,
+      "mandanteEscudo": "https://crests.football-data.org/397.png",
+      "visitante": "Aston Villa FC",
+      "visitanteId": 58,
+      "visitanteEscudo": "https://crests.football-data.org/58.png",
       "placarMandante": null,
       "placarVisitante": null
     },
@@ -883,22 +835,6 @@
       "placarVisitante": null
     },
     {
-      "id": 558634,
-      "data": "2026-08-23T18:45:00Z",
-      "status": "TIMED",
-      "stage": "REGULAR_SEASON",
-      "competicao": "Serie A",
-      "competicaoCodigo": "SA",
-      "mandante": "Torino FC",
-      "mandanteId": 586,
-      "mandanteEscudo": "https://crests.football-data.org/586.png",
-      "visitante": "AC Milan",
-      "visitanteId": 98,
-      "visitanteEscudo": "https://crests.football-data.org/98.png",
-      "placarMandante": null,
-      "placarVisitante": null
-    },
-    {
       "id": 559713,
       "data": "2026-08-23T18:45:00Z",
       "status": "TIMED",
@@ -927,6 +863,22 @@
       "visitante": "US Sassuolo Calcio",
       "visitanteId": 471,
       "visitanteEscudo": "https://crests.football-data.org/471.png",
+      "placarMandante": null,
+      "placarVisitante": null
+    },
+    {
+      "id": 558634,
+      "data": "2026-08-23T18:45:00Z",
+      "status": "TIMED",
+      "stage": "REGULAR_SEASON",
+      "competicao": "Serie A",
+      "competicaoCodigo": "SA",
+      "mandante": "Torino FC",
+      "mandanteId": 586,
+      "mandanteEscudo": "https://crests.football-data.org/586.png",
+      "visitante": "AC Milan",
+      "visitanteId": 98,
+      "visitanteEscudo": "https://crests.football-data.org/98.png",
       "placarMandante": null,
       "placarVisitante": null
     },
@@ -979,22 +931,6 @@
       "placarVisitante": null
     },
     {
-      "id": 567280,
-      "data": "2026-08-23T19:30:00Z",
-      "status": "TIMED",
-      "stage": "REGULAR_SEASON",
-      "competicao": "Primeira Liga",
-      "competicaoCodigo": "PPL",
-      "mandante": "FC Porto",
-      "mandanteId": 503,
-      "mandanteEscudo": "https://crests.football-data.org/503.png",
-      "visitante": "FC Arouca",
-      "visitanteId": 712,
-      "visitanteEscudo": "https://crests.football-data.org/712.png",
-      "placarMandante": null,
-      "placarVisitante": null
-    },
-    {
       "id": 564642,
       "data": "2026-08-23T19:30:00Z",
       "status": "TIMED",
@@ -1007,6 +943,22 @@
       "visitante": "FC Barcelona",
       "visitanteId": 81,
       "visitanteEscudo": "https://crests.football-data.org/81.png",
+      "placarMandante": null,
+      "placarVisitante": null
+    },
+    {
+      "id": 567280,
+      "data": "2026-08-23T19:30:00Z",
+      "status": "TIMED",
+      "stage": "REGULAR_SEASON",
+      "competicao": "Primeira Liga",
+      "competicaoCodigo": "PPL",
+      "mandante": "FC Porto",
+      "mandanteId": 503,
+      "mandanteEscudo": "https://crests.football-data.org/503.png",
+      "visitante": "FC Arouca",
+      "visitanteId": 712,
+      "visitanteEscudo": "https://crests.football-data.org/712.png",
       "placarMandante": null,
       "placarVisitante": null
     },
@@ -1237,22 +1189,6 @@
       "placarVisitante": 1
     },
     {
-      "id": 564458,
-      "data": "2026-08-12T22:00:00Z",
-      "status": "FINISHED",
-      "stage": "PLAY_OFFS",
-      "competicao": "Copa Libertadores",
-      "competicaoCodigo": "CLI",
-      "mandante": "CA Platense",
-      "mandanteId": 7580,
-      "mandanteEscudo": "https://crests.football-data.org/7580.png",
-      "visitante": "CD Coquimbo Unido",
-      "visitanteId": 7912,
-      "visitanteEscudo": "https://crests.football-data.org/7912.png",
-      "placarMandante": 1,
-      "placarVisitante": 1
-    },
-    {
       "id": 564459,
       "data": "2026-08-12T22:00:00Z",
       "status": "FINISHED",
@@ -1265,6 +1201,22 @@
       "visitante": "Club Cerro Porteño",
       "visitanteId": 9373,
       "visitanteEscudo": "https://crests.football-data.org/9373.png",
+      "placarMandante": 1,
+      "placarVisitante": 1
+    },
+    {
+      "id": 564458,
+      "data": "2026-08-12T22:00:00Z",
+      "status": "FINISHED",
+      "stage": "PLAY_OFFS",
+      "competicao": "Copa Libertadores",
+      "competicaoCodigo": "CLI",
+      "mandante": "CA Platense",
+      "mandanteId": 7580,
+      "mandanteEscudo": "https://crests.football-data.org/7580.png",
+      "visitante": "CD Coquimbo Unido",
+      "visitanteId": 7912,
+      "visitanteEscudo": "https://crests.football-data.org/7912.png",
       "placarMandante": 1,
       "placarVisitante": 1
     },
@@ -1381,20 +1333,52 @@
       "placarVisitante": 1
     },
     {
-      "id": 561764,
+      "id": 561767,
       "data": "2026-08-15T14:00:00Z",
       "status": "FINISHED",
       "stage": "REGULAR_SEASON",
       "competicao": "Championship",
       "competicaoCodigo": "ELC",
-      "mandante": "Bristol City FC",
-      "mandanteId": 387,
-      "mandanteEscudo": "https://crests.football-data.org/387.png",
-      "visitante": "Millwall FC",
-      "visitanteId": 384,
-      "visitanteEscudo": "https://crests.football-data.org/384.png",
-      "placarMandante": 0,
+      "mandante": "Charlton Athletic FC",
+      "mandanteId": 348,
+      "mandanteEscudo": "https://crests.football-data.org/348.png",
+      "visitante": "Derby County FC",
+      "visitanteId": 342,
+      "visitanteEscudo": "https://crests.football-data.org/342.png",
+      "placarMandante": 2,
+      "placarVisitante": 1
+    },
+    {
+      "id": 561763,
+      "data": "2026-08-15T14:00:00Z",
+      "status": "FINISHED",
+      "stage": "REGULAR_SEASON",
+      "competicao": "Championship",
+      "competicaoCodigo": "ELC",
+      "mandante": "Norwich City FC",
+      "mandanteId": 68,
+      "mandanteEscudo": "https://crests.football-data.org/68.png",
+      "visitante": "West Bromwich Albion FC",
+      "visitanteId": 74,
+      "visitanteEscudo": "https://crests.football-data.org/74.png",
+      "placarMandante": 1,
       "placarVisitante": 2
+    },
+    {
+      "id": 561765,
+      "data": "2026-08-15T14:00:00Z",
+      "status": "FINISHED",
+      "stage": "REGULAR_SEASON",
+      "competicao": "Championship",
+      "competicaoCodigo": "ELC",
+      "mandante": "Middlesbrough FC",
+      "mandanteId": 343,
+      "mandanteEscudo": "https://crests.football-data.org/343.png",
+      "visitante": "Lincoln City FC",
+      "visitanteId": 1126,
+      "visitanteEscudo": "https://crests.football-data.org/1126.png",
+      "placarMandante": 2,
+      "placarVisitante": 1
     },
     {
       "id": 561766,
@@ -1429,51 +1413,35 @@
       "placarVisitante": 3
     },
     {
-      "id": 561765,
+      "id": 561764,
       "data": "2026-08-15T14:00:00Z",
       "status": "FINISHED",
       "stage": "REGULAR_SEASON",
       "competicao": "Championship",
       "competicaoCodigo": "ELC",
-      "mandante": "Middlesbrough FC",
-      "mandanteId": 343,
-      "mandanteEscudo": "https://crests.football-data.org/343.png",
-      "visitante": "Lincoln City FC",
-      "visitanteId": 1126,
-      "visitanteEscudo": "https://crests.football-data.org/1126.png",
-      "placarMandante": 2,
-      "placarVisitante": 1
+      "mandante": "Bristol City FC",
+      "mandanteId": 387,
+      "mandanteEscudo": "https://crests.football-data.org/387.png",
+      "visitante": "Millwall FC",
+      "visitanteId": 384,
+      "visitanteEscudo": "https://crests.football-data.org/384.png",
+      "placarMandante": 0,
+      "placarVisitante": 2
     },
     {
-      "id": 561767,
-      "data": "2026-08-15T14:00:00Z",
+      "id": 567266,
+      "data": "2026-08-15T14:30:00Z",
       "status": "FINISHED",
       "stage": "REGULAR_SEASON",
-      "competicao": "Championship",
-      "competicaoCodigo": "ELC",
-      "mandante": "Charlton Athletic FC",
-      "mandanteId": 348,
-      "mandanteEscudo": "https://crests.football-data.org/348.png",
-      "visitante": "Derby County FC",
-      "visitanteId": 342,
-      "visitanteEscudo": "https://crests.football-data.org/342.png",
+      "competicao": "Primeira Liga",
+      "competicaoCodigo": "PPL",
+      "mandante": "FC Alverca",
+      "mandanteId": 7822,
+      "mandanteEscudo": "https://crests.football-data.org/7822.png",
+      "visitante": "CF Estrela da Amadora",
+      "visitanteId": 9136,
+      "visitanteEscudo": "https://crests.football-data.org/9136.png",
       "placarMandante": 2,
-      "placarVisitante": 1
-    },
-    {
-      "id": 561763,
-      "data": "2026-08-15T14:00:00Z",
-      "status": "FINISHED",
-      "stage": "REGULAR_SEASON",
-      "competicao": "Championship",
-      "competicaoCodigo": "ELC",
-      "mandante": "Norwich City FC",
-      "mandanteId": 68,
-      "mandanteEscudo": "https://crests.football-data.org/68.png",
-      "visitante": "West Bromwich Albion FC",
-      "visitanteId": 74,
-      "visitanteEscudo": "https://crests.football-data.org/74.png",
-      "placarMandante": 1,
       "placarVisitante": 2
     },
     {
@@ -1491,22 +1459,6 @@
       "visitanteEscudo": "https://crests.football-data.org/1915.png",
       "placarMandante": 1,
       "placarVisitante": 4
-    },
-    {
-      "id": 567266,
-      "data": "2026-08-15T14:30:00Z",
-      "status": "FINISHED",
-      "stage": "REGULAR_SEASON",
-      "competicao": "Primeira Liga",
-      "competicaoCodigo": "PPL",
-      "mandante": "FC Alverca",
-      "mandanteId": 7822,
-      "mandanteEscudo": "https://crests.football-data.org/7822.png",
-      "visitante": "CF Estrela da Amadora",
-      "visitanteId": 9136,
-      "visitanteEscudo": "https://crests.football-data.org/9136.png",
-      "placarMandante": 2,
-      "placarVisitante": 2
     },
     {
       "id": 561769,
@@ -1605,22 +1557,6 @@
       "placarVisitante": 1
     },
     {
-      "id": 554964,
-      "data": "2026-08-15T19:30:00Z",
-      "status": "FINISHED",
-      "stage": "REGULAR_SEASON",
-      "competicao": "Campeonato Brasileiro Série A",
-      "competicaoCodigo": "BSA",
-      "mandante": "Fluminense FC",
-      "mandanteId": 1765,
-      "mandanteEscudo": "https://crests.football-data.org/1765.png",
-      "visitante": "SE Palmeiras",
-      "visitanteId": 1769,
-      "visitanteEscudo": "https://crests.football-data.org/1769.png",
-      "placarMandante": 3,
-      "placarVisitante": 2
-    },
-    {
       "id": 567274,
       "data": "2026-08-15T19:30:00Z",
       "status": "FINISHED",
@@ -1651,6 +1587,22 @@
       "visitanteEscudo": "https://crests.football-data.org/87.png",
       "placarMandante": 2,
       "placarVisitante": 1
+    },
+    {
+      "id": 554964,
+      "data": "2026-08-15T19:30:00Z",
+      "status": "FINISHED",
+      "stage": "REGULAR_SEASON",
+      "competicao": "Campeonato Brasileiro Série A",
+      "competicaoCodigo": "BSA",
+      "mandante": "Fluminense FC",
+      "mandanteId": 1765,
+      "mandanteEscudo": "https://crests.football-data.org/1765.png",
+      "visitante": "SE Palmeiras",
+      "visitanteId": 1769,
+      "visitanteEscudo": "https://crests.football-data.org/1769.png",
+      "placarMandante": 3,
+      "placarVisitante": 2
     },
     {
       "id": 554960,
@@ -1701,20 +1653,20 @@
       "placarVisitante": 4
     },
     {
-      "id": 561770,
+      "id": 558229,
       "data": "2026-08-16T12:30:00Z",
       "status": "FINISHED",
       "stage": "REGULAR_SEASON",
-      "competicao": "Championship",
-      "competicaoCodigo": "ELC",
-      "mandante": "Watford FC",
-      "mandanteId": 346,
-      "mandanteEscudo": "https://crests.football-data.org/346.png",
-      "visitante": "Southampton FC",
-      "visitanteId": 340,
-      "visitanteEscudo": "https://crests.football-data.org/340.png",
+      "competicao": "Eredivisie",
+      "competicaoCodigo": "DED",
+      "mandante": "Feyenoord Rotterdam",
+      "mandanteId": 675,
+      "mandanteEscudo": "https://crests.football-data.org/675.png",
+      "visitante": "Go Ahead Eagles",
+      "visitanteId": 718,
+      "visitanteEscudo": "https://crests.football-data.org/718.png",
       "placarMandante": 2,
-      "placarVisitante": 1
+      "placarVisitante": 2
     },
     {
       "id": 558230,
@@ -1733,20 +1685,20 @@
       "placarVisitante": 1
     },
     {
-      "id": 558229,
+      "id": 561770,
       "data": "2026-08-16T12:30:00Z",
       "status": "FINISHED",
       "stage": "REGULAR_SEASON",
-      "competicao": "Eredivisie",
-      "competicaoCodigo": "DED",
-      "mandante": "Feyenoord Rotterdam",
-      "mandanteId": 675,
-      "mandanteEscudo": "https://crests.football-data.org/675.png",
-      "visitante": "Go Ahead Eagles",
-      "visitanteId": 718,
-      "visitanteEscudo": "https://crests.football-data.org/718.png",
+      "competicao": "Championship",
+      "competicaoCodigo": "ELC",
+      "mandante": "Watford FC",
+      "mandanteId": 346,
+      "mandanteEscudo": "https://crests.football-data.org/346.png",
+      "visitante": "Southampton FC",
+      "visitanteId": 340,
+      "visitanteEscudo": "https://crests.football-data.org/340.png",
       "placarMandante": 2,
-      "placarVisitante": 2
+      "placarVisitante": 1
     },
     {
       "id": 554962,
@@ -1797,6 +1749,22 @@
       "placarVisitante": 2
     },
     {
+      "id": 561771,
+      "data": "2026-08-16T15:00:00Z",
+      "status": "FINISHED",
+      "stage": "REGULAR_SEASON",
+      "competicao": "Championship",
+      "competicaoCodigo": "ELC",
+      "mandante": "Burnley FC",
+      "mandanteId": 328,
+      "mandanteEscudo": "https://crests.football-data.org/328.png",
+      "visitante": "West Ham United FC",
+      "visitanteId": 563,
+      "visitanteEscudo": "https://crests.football-data.org/563.png",
+      "placarMandante": 2,
+      "placarVisitante": 2
+    },
+    {
       "id": 564629,
       "data": "2026-08-16T15:00:00Z",
       "status": "FINISHED",
@@ -1813,20 +1781,20 @@
       "placarVisitante": 2
     },
     {
-      "id": 561771,
-      "data": "2026-08-16T15:00:00Z",
+      "id": 567272,
+      "data": "2026-08-16T17:00:00Z",
       "status": "FINISHED",
       "stage": "REGULAR_SEASON",
-      "competicao": "Championship",
-      "competicaoCodigo": "ELC",
-      "mandante": "Burnley FC",
-      "mandanteId": 328,
-      "mandanteEscudo": "https://crests.football-data.org/328.png",
-      "visitante": "West Ham United FC",
-      "visitanteId": 563,
-      "visitanteEscudo": "https://crests.football-data.org/563.png",
-      "placarMandante": 2,
-      "placarVisitante": 2
+      "competicao": "Primeira Liga",
+      "competicaoCodigo": "PPL",
+      "mandante": "FC Arouca",
+      "mandanteId": 712,
+      "mandanteEscudo": "https://crests.football-data.org/712.png",
+      "visitante": "Moreirense FC",
+      "visitanteId": 583,
+      "visitanteEscudo": "https://crests.football-data.org/583.png",
+      "placarMandante": 4,
+      "placarVisitante": 0
     },
     {
       "id": 564632,
@@ -1845,19 +1813,19 @@
       "placarVisitante": 0
     },
     {
-      "id": 567272,
-      "data": "2026-08-16T17:00:00Z",
+      "id": 554961,
+      "data": "2026-08-16T19:00:00Z",
       "status": "FINISHED",
       "stage": "REGULAR_SEASON",
-      "competicao": "Primeira Liga",
-      "competicaoCodigo": "PPL",
-      "mandante": "FC Arouca",
-      "mandanteId": 712,
-      "mandanteEscudo": "https://crests.football-data.org/712.png",
-      "visitante": "Moreirense FC",
-      "visitanteId": 583,
-      "visitanteEscudo": "https://crests.football-data.org/583.png",
-      "placarMandante": 4,
+      "competicao": "Campeonato Brasileiro Série A",
+      "competicaoCodigo": "BSA",
+      "mandante": "CA Mineiro",
+      "mandanteId": 1766,
+      "mandanteEscudo": "https://crests.football-data.org/1766.png",
+      "visitante": "Grêmio FBPA",
+      "visitanteId": 1767,
+      "visitanteEscudo": "https://crests.football-data.org/1767.png",
+      "placarMandante": 3,
       "placarVisitante": 0
     },
     {
@@ -1877,22 +1845,6 @@
       "placarVisitante": 3
     },
     {
-      "id": 554961,
-      "data": "2026-08-16T19:00:00Z",
-      "status": "FINISHED",
-      "stage": "REGULAR_SEASON",
-      "competicao": "Campeonato Brasileiro Série A",
-      "competicaoCodigo": "BSA",
-      "mandante": "CA Mineiro",
-      "mandanteId": 1766,
-      "mandanteEscudo": "https://crests.football-data.org/1766.png",
-      "visitante": "Grêmio FBPA",
-      "visitanteId": 1767,
-      "visitanteEscudo": "https://crests.football-data.org/1767.png",
-      "placarMandante": 3,
-      "placarVisitante": 0
-    },
-    {
       "id": 567269,
       "data": "2026-08-16T19:30:00Z",
       "status": "FINISHED",
@@ -1907,22 +1859,6 @@
       "visitanteEscudo": "https://crests.football-data.org/5575.png",
       "placarMandante": 1,
       "placarVisitante": 2
-    },
-    {
-      "id": 554966,
-      "data": "2026-08-16T21:30:00Z",
-      "status": "FINISHED",
-      "stage": "REGULAR_SEASON",
-      "competicao": "Campeonato Brasileiro Série A",
-      "competicaoCodigo": "BSA",
-      "mandante": "Mirassol FC",
-      "mandanteId": 4364,
-      "mandanteEscudo": "https://crests.football-data.org/4364.png",
-      "visitante": "CR Flamengo",
-      "visitanteId": 1783,
-      "visitanteEscudo": "https://crests.football-data.org/1783.png",
-      "placarMandante": 1,
-      "placarVisitante": 5
     },
     {
       "id": 554969,
@@ -1941,6 +1877,22 @@
       "placarVisitante": 0
     },
     {
+      "id": 554966,
+      "data": "2026-08-16T21:30:00Z",
+      "status": "FINISHED",
+      "stage": "REGULAR_SEASON",
+      "competicao": "Campeonato Brasileiro Série A",
+      "competicaoCodigo": "BSA",
+      "mandante": "Mirassol FC",
+      "mandanteId": 4364,
+      "mandanteEscudo": "https://crests.football-data.org/4364.png",
+      "visitante": "CR Flamengo",
+      "visitanteId": 1783,
+      "visitanteEscudo": "https://crests.football-data.org/1783.png",
+      "placarMandante": 1,
+      "placarVisitante": 5
+    },
+    {
       "id": 554963,
       "data": "2026-08-16T22:30:00Z",
       "status": "FINISHED",
@@ -1957,22 +1909,6 @@
       "placarVisitante": 2
     },
     {
-      "id": 561772,
-      "data": "2026-08-17T19:00:00Z",
-      "status": "FINISHED",
-      "stage": "REGULAR_SEASON",
-      "competicao": "Championship",
-      "competicaoCodigo": "ELC",
-      "mandante": "Cardiff City FC",
-      "mandanteId": 715,
-      "mandanteEscudo": "https://crests.football-data.org/715.png",
-      "visitante": "Wrexham AFC",
-      "visitanteId": 404,
-      "visitanteEscudo": "https://crests.football-data.org/404.png",
-      "placarMandante": 1,
-      "placarVisitante": 1
-    },
-    {
       "id": 564635,
       "data": "2026-08-17T19:00:00Z",
       "status": "FINISHED",
@@ -1985,6 +1921,22 @@
       "visitante": "Elche CF",
       "visitanteId": 285,
       "visitanteEscudo": "https://crests.football-data.org/285.png",
+      "placarMandante": 1,
+      "placarVisitante": 1
+    },
+    {
+      "id": 561772,
+      "data": "2026-08-17T19:00:00Z",
+      "status": "FINISHED",
+      "stage": "REGULAR_SEASON",
+      "competicao": "Championship",
+      "competicaoCodigo": "ELC",
+      "mandante": "Cardiff City FC",
+      "mandanteId": 715,
+      "mandanteEscudo": "https://crests.football-data.org/715.png",
+      "visitante": "Wrexham AFC",
+      "visitanteId": 404,
+      "visitanteEscudo": "https://crests.football-data.org/404.png",
       "placarMandante": 1,
       "placarVisitante": 1
     },
@@ -2069,22 +2021,6 @@
       "placarVisitante": 0
     },
     {
-      "id": 564466,
-      "data": "2026-08-19T22:00:00Z",
-      "status": "FINISHED",
-      "stage": "PLAY_OFFS",
-      "competicao": "Copa Libertadores",
-      "competicaoCodigo": "CLI",
-      "mandante": "Club Cerro Porteño",
-      "mandanteId": 9373,
-      "mandanteEscudo": "https://crests.football-data.org/9373.png",
-      "visitante": "SE Palmeiras",
-      "visitanteId": 1769,
-      "visitanteEscudo": "https://crests.football-data.org/1769.png",
-      "placarMandante": 0,
-      "placarVisitante": 1
-    },
-    {
       "id": 564467,
       "data": "2026-08-19T22:00:00Z",
       "status": "FINISHED",
@@ -2099,6 +2035,22 @@
       "visitanteEscudo": "https://crests.football-data.org/7580.png",
       "placarMandante": 6,
       "placarVisitante": 7
+    },
+    {
+      "id": 564466,
+      "data": "2026-08-19T22:00:00Z",
+      "status": "FINISHED",
+      "stage": "PLAY_OFFS",
+      "competicao": "Copa Libertadores",
+      "competicaoCodigo": "CLI",
+      "mandante": "Club Cerro Porteño",
+      "mandanteId": 9373,
+      "mandanteEscudo": "https://crests.football-data.org/9373.png",
+      "visitante": "SE Palmeiras",
+      "visitanteId": 1769,
+      "visitanteEscudo": "https://crests.football-data.org/1769.png",
+      "placarMandante": 0,
+      "placarVisitante": 1
     },
     {
       "id": 564468,
@@ -3538,6 +3490,32 @@
         },
         {
           "posicao": 9,
+          "time": "Real Betis Balompié",
+          "escudo": "https://crests.football-data.org/90.png",
+          "pontos": 1,
+          "jogos": 1,
+          "vitorias": 0,
+          "empates": 1,
+          "derrotas": 0,
+          "golsPro": 0,
+          "golsContra": 0,
+          "saldoGols": 0
+        },
+        {
+          "posicao": 9,
+          "time": "Real Sociedad de Fútbol",
+          "escudo": "https://crests.football-data.org/92.png",
+          "pontos": 1,
+          "jogos": 1,
+          "vitorias": 0,
+          "empates": 1,
+          "derrotas": 0,
+          "golsPro": 0,
+          "golsContra": 0,
+          "saldoGols": 0
+        },
+        {
+          "posicao": 11,
           "time": "Rayo Vallecano de Madrid",
           "escudo": "https://crests.football-data.org/87.png",
           "pontos": 1,
@@ -3550,7 +3528,7 @@
           "saldoGols": -1
         },
         {
-          "posicao": 10,
+          "posicao": 12,
           "time": "Athletic Club",
           "escudo": "https://crests.football-data.org/77.png",
           "pontos": 0,
@@ -3563,7 +3541,7 @@
           "saldoGols": 0
         },
         {
-          "posicao": 10,
+          "posicao": 12,
           "time": "CA Osasuna",
           "escudo": "https://crests.football-data.org/79.png",
           "pontos": 0,
@@ -3576,7 +3554,7 @@
           "saldoGols": 0
         },
         {
-          "posicao": 10,
+          "posicao": 12,
           "time": "FC Barcelona",
           "escudo": "https://crests.football-data.org/81.png",
           "pontos": 0,
@@ -3589,7 +3567,7 @@
           "saldoGols": 0
         },
         {
-          "posicao": 10,
+          "posicao": 12,
           "time": "RC Celta de Vigo",
           "escudo": "https://crests.football-data.org/558.png",
           "pontos": 0,
@@ -3602,20 +3580,7 @@
           "saldoGols": 0
         },
         {
-          "posicao": 10,
-          "time": "Real Betis Balompié",
-          "escudo": "https://crests.football-data.org/90.png",
-          "pontos": 0,
-          "jogos": 0,
-          "vitorias": 0,
-          "empates": 0,
-          "derrotas": 0,
-          "golsPro": 0,
-          "golsContra": 0,
-          "saldoGols": 0
-        },
-        {
-          "posicao": 10,
+          "posicao": 12,
           "time": "Real Madrid CF",
           "escudo": "https://crests.football-data.org/86.png",
           "pontos": 0,
@@ -3628,20 +3593,7 @@
           "saldoGols": 0
         },
         {
-          "posicao": 10,
-          "time": "Real Sociedad de Fútbol",
-          "escudo": "https://crests.football-data.org/92.png",
-          "pontos": 0,
-          "jogos": 0,
-          "vitorias": 0,
-          "empates": 0,
-          "derrotas": 0,
-          "golsPro": 0,
-          "golsContra": 0,
-          "saldoGols": 0
-        },
-        {
-          "posicao": 10,
+          "posicao": 12,
           "time": "Valencia CF",
           "escudo": "https://crests.football-data.org/95.png",
           "pontos": 0,
@@ -4822,6 +4774,32 @@
       "tabela": [
         {
           "posicao": 1,
+          "time": "Arsenal FC",
+          "escudo": "https://crests.football-data.org/57.png",
+          "pontos": 1,
+          "jogos": 1,
+          "vitorias": 0,
+          "empates": 1,
+          "derrotas": 0,
+          "golsPro": 0,
+          "golsContra": 0,
+          "saldoGols": 0
+        },
+        {
+          "posicao": 1,
+          "time": "Coventry City FC",
+          "escudo": "https://crests.football-data.org/1076.png",
+          "pontos": 1,
+          "jogos": 1,
+          "vitorias": 0,
+          "empates": 1,
+          "derrotas": 0,
+          "golsPro": 0,
+          "golsContra": 0,
+          "saldoGols": 0
+        },
+        {
+          "posicao": 3,
           "time": "AFC Bournemouth",
           "escudo": "https://crests.football-data.org/bournemouth.png",
           "pontos": 0,
@@ -4834,20 +4812,7 @@
           "saldoGols": 0
         },
         {
-          "posicao": 1,
-          "time": "Arsenal FC",
-          "escudo": "https://crests.football-data.org/57.png",
-          "pontos": 0,
-          "jogos": 0,
-          "vitorias": 0,
-          "empates": 0,
-          "derrotas": 0,
-          "golsPro": 0,
-          "golsContra": 0,
-          "saldoGols": 0
-        },
-        {
-          "posicao": 1,
+          "posicao": 3,
           "time": "Aston Villa FC",
           "escudo": "https://crests.football-data.org/58.png",
           "pontos": 0,
@@ -4860,7 +4825,7 @@
           "saldoGols": 0
         },
         {
-          "posicao": 1,
+          "posicao": 3,
           "time": "Brentford FC",
           "escudo": "https://crests.football-data.org/402.png",
           "pontos": 0,
@@ -4873,7 +4838,7 @@
           "saldoGols": 0
         },
         {
-          "posicao": 1,
+          "posicao": 3,
           "time": "Brighton & Hove Albion FC",
           "escudo": "https://crests.football-data.org/397.png",
           "pontos": 0,
@@ -4886,7 +4851,7 @@
           "saldoGols": 0
         },
         {
-          "posicao": 1,
+          "posicao": 3,
           "time": "Chelsea FC",
           "escudo": "https://crests.football-data.org/61.png",
           "pontos": 0,
@@ -4899,20 +4864,7 @@
           "saldoGols": 0
         },
         {
-          "posicao": 1,
-          "time": "Coventry City FC",
-          "escudo": "https://crests.football-data.org/1076.png",
-          "pontos": 0,
-          "jogos": 0,
-          "vitorias": 0,
-          "empates": 0,
-          "derrotas": 0,
-          "golsPro": 0,
-          "golsContra": 0,
-          "saldoGols": 0
-        },
-        {
-          "posicao": 1,
+          "posicao": 3,
           "time": "Crystal Palace FC",
           "escudo": "https://crests.football-data.org/354.png",
           "pontos": 0,
@@ -4925,7 +4877,7 @@
           "saldoGols": 0
         },
         {
-          "posicao": 1,
+          "posicao": 3,
           "time": "Everton FC",
           "escudo": "https://crests.football-data.org/62.png",
           "pontos": 0,
@@ -4938,7 +4890,7 @@
           "saldoGols": 0
         },
         {
-          "posicao": 1,
+          "posicao": 3,
           "time": "Fulham FC",
           "escudo": "https://crests.football-data.org/63.png",
           "pontos": 0,
@@ -4951,7 +4903,7 @@
           "saldoGols": 0
         },
         {
-          "posicao": 1,
+          "posicao": 3,
           "time": "Hull City AFC",
           "escudo": "https://crests.football-data.org/322.png",
           "pontos": 0,
@@ -4964,7 +4916,7 @@
           "saldoGols": 0
         },
         {
-          "posicao": 1,
+          "posicao": 3,
           "time": "Ipswich Town FC",
           "escudo": "https://crests.football-data.org/349.png",
           "pontos": 0,
@@ -4977,7 +4929,7 @@
           "saldoGols": 0
         },
         {
-          "posicao": 1,
+          "posicao": 3,
           "time": "Leeds United FC",
           "escudo": "https://crests.football-data.org/341.png",
           "pontos": 0,
@@ -4990,7 +4942,7 @@
           "saldoGols": 0
         },
         {
-          "posicao": 1,
+          "posicao": 3,
           "time": "Liverpool FC",
           "escudo": "https://crests.football-data.org/64.png",
           "pontos": 0,
@@ -5003,7 +4955,7 @@
           "saldoGols": 0
         },
         {
-          "posicao": 1,
+          "posicao": 3,
           "time": "Manchester City FC",
           "escudo": "https://crests.football-data.org/65.png",
           "pontos": 0,
@@ -5016,7 +4968,7 @@
           "saldoGols": 0
         },
         {
-          "posicao": 1,
+          "posicao": 3,
           "time": "Manchester United FC",
           "escudo": "https://crests.football-data.org/66.png",
           "pontos": 0,
@@ -5029,7 +4981,7 @@
           "saldoGols": 0
         },
         {
-          "posicao": 1,
+          "posicao": 3,
           "time": "Newcastle United FC",
           "escudo": "https://crests.football-data.org/67.png",
           "pontos": 0,
@@ -5042,7 +4994,7 @@
           "saldoGols": 0
         },
         {
-          "posicao": 1,
+          "posicao": 3,
           "time": "Nottingham Forest FC",
           "escudo": "https://crests.football-data.org/351.png",
           "pontos": 0,
@@ -5055,7 +5007,7 @@
           "saldoGols": 0
         },
         {
-          "posicao": 1,
+          "posicao": 3,
           "time": "Sunderland AFC",
           "escudo": "https://crests.football-data.org/71.png",
           "pontos": 0,
@@ -5068,7 +5020,7 @@
           "saldoGols": 0
         },
         {
-          "posicao": 1,
+          "posicao": 3,
           "time": "Tottenham Hotspur FC",
           "escudo": "https://crests.football-data.org/73.png",
           "pontos": 0,
@@ -6933,6 +6885,34 @@
       "obs": "Modelo de Poisson sobre gols esperados (1.03 x 0.98). Placar mais provável: 1x0. Confiança: alta. Baseado em: mandante em 10º lugar na competição, visitante em 9º lugar, 9 confronto(s) direto(s) considerado(s)."
     },
     {
+      "id": 558630,
+      "data": "2026-08-24T16:30:00Z",
+      "status": "TIMED",
+      "stage": "REGULAR_SEASON",
+      "competicao": "Serie A",
+      "competicaoCodigo": "SA",
+      "mandante": "Bologna FC 1909",
+      "mandanteId": 103,
+      "mandanteEscudo": "https://crests.football-data.org/103.png",
+      "visitante": "SS Lazio",
+      "visitanteId": 110,
+      "visitanteEscudo": "https://crests.football-data.org/110.png",
+      "placarMandante": null,
+      "placarVisitante": null,
+      "probabilidades": {
+        "mandante": 31,
+        "empate": 49,
+        "visitante": 20
+      },
+      "golsEsperados": {
+        "mandante": 1.29,
+        "visitante": 0.97
+      },
+      "placarMaisProvavel": "1x0",
+      "confianca": "alta",
+      "obs": "Modelo de Poisson sobre gols esperados (1.29 x 0.97). Placar mais provável: 1x0. Confiança: alta. Baseado em: mandante em 8º lugar na temporada passada (atual ainda não começou), visitante em 9º lugar na temporada passada (atual ainda não começou), 30 confronto(s) direto(s) considerado(s)."
+    },
+    {
       "id": 564639,
       "data": "2026-08-24T17:30:00Z",
       "status": "TIMED",
@@ -6959,6 +6939,34 @@
       "placarMaisProvavel": "3x0",
       "confianca": "baixa",
       "obs": "Modelo de Poisson sobre gols esperados (3.45 x 0.37). Placar mais provável: 3x0. Confiança: baixa. Baseado em: visitante em 19º lugar, 24 confronto(s) direto(s) considerado(s)."
+    },
+    {
+      "id": 558638,
+      "data": "2026-08-24T18:45:00Z",
+      "status": "TIMED",
+      "stage": "REGULAR_SEASON",
+      "competicao": "Serie A",
+      "competicaoCodigo": "SA",
+      "mandante": "AS Roma",
+      "mandanteId": 100,
+      "mandanteEscudo": "https://crests.football-data.org/100.png",
+      "visitante": "ACF Fiorentina",
+      "visitanteId": 99,
+      "visitanteEscudo": "https://crests.football-data.org/99.png",
+      "placarMandante": null,
+      "placarVisitante": null,
+      "probabilidades": {
+        "mandante": 48,
+        "empate": 44,
+        "visitante": 8
+      },
+      "golsEsperados": {
+        "mandante": 1.94,
+        "visitante": 0.65
+      },
+      "placarMaisProvavel": "1x0",
+      "confianca": "alta",
+      "obs": "Modelo de Poisson sobre gols esperados (1.94 x 0.65). Placar mais provável: 1x0. Confiança: alta. Baseado em: mandante em 3º lugar na temporada passada (atual ainda não começou), visitante em 15º lugar na temporada passada (atual ainda não começou), 30 confronto(s) direto(s) considerado(s)."
     },
     {
       "id": 560551,
@@ -6989,6 +6997,62 @@
       "confianca": "alta"
     },
     {
+      "id": 567277,
+      "data": "2026-08-24T19:15:00Z",
+      "status": "TIMED",
+      "stage": "REGULAR_SEASON",
+      "competicao": "Primeira Liga",
+      "competicaoCodigo": "PPL",
+      "mandante": "Gil Vicente FC",
+      "mandanteId": 5533,
+      "mandanteEscudo": "https://crests.football-data.org/5533.png",
+      "visitante": "Casa Pia AC",
+      "visitanteId": 6618,
+      "visitanteEscudo": "https://crests.football-data.org/6618.png",
+      "placarMandante": null,
+      "placarVisitante": null,
+      "probabilidades": {
+        "mandante": 64,
+        "empate": 35,
+        "visitante": 1
+      },
+      "golsEsperados": {
+        "mandante": 2.88,
+        "visitante": 0.2
+      },
+      "placarMaisProvavel": "2x0",
+      "confianca": "baixa",
+      "obs": "Modelo de Poisson sobre gols esperados (2.88 x 0.2). Placar mais provável: 2x0. Confiança: baixa. Baseado em: mandante em 8º lugar na competição, visitante em 18º lugar, 8 confronto(s) direto(s) considerado(s)."
+    },
+    {
+      "id": 564640,
+      "data": "2026-08-24T19:30:00Z",
+      "status": "TIMED",
+      "stage": "REGULAR_SEASON",
+      "competicao": "Primera Division",
+      "competicaoCodigo": "PD",
+      "mandante": "Málaga CF",
+      "mandanteId": 84,
+      "mandanteEscudo": "https://crests.football-data.org/84.png",
+      "visitante": "RC Deportivo La Coruña",
+      "visitanteId": 560,
+      "visitanteEscudo": "https://crests.football-data.org/560.png",
+      "placarMandante": null,
+      "placarVisitante": null,
+      "probabilidades": {
+        "mandante": 6,
+        "empate": 47,
+        "visitante": 47
+      },
+      "golsEsperados": {
+        "mandante": 0.35,
+        "visitante": 1.52
+      },
+      "placarMaisProvavel": "0x1",
+      "confianca": "baixa",
+      "obs": "Modelo de Poisson sobre gols esperados (0.35 x 1.52). Placar mais provável: 0x1. Confiança: baixa. Baseado em: mandante em 18º lugar na competição, visitante em 7º lugar, 30 confronto(s) direto(s) considerado(s)."
+    },
+    {
       "id": 554970,
       "data": "2026-08-24T23:00:00Z",
       "status": "TIMED",
@@ -7015,6 +7079,62 @@
       "placarMaisProvavel": "1x1",
       "confianca": "alta",
       "obs": "Modelo de Poisson sobre gols esperados (1.22 x 1.44). Placar mais provável: 1x1. Confiança: alta. Baseado em: mandante em 11º lugar na competição, visitante em 3º lugar, 17 confronto(s) direto(s) considerado(s)."
+    },
+    {
+      "id": 564637,
+      "data": "2026-08-25T19:00:00Z",
+      "status": "TIMED",
+      "stage": "REGULAR_SEASON",
+      "competicao": "Primera Division",
+      "competicaoCodigo": "PD",
+      "mandante": "Valencia CF",
+      "mandanteId": 95,
+      "mandanteEscudo": "https://crests.football-data.org/95.png",
+      "visitante": "Real Betis Balompié",
+      "visitanteId": 90,
+      "visitanteEscudo": "https://crests.football-data.org/90.png",
+      "placarMandante": null,
+      "placarVisitante": null,
+      "probabilidades": {
+        "mandante": 18,
+        "empate": 68,
+        "visitante": 14
+      },
+      "golsEsperados": {
+        "mandante": 0.41,
+        "visitante": 0.32
+      },
+      "placarMaisProvavel": "0x0",
+      "confianca": "baixa",
+      "obs": "Modelo de Poisson sobre gols esperados (0.41 x 0.32). Placar mais provável: 0x0. Confiança: baixa. Baseado em: visitante em 9º lugar, 30 confronto(s) direto(s) considerado(s)."
+    },
+    {
+      "id": 564631,
+      "data": "2026-08-26T19:00:00Z",
+      "status": "TIMED",
+      "stage": "REGULAR_SEASON",
+      "competicao": "Primera Division",
+      "competicaoCodigo": "PD",
+      "mandante": "Real Madrid CF",
+      "mandanteId": 86,
+      "mandanteEscudo": "https://crests.football-data.org/86.png",
+      "visitante": "Real Sociedad de Fútbol",
+      "visitanteId": 92,
+      "visitanteEscudo": "https://crests.football-data.org/92.png",
+      "placarMandante": null,
+      "placarVisitante": null,
+      "probabilidades": {
+        "mandante": 32,
+        "empate": 57,
+        "visitante": 11
+      },
+      "golsEsperados": {
+        "mandante": 0.91,
+        "visitante": 0.41
+      },
+      "placarMaisProvavel": "0x0",
+      "confianca": "média",
+      "obs": "Modelo de Poisson sobre gols esperados (0.91 x 0.41). Placar mais provável: 0x0. Confiança: média. Baseado em: mandante estreando nessa fase/competição — usado o nível geral do time (8 jogo(s) analisados), visitante em 9º lugar, 30 confronto(s) direto(s) considerado(s)."
     }
   ],
   "avisos": []
