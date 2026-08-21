@@ -1,5 +1,5 @@
 {
-  "geradoEm": "2026-08-21T17:20:28.467Z",
+  "geradoEm": "2026-08-21T18:06:11.783Z",
   "fonte": "football-data.org",
   "proximosJogos": [
     {
@@ -15,22 +15,6 @@
       "visitante": "RC Strasbourg Alsace",
       "visitanteId": 576,
       "visitanteEscudo": "https://crests.football-data.org/576.png",
-      "placarMandante": null,
-      "placarVisitante": null
-    },
-    {
-      "id": 564647,
-      "data": "2026-08-21T19:00:00Z",
-      "status": "TIMED",
-      "stage": "REGULAR_SEASON",
-      "competicao": "Primera Division",
-      "competicaoCodigo": "PD",
-      "mandante": "Real Betis Balompié",
-      "mandanteId": 90,
-      "mandanteEscudo": "https://crests.football-data.org/90.png",
-      "visitante": "Real Sociedad de Fútbol",
-      "visitanteId": 92,
-      "visitanteEscudo": "https://crests.football-data.org/92.png",
       "placarMandante": null,
       "placarVisitante": null
     },
@@ -51,18 +35,18 @@
       "placarVisitante": null
     },
     {
-      "id": 561781,
-      "data": "2026-08-22T11:30:00Z",
+      "id": 564647,
+      "data": "2026-08-21T19:00:00Z",
       "status": "TIMED",
       "stage": "REGULAR_SEASON",
-      "competicao": "Championship",
-      "competicaoCodigo": "ELC",
-      "mandante": "Lincoln City FC",
-      "mandanteId": 1126,
-      "mandanteEscudo": "https://crests.football-data.org/1126.png",
-      "visitante": "Portsmouth FC",
-      "visitanteId": 325,
-      "visitanteEscudo": "https://crests.football-data.org/325.png",
+      "competicao": "Primera Division",
+      "competicaoCodigo": "PD",
+      "mandante": "Real Betis Balompié",
+      "mandanteId": 90,
+      "mandanteEscudo": "https://crests.football-data.org/90.png",
+      "visitante": "Real Sociedad de Fútbol",
+      "visitanteId": 92,
+      "visitanteEscudo": "https://crests.football-data.org/92.png",
       "placarMandante": null,
       "placarVisitante": null
     },
@@ -83,22 +67,6 @@
       "placarVisitante": null
     },
     {
-      "id": 561773,
-      "data": "2026-08-22T11:30:00Z",
-      "status": "TIMED",
-      "stage": "REGULAR_SEASON",
-      "competicao": "Championship",
-      "competicaoCodigo": "ELC",
-      "mandante": "Birmingham City FC",
-      "mandanteId": 332,
-      "mandanteEscudo": "https://crests.football-data.org/332.png",
-      "visitante": "Bristol City FC",
-      "visitanteId": 387,
-      "visitanteEscudo": "https://crests.football-data.org/387.png",
-      "placarMandante": null,
-      "placarVisitante": null
-    },
-    {
       "id": 561784,
       "data": "2026-08-22T11:30:00Z",
       "status": "TIMED",
@@ -115,50 +83,34 @@
       "placarVisitante": null
     },
     {
-      "id": 561775,
-      "data": "2026-08-22T14:00:00Z",
+      "id": 561773,
+      "data": "2026-08-22T11:30:00Z",
       "status": "TIMED",
       "stage": "REGULAR_SEASON",
       "competicao": "Championship",
       "competicaoCodigo": "ELC",
-      "mandante": "West Ham United FC",
-      "mandanteId": 563,
-      "mandanteEscudo": "https://crests.football-data.org/563.png",
-      "visitante": "Charlton Athletic FC",
-      "visitanteId": 348,
-      "visitanteEscudo": "https://crests.football-data.org/348.png",
+      "mandante": "Birmingham City FC",
+      "mandanteId": 332,
+      "mandanteEscudo": "https://crests.football-data.org/332.png",
+      "visitante": "Bristol City FC",
+      "visitanteId": 387,
+      "visitanteEscudo": "https://crests.football-data.org/387.png",
       "placarMandante": null,
       "placarVisitante": null
     },
     {
-      "id": 561777,
-      "data": "2026-08-22T14:00:00Z",
+      "id": 561781,
+      "data": "2026-08-22T11:30:00Z",
       "status": "TIMED",
       "stage": "REGULAR_SEASON",
       "competicao": "Championship",
       "competicaoCodigo": "ELC",
-      "mandante": "Derby County FC",
-      "mandanteId": 342,
-      "mandanteEscudo": "https://crests.football-data.org/342.png",
-      "visitante": "Cardiff City FC",
-      "visitanteId": 715,
-      "visitanteEscudo": "https://crests.football-data.org/715.png",
-      "placarMandante": null,
-      "placarVisitante": null
-    },
-    {
-      "id": 561783,
-      "data": "2026-08-22T14:00:00Z",
-      "status": "TIMED",
-      "stage": "REGULAR_SEASON",
-      "competicao": "Championship",
-      "competicaoCodigo": "ELC",
-      "mandante": "Queens Park Rangers FC",
-      "mandanteId": 69,
-      "mandanteEscudo": "https://crests.football-data.org/69.png",
-      "visitante": "Bolton Wanderers FC",
-      "visitanteId": 60,
-      "visitanteEscudo": "https://crests.football-data.org/60.png",
+      "mandante": "Lincoln City FC",
+      "mandanteId": 1126,
+      "mandanteEscudo": "https://crests.football-data.org/1126.png",
+      "visitante": "Portsmouth FC",
+      "visitanteId": 325,
+      "visitanteEscudo": "https://crests.football-data.org/325.png",
       "placarMandante": null,
       "placarVisitante": null
     },
@@ -179,34 +131,34 @@
       "placarVisitante": null
     },
     {
-      "id": 561779,
+      "id": 561774,
       "data": "2026-08-22T14:00:00Z",
       "status": "TIMED",
       "stage": "REGULAR_SEASON",
       "competicao": "Championship",
       "competicaoCodigo": "ELC",
-      "mandante": "Wrexham AFC",
-      "mandanteId": 404,
-      "mandanteEscudo": "https://crests.football-data.org/404.png",
-      "visitante": "Watford FC",
-      "visitanteId": 346,
-      "visitanteEscudo": "https://crests.football-data.org/346.png",
+      "mandante": "Swansea City AFC",
+      "mandanteId": 72,
+      "mandanteEscudo": "https://crests.football-data.org/72.png",
+      "visitante": "Sheffield United FC",
+      "visitanteId": 356,
+      "visitanteEscudo": "https://crests.football-data.org/356.png",
       "placarMandante": null,
       "placarVisitante": null
     },
     {
-      "id": 560546,
+      "id": 561778,
       "data": "2026-08-22T14:00:00Z",
       "status": "TIMED",
       "stage": "REGULAR_SEASON",
-      "competicao": "Premier League",
-      "competicaoCodigo": "PL",
-      "mandante": "Everton FC",
-      "mandanteId": 62,
-      "mandanteEscudo": "https://crests.football-data.org/62.png",
-      "visitante": "Crystal Palace FC",
-      "visitanteId": 354,
-      "visitanteEscudo": "https://crests.football-data.org/354.png",
+      "competicao": "Championship",
+      "competicaoCodigo": "ELC",
+      "mandante": "Preston North End FC",
+      "mandanteId": 1081,
+      "mandanteEscudo": "https://crests.football-data.org/1081.png",
+      "visitante": "Wolverhampton Wanderers FC",
+      "visitanteId": 76,
+      "visitanteEscudo": "https://crests.football-data.org/76.png",
       "placarMandante": null,
       "placarVisitante": null
     },
@@ -259,50 +211,82 @@
       "placarVisitante": null
     },
     {
-      "id": 561778,
+      "id": 560546,
+      "data": "2026-08-22T14:00:00Z",
+      "status": "TIMED",
+      "stage": "REGULAR_SEASON",
+      "competicao": "Premier League",
+      "competicaoCodigo": "PL",
+      "mandante": "Everton FC",
+      "mandanteId": 62,
+      "mandanteEscudo": "https://crests.football-data.org/62.png",
+      "visitante": "Crystal Palace FC",
+      "visitanteId": 354,
+      "visitanteEscudo": "https://crests.football-data.org/354.png",
+      "placarMandante": null,
+      "placarVisitante": null
+    },
+    {
+      "id": 561775,
       "data": "2026-08-22T14:00:00Z",
       "status": "TIMED",
       "stage": "REGULAR_SEASON",
       "competicao": "Championship",
       "competicaoCodigo": "ELC",
-      "mandante": "Preston North End FC",
-      "mandanteId": 1081,
-      "mandanteEscudo": "https://crests.football-data.org/1081.png",
-      "visitante": "Wolverhampton Wanderers FC",
-      "visitanteId": 76,
-      "visitanteEscudo": "https://crests.football-data.org/76.png",
+      "mandante": "West Ham United FC",
+      "mandanteId": 563,
+      "mandanteEscudo": "https://crests.football-data.org/563.png",
+      "visitante": "Charlton Athletic FC",
+      "visitanteId": 348,
+      "visitanteEscudo": "https://crests.football-data.org/348.png",
       "placarMandante": null,
       "placarVisitante": null
     },
     {
-      "id": 561774,
+      "id": 561783,
       "data": "2026-08-22T14:00:00Z",
       "status": "TIMED",
       "stage": "REGULAR_SEASON",
       "competicao": "Championship",
       "competicaoCodigo": "ELC",
-      "mandante": "Swansea City AFC",
-      "mandanteId": 72,
-      "mandanteEscudo": "https://crests.football-data.org/72.png",
-      "visitante": "Sheffield United FC",
-      "visitanteId": 356,
-      "visitanteEscudo": "https://crests.football-data.org/356.png",
+      "mandante": "Queens Park Rangers FC",
+      "mandanteId": 69,
+      "mandanteEscudo": "https://crests.football-data.org/69.png",
+      "visitante": "Bolton Wanderers FC",
+      "visitanteId": 60,
+      "visitanteEscudo": "https://crests.football-data.org/60.png",
       "placarMandante": null,
       "placarVisitante": null
     },
     {
-      "id": 558232,
-      "data": "2026-08-22T14:30:00Z",
+      "id": 561779,
+      "data": "2026-08-22T14:00:00Z",
       "status": "TIMED",
       "stage": "REGULAR_SEASON",
-      "competicao": "Eredivisie",
-      "competicaoCodigo": "DED",
-      "mandante": "Fortuna Sittard",
-      "mandanteId": 1920,
-      "mandanteEscudo": "https://crests.football-data.org/1920.png",
-      "visitante": "AZ",
-      "visitanteId": 682,
-      "visitanteEscudo": "https://crests.football-data.org/682.png",
+      "competicao": "Championship",
+      "competicaoCodigo": "ELC",
+      "mandante": "Wrexham AFC",
+      "mandanteId": 404,
+      "mandanteEscudo": "https://crests.football-data.org/404.png",
+      "visitante": "Watford FC",
+      "visitanteId": 346,
+      "visitanteEscudo": "https://crests.football-data.org/346.png",
+      "placarMandante": null,
+      "placarVisitante": null
+    },
+    {
+      "id": 561777,
+      "data": "2026-08-22T14:00:00Z",
+      "status": "TIMED",
+      "stage": "REGULAR_SEASON",
+      "competicao": "Championship",
+      "competicaoCodigo": "ELC",
+      "mandante": "Derby County FC",
+      "mandanteId": 342,
+      "mandanteEscudo": "https://crests.football-data.org/342.png",
+      "visitante": "Cardiff City FC",
+      "visitanteId": 715,
+      "visitanteEscudo": "https://crests.football-data.org/715.png",
       "placarMandante": null,
       "placarVisitante": null
     },
@@ -319,6 +303,22 @@
       "visitante": "Académico de Viseu FC",
       "visitanteId": 5527,
       "visitanteEscudo": "https://crests.football-data.org/5527.png",
+      "placarMandante": null,
+      "placarVisitante": null
+    },
+    {
+      "id": 558232,
+      "data": "2026-08-22T14:30:00Z",
+      "status": "TIMED",
+      "stage": "REGULAR_SEASON",
+      "competicao": "Eredivisie",
+      "competicaoCodigo": "DED",
+      "mandante": "Fortuna Sittard",
+      "mandanteId": 1920,
+      "mandanteEscudo": "https://crests.football-data.org/1920.png",
+      "visitante": "AZ",
+      "visitanteId": 682,
+      "visitanteEscudo": "https://crests.football-data.org/682.png",
       "placarMandante": null,
       "placarVisitante": null
     },
@@ -467,6 +467,54 @@
       "placarVisitante": null
     },
     {
+      "id": 559711,
+      "data": "2026-08-22T18:45:00Z",
+      "status": "TIMED",
+      "stage": "REGULAR_SEASON",
+      "competicao": "Ligue 1",
+      "competicaoCodigo": "FL1",
+      "mandante": "Le Mans FC",
+      "mandanteId": 535,
+      "mandanteEscudo": "https://upload.wikimedia.org/wikipedia/en/5/57/Le_Mans_FC_logo.svg",
+      "visitante": "Stade Brestois 29",
+      "visitanteId": 512,
+      "visitanteEscudo": "https://crests.football-data.org/512.png",
+      "placarMandante": null,
+      "placarVisitante": null
+    },
+    {
+      "id": 558631,
+      "data": "2026-08-22T18:45:00Z",
+      "status": "TIMED",
+      "stage": "REGULAR_SEASON",
+      "competicao": "Serie A",
+      "competicaoCodigo": "SA",
+      "mandante": "Genoa CFC",
+      "mandanteId": 107,
+      "mandanteEscudo": "https://crests.football-data.org/107.png",
+      "visitante": "SSC Napoli",
+      "visitanteId": 113,
+      "visitanteEscudo": "https://crests.football-data.org/113.png",
+      "placarMandante": null,
+      "placarVisitante": null
+    },
+    {
+      "id": 559716,
+      "data": "2026-08-22T18:45:00Z",
+      "status": "TIMED",
+      "stage": "REGULAR_SEASON",
+      "competicao": "Ligue 1",
+      "competicaoCodigo": "FL1",
+      "mandante": "OGC Nice",
+      "mandanteId": 522,
+      "mandanteEscudo": "https://crests.football-data.org/522.png",
+      "visitante": "FC Lorient",
+      "visitanteId": 525,
+      "visitanteEscudo": "https://crests.football-data.org/525.png",
+      "placarMandante": null,
+      "placarVisitante": null
+    },
+    {
       "id": 559718,
       "data": "2026-08-22T18:45:00Z",
       "status": "TIMED",
@@ -495,54 +543,6 @@
       "visitante": "Paris FC",
       "visitanteId": 1045,
       "visitanteEscudo": "https://crests.football-data.org/1045.png",
-      "placarMandante": null,
-      "placarVisitante": null
-    },
-    {
-      "id": 559716,
-      "data": "2026-08-22T18:45:00Z",
-      "status": "TIMED",
-      "stage": "REGULAR_SEASON",
-      "competicao": "Ligue 1",
-      "competicaoCodigo": "FL1",
-      "mandante": "OGC Nice",
-      "mandanteId": 522,
-      "mandanteEscudo": "https://crests.football-data.org/522.png",
-      "visitante": "FC Lorient",
-      "visitanteId": 525,
-      "visitanteEscudo": "https://crests.football-data.org/525.png",
-      "placarMandante": null,
-      "placarVisitante": null
-    },
-    {
-      "id": 558631,
-      "data": "2026-08-22T18:45:00Z",
-      "status": "TIMED",
-      "stage": "REGULAR_SEASON",
-      "competicao": "Serie A",
-      "competicaoCodigo": "SA",
-      "mandante": "Genoa CFC",
-      "mandanteId": 107,
-      "mandanteEscudo": "https://crests.football-data.org/107.png",
-      "visitante": "SSC Napoli",
-      "visitanteId": 113,
-      "visitanteEscudo": "https://crests.football-data.org/113.png",
-      "placarMandante": null,
-      "placarVisitante": null
-    },
-    {
-      "id": 559711,
-      "data": "2026-08-22T18:45:00Z",
-      "status": "TIMED",
-      "stage": "REGULAR_SEASON",
-      "competicao": "Ligue 1",
-      "competicaoCodigo": "FL1",
-      "mandante": "Le Mans FC",
-      "mandanteId": 535,
-      "mandanteEscudo": "https://upload.wikimedia.org/wikipedia/en/5/57/Le_Mans_FC_logo.svg",
-      "visitante": "Stade Brestois 29",
-      "visitanteId": 512,
-      "visitanteEscudo": "https://crests.football-data.org/512.png",
       "placarMandante": null,
       "placarVisitante": null
     },
@@ -579,22 +579,6 @@
       "placarVisitante": null
     },
     {
-      "id": 567275,
-      "data": "2026-08-22T19:30:00Z",
-      "status": "TIMED",
-      "stage": "REGULAR_SEASON",
-      "competicao": "Primeira Liga",
-      "competicaoCodigo": "PPL",
-      "mandante": "Sporting Clube de Portugal",
-      "mandanteId": 498,
-      "mandanteEscudo": "https://crests.football-data.org/498.png",
-      "visitante": "FC Alverca",
-      "visitanteId": 7822,
-      "visitanteEscudo": "https://crests.football-data.org/7822.png",
-      "placarMandante": null,
-      "placarVisitante": null
-    },
-    {
       "id": 564645,
       "data": "2026-08-22T19:30:00Z",
       "status": "TIMED",
@@ -607,6 +591,22 @@
       "visitante": "Real Madrid CF",
       "visitanteId": 86,
       "visitanteEscudo": "https://crests.football-data.org/86.png",
+      "placarMandante": null,
+      "placarVisitante": null
+    },
+    {
+      "id": 567275,
+      "data": "2026-08-22T19:30:00Z",
+      "status": "TIMED",
+      "stage": "REGULAR_SEASON",
+      "competicao": "Primeira Liga",
+      "competicaoCodigo": "PPL",
+      "mandante": "Sporting Clube de Portugal",
+      "mandanteId": 498,
+      "mandanteEscudo": "https://crests.football-data.org/498.png",
+      "visitante": "FC Alverca",
+      "visitanteId": 7822,
+      "visitanteEscudo": "https://crests.football-data.org/7822.png",
       "placarMandante": null,
       "placarVisitante": null
     },
@@ -819,22 +819,6 @@
       "placarVisitante": null
     },
     {
-      "id": 558637,
-      "data": "2026-08-23T16:30:00Z",
-      "status": "TIMED",
-      "stage": "REGULAR_SEASON",
-      "competicao": "Serie A",
-      "competicaoCodigo": "SA",
-      "mandante": "Venezia FC",
-      "mandanteId": 454,
-      "mandanteEscudo": "https://crests.football-data.org/454.png",
-      "visitante": "US Lecce",
-      "visitanteId": 5890,
-      "visitanteEscudo": "https://crests.football-data.org/5890.png",
-      "placarMandante": null,
-      "placarVisitante": null
-    },
-    {
       "id": 558635,
       "data": "2026-08-23T16:30:00Z",
       "status": "TIMED",
@@ -847,6 +831,22 @@
       "visitante": "Juventus FC",
       "visitanteId": 109,
       "visitanteEscudo": "https://crests.football-data.org/109.png",
+      "placarMandante": null,
+      "placarVisitante": null
+    },
+    {
+      "id": 558637,
+      "data": "2026-08-23T16:30:00Z",
+      "status": "TIMED",
+      "stage": "REGULAR_SEASON",
+      "competicao": "Serie A",
+      "competicaoCodigo": "SA",
+      "mandante": "Venezia FC",
+      "mandanteId": 454,
+      "mandanteEscudo": "https://crests.football-data.org/454.png",
+      "visitante": "US Lecce",
+      "visitanteId": 5890,
+      "visitanteEscudo": "https://crests.football-data.org/5890.png",
       "placarMandante": null,
       "placarVisitante": null
     },
@@ -931,6 +931,22 @@
       "placarVisitante": null
     },
     {
+      "id": 554971,
+      "data": "2026-08-23T19:00:00Z",
+      "status": "TIMED",
+      "stage": "REGULAR_SEASON",
+      "competicao": "Campeonato Brasileiro Série A",
+      "competicaoCodigo": "BSA",
+      "mandante": "RB Bragantino",
+      "mandanteId": 4286,
+      "mandanteEscudo": "https://crests.football-data.org/4286.png",
+      "visitante": "Grêmio FBPA",
+      "visitanteId": 1767,
+      "visitanteEscudo": "https://crests.football-data.org/1767.png",
+      "placarMandante": null,
+      "placarVisitante": null
+    },
+    {
       "id": 554977,
       "data": "2026-08-23T19:00:00Z",
       "status": "TIMED",
@@ -959,22 +975,6 @@
       "visitante": "EC Bahia",
       "visitanteId": 1777,
       "visitanteEscudo": "https://crests.football-data.org/1777.png",
-      "placarMandante": null,
-      "placarVisitante": null
-    },
-    {
-      "id": 554971,
-      "data": "2026-08-23T19:00:00Z",
-      "status": "TIMED",
-      "stage": "REGULAR_SEASON",
-      "competicao": "Campeonato Brasileiro Série A",
-      "competicaoCodigo": "BSA",
-      "mandante": "RB Bragantino",
-      "mandanteId": 4286,
-      "mandanteEscudo": "https://crests.football-data.org/4286.png",
-      "visitante": "Grêmio FBPA",
-      "visitanteId": 1767,
-      "visitanteEscudo": "https://crests.football-data.org/1767.png",
       "placarMandante": null,
       "placarVisitante": null
     },
@@ -1011,22 +1011,6 @@
       "placarVisitante": null
     },
     {
-      "id": 554978,
-      "data": "2026-08-23T21:30:00Z",
-      "status": "TIMED",
-      "stage": "REGULAR_SEASON",
-      "competicao": "Campeonato Brasileiro Série A",
-      "competicaoCodigo": "BSA",
-      "mandante": "Santos FC",
-      "mandanteId": 6685,
-      "mandanteEscudo": "https://crests.football-data.org/6685.png",
-      "visitante": "Mirassol FC",
-      "visitanteId": 4364,
-      "visitanteEscudo": "https://crests.football-data.org/4364.png",
-      "placarMandante": null,
-      "placarVisitante": null
-    },
-    {
       "id": 554972,
       "data": "2026-08-23T21:30:00Z",
       "status": "TIMED",
@@ -1039,6 +1023,22 @@
       "visitante": "São Paulo FC",
       "visitanteId": 1776,
       "visitanteEscudo": "https://crests.football-data.org/1776.png",
+      "placarMandante": null,
+      "placarVisitante": null
+    },
+    {
+      "id": 554978,
+      "data": "2026-08-23T21:30:00Z",
+      "status": "TIMED",
+      "stage": "REGULAR_SEASON",
+      "competicao": "Campeonato Brasileiro Série A",
+      "competicaoCodigo": "BSA",
+      "mandante": "Santos FC",
+      "mandanteId": 6685,
+      "mandanteEscudo": "https://crests.football-data.org/6685.png",
+      "visitante": "Mirassol FC",
+      "visitanteId": 4364,
+      "visitanteEscudo": "https://crests.football-data.org/4364.png",
       "placarMandante": null,
       "placarVisitante": null
     },
@@ -1381,22 +1381,6 @@
       "placarVisitante": 1
     },
     {
-      "id": 561768,
-      "data": "2026-08-15T14:00:00Z",
-      "status": "FINISHED",
-      "stage": "REGULAR_SEASON",
-      "competicao": "Championship",
-      "competicaoCodigo": "ELC",
-      "mandante": "Portsmouth FC",
-      "mandanteId": 325,
-      "mandanteEscudo": "https://crests.football-data.org/325.png",
-      "visitante": "Queens Park Rangers FC",
-      "visitanteId": 69,
-      "visitanteEscudo": "https://crests.football-data.org/69.png",
-      "placarMandante": 1,
-      "placarVisitante": 3
-    },
-    {
       "id": 561764,
       "data": "2026-08-15T14:00:00Z",
       "status": "FINISHED",
@@ -1427,6 +1411,22 @@
       "visitanteEscudo": "https://crests.football-data.org/72.png",
       "placarMandante": 1,
       "placarVisitante": 2
+    },
+    {
+      "id": 561768,
+      "data": "2026-08-15T14:00:00Z",
+      "status": "FINISHED",
+      "stage": "REGULAR_SEASON",
+      "competicao": "Championship",
+      "competicaoCodigo": "ELC",
+      "mandante": "Portsmouth FC",
+      "mandanteId": 325,
+      "mandanteEscudo": "https://crests.football-data.org/325.png",
+      "visitante": "Queens Park Rangers FC",
+      "visitanteId": 69,
+      "visitanteEscudo": "https://crests.football-data.org/69.png",
+      "placarMandante": 1,
+      "placarVisitante": 3
     },
     {
       "id": 561765,
@@ -5100,11 +5100,17 @@
       "placarMandante": null,
       "placarVisitante": null,
       "probabilidades": {
-        "mandante": 32,
-        "empate": 40,
-        "visitante": 28
+        "mandante": 37,
+        "empate": 45,
+        "visitante": 18
       },
-      "obs": "Cálculo considerando forma atual, aproveitamento na competição e mandante estreando nessa fase/competição — usado o nível geral do time (últimos jogos e posição no campeonato nacional, 0 jogo(s) analisados), visitante estreando nessa fase/competição — usado o nível geral do time (últimos jogos e posição no campeonato nacional, 0 jogo(s) analisados), 30 confronto(s) direto(s) recente(s) considerado(s)."
+      "obs": "Modelo de Poisson sobre gols esperados (2.08 x 1.44). Placar mais provável: 2x1. Confiança: alta. Baseado em: mandante em 5º lugar na temporada passada (atual ainda não começou), visitante em 8º lugar na temporada passada (atual ainda não começou), 30 confronto(s) direto(s) considerado(s).",
+      "golsEsperados": {
+        "mandante": 2.08,
+        "visitante": 1.44
+      },
+      "placarMaisProvavel": "2x1",
+      "confianca": "alta"
     },
     {
       "id": 560542,
@@ -5122,11 +5128,17 @@
       "placarMandante": null,
       "placarVisitante": null,
       "probabilidades": {
-        "mandante": 32,
-        "empate": 40,
-        "visitante": 28
+        "mandante": 50,
+        "empate": 43,
+        "visitante": 7
       },
-      "obs": "Cálculo considerando forma atual, aproveitamento na competição e mandante estreando nessa fase/competição — usado o nível geral do time (últimos jogos e posição no campeonato nacional, 0 jogo(s) analisados), visitante estreando nessa fase/competição — usado o nível geral do time (últimos jogos e posição no campeonato nacional, 0 jogo(s) analisados), 30 confronto(s) direto(s) recente(s) considerado(s)."
+      "obs": "Modelo de Poisson sobre gols esperados (2.15 x 0.64). Placar mais provável: 2x0. Confiança: baixa. Baseado em: mandante em 1º lugar na temporada passada (atual ainda não começou), 30 confronto(s) direto(s) considerado(s).",
+      "golsEsperados": {
+        "mandante": 2.15,
+        "visitante": 0.64
+      },
+      "placarMaisProvavel": "2x0",
+      "confianca": "baixa"
     },
     {
       "id": 564647,
@@ -5145,10 +5157,16 @@
       "placarVisitante": null,
       "probabilidades": {
         "mandante": 32,
-        "empate": 40,
-        "visitante": 28
+        "empate": 47,
+        "visitante": 21
       },
-      "obs": "Cálculo considerando forma atual, aproveitamento na competição e mandante estreando nessa fase/competição — usado o nível geral do time (últimos jogos e posição no campeonato nacional, 0 jogo(s) analisados), visitante estreando nessa fase/competição — usado o nível geral do time (últimos jogos e posição no campeonato nacional, 0 jogo(s) analisados), 30 confronto(s) direto(s) recente(s) considerado(s)."
+      "obs": "Modelo de Poisson sobre gols esperados (1.56 x 1.22). Placar mais provável: 1x1. Confiança: baixa. Baseado em: 30 confronto(s) direto(s) considerado(s).",
+      "golsEsperados": {
+        "mandante": 1.56,
+        "visitante": 1.22
+      },
+      "placarMaisProvavel": "1x1",
+      "confianca": "baixa"
     },
     {
       "id": 560543,
@@ -5166,11 +5184,17 @@
       "placarMandante": null,
       "placarVisitante": null,
       "probabilidades": {
-        "mandante": 32,
-        "empate": 40,
-        "visitante": 28
+        "mandante": 25,
+        "empate": 46,
+        "visitante": 29
       },
-      "obs": "Cálculo considerando forma atual, aproveitamento na competição e mandante estreando nessa fase/competição — usado o nível geral do time (últimos jogos e posição no campeonato nacional, 0 jogo(s) analisados), visitante estreando nessa fase/competição — usado o nível geral do time (últimos jogos e posição no campeonato nacional, 0 jogo(s) analisados), 16 confronto(s) direto(s) recente(s) considerado(s)."
+      "obs": "Modelo de Poisson sobre gols esperados (1.51 x 1.63). Placar mais provável: 1x1. Confiança: baixa. Baseado em: visitante em 3º lugar na temporada passada (atual ainda não começou), 16 confronto(s) direto(s) considerado(s).",
+      "golsEsperados": {
+        "mandante": 1.51,
+        "visitante": 1.63
+      },
+      "placarMaisProvavel": "1x1",
+      "confianca": "baixa"
     },
     {
       "id": 561781,
@@ -5188,11 +5212,17 @@
       "placarMandante": null,
       "placarVisitante": null,
       "probabilidades": {
-        "mandante": 55,
-        "empate": 40,
-        "visitante": 5
+        "mandante": 44,
+        "empate": 43,
+        "visitante": 13
       },
-      "obs": "Cálculo considerando forma atual, aproveitamento na competição e mandante estreando nessa fase/competição — usado o nível geral do time (últimos jogos e posição no campeonato nacional, 1 jogo(s) analisados), visitante estreando nessa fase/competição — usado o nível geral do time (últimos jogos e posição no campeonato nacional, 1 jogo(s) analisados), 12 confronto(s) direto(s) recente(s) considerado(s)."
+      "obs": "Modelo de Poisson sobre gols esperados (2.44 x 1.27). Placar mais provável: 2x1. Confiança: baixa. Baseado em: mandante em 17º lugar na competição, visitante em 23º lugar, 12 confronto(s) direto(s) considerado(s).",
+      "golsEsperados": {
+        "mandante": 2.44,
+        "visitante": 1.27
+      },
+      "placarMaisProvavel": "2x1",
+      "confianca": "baixa"
     },
     {
       "id": 561773,
@@ -5210,11 +5240,17 @@
       "placarMandante": null,
       "placarVisitante": null,
       "probabilidades": {
-        "mandante": 60,
-        "empate": 40,
-        "visitante": 0
+        "mandante": 30,
+        "empate": 63,
+        "visitante": 7
       },
-      "obs": "Cálculo considerando forma atual, aproveitamento na competição e mandante estreando nessa fase/competição — usado o nível geral do time (últimos jogos e posição no campeonato nacional, 1 jogo(s) analisados), visitante estreando nessa fase/competição — usado o nível geral do time (últimos jogos e posição no campeonato nacional, 1 jogo(s) analisados), 30 confronto(s) direto(s) recente(s) considerado(s)."
+      "obs": "Modelo de Poisson sobre gols esperados (0.69 x 0.2). Placar mais provável: 0x0. Confiança: baixa. Baseado em: mandante em 15º lugar na competição, visitante em 24º lugar, 30 confronto(s) direto(s) considerado(s).",
+      "golsEsperados": {
+        "mandante": 0.69,
+        "visitante": 0.2
+      },
+      "placarMaisProvavel": "0x0",
+      "confianca": "baixa"
     },
     {
       "id": 561784,
@@ -5232,11 +5268,17 @@
       "placarMandante": null,
       "placarVisitante": null,
       "probabilidades": {
-        "mandante": 52,
-        "empate": 40,
-        "visitante": 8
+        "mandante": 65,
+        "empate": 34,
+        "visitante": 1
       },
-      "obs": "Cálculo considerando forma atual, aproveitamento na competição e mandante estreando nessa fase/competição — usado o nível geral do time (últimos jogos e posição no campeonato nacional, 1 jogo(s) analisados), visitante estreando nessa fase/competição — usado o nível geral do time (últimos jogos e posição no campeonato nacional, 1 jogo(s) analisados), 25 confronto(s) direto(s) recente(s) considerado(s)."
+      "obs": "Modelo de Poisson sobre gols esperados (3.25 x 0.27). Placar mais provável: 3x0. Confiança: baixa. Baseado em: mandante em 2º lugar na competição, visitante em 17º lugar, 25 confronto(s) direto(s) considerado(s).",
+      "golsEsperados": {
+        "mandante": 3.25,
+        "visitante": 0.27
+      },
+      "placarMaisProvavel": "3x0",
+      "confianca": "baixa"
     },
     {
       "id": 560544,
@@ -5254,11 +5296,17 @@
       "placarMandante": null,
       "placarVisitante": null,
       "probabilidades": {
-        "mandante": 32,
-        "empate": 40,
-        "visitante": 28
+        "mandante": 33,
+        "empate": 49,
+        "visitante": 18
       },
-      "obs": "Cálculo considerando forma atual, aproveitamento na competição e mandante estreando nessa fase/competição — usado o nível geral do time (últimos jogos e posição no campeonato nacional, 0 jogo(s) analisados), visitante estreando nessa fase/competição — usado o nível geral do time (últimos jogos e posição no campeonato nacional, 0 jogo(s) analisados), 30 confronto(s) direto(s) recente(s) considerado(s)."
+      "obs": "Modelo de Poisson sobre gols esperados (1.45 x 0.99). Placar mais provável: 1x0. Confiança: baixa. Baseado em: visitante em 7º lugar na temporada passada (atual ainda não começou), 30 confronto(s) direto(s) considerado(s).",
+      "golsEsperados": {
+        "mandante": 1.45,
+        "visitante": 0.99
+      },
+      "placarMaisProvavel": "1x0",
+      "confianca": "baixa"
     },
     {
       "id": 560546,
@@ -5276,11 +5324,17 @@
       "placarMandante": null,
       "placarVisitante": null,
       "probabilidades": {
-        "mandante": 32,
-        "empate": 40,
-        "visitante": 28
+        "mandante": 33,
+        "empate": 49,
+        "visitante": 18
       },
-      "obs": "Cálculo considerando forma atual, aproveitamento na competição e mandante estreando nessa fase/competição — usado o nível geral do time (últimos jogos e posição no campeonato nacional, 0 jogo(s) analisados), visitante estreando nessa fase/competição — usado o nível geral do time (últimos jogos e posição no campeonato nacional, 0 jogo(s) analisados), 30 confronto(s) direto(s) recente(s) considerado(s)."
+      "obs": "Modelo de Poisson sobre gols esperados (1.39 x 0.93). Placar mais provável: 1x0. Confiança: alta. Baseado em: mandante em 13º lugar na temporada passada (atual ainda não começou), visitante em 15º lugar na temporada passada (atual ainda não começou), 30 confronto(s) direto(s) considerado(s).",
+      "golsEsperados": {
+        "mandante": 1.39,
+        "visitante": 0.93
+      },
+      "placarMaisProvavel": "1x0",
+      "confianca": "alta"
     },
     {
       "id": 560545,
@@ -5298,11 +5352,17 @@
       "placarMandante": null,
       "placarVisitante": null,
       "probabilidades": {
-        "mandante": 32,
-        "empate": 40,
-        "visitante": 28
+        "mandante": 33,
+        "empate": 48,
+        "visitante": 19
       },
-      "obs": "Cálculo considerando forma atual, aproveitamento na competição e mandante estreando nessa fase/competição — usado o nível geral do time (últimos jogos e posição no campeonato nacional, 0 jogo(s) analisados), visitante estreando nessa fase/competição — usado o nível geral do time (últimos jogos e posição no campeonato nacional, 0 jogo(s) analisados), 30 confronto(s) direto(s) recente(s) considerado(s)."
+      "obs": "Modelo de Poisson sobre gols esperados (1.56 x 1.13). Placar mais provável: 1x1. Confiança: alta. Baseado em: mandante em 16º lugar na temporada passada (atual ainda não começou), visitante em 14º lugar na temporada passada (atual ainda não começou), 30 confronto(s) direto(s) considerado(s).",
+      "golsEsperados": {
+        "mandante": 1.56,
+        "visitante": 1.13
+      },
+      "placarMaisProvavel": "1x1",
+      "confianca": "alta"
     },
     {
       "id": 561777,
@@ -5320,11 +5380,17 @@
       "placarMandante": null,
       "placarVisitante": null,
       "probabilidades": {
-        "mandante": 21,
-        "empate": 40,
-        "visitante": 39
+        "mandante": 17,
+        "empate": 50,
+        "visitante": 33
       },
-      "obs": "Cálculo considerando forma atual, aproveitamento na competição e mandante estreando nessa fase/competição — usado o nível geral do time (últimos jogos e posição no campeonato nacional, 1 jogo(s) analisados), visitante estreando nessa fase/competição — usado o nível geral do time (últimos jogos e posição no campeonato nacional, 1 jogo(s) analisados), 19 confronto(s) direto(s) recente(s) considerado(s)."
+      "obs": "Modelo de Poisson sobre gols esperados (0.81 x 1.27). Placar mais provável: 0x1. Confiança: baixa. Baseado em: mandante em 17º lugar na competição, visitante em 13º lugar, 19 confronto(s) direto(s) considerado(s).",
+      "golsEsperados": {
+        "mandante": 0.81,
+        "visitante": 1.27
+      },
+      "placarMaisProvavel": "0x1",
+      "confianca": "baixa"
     },
     {
       "id": 561783,
@@ -5342,11 +5408,17 @@
       "placarMandante": null,
       "placarVisitante": null,
       "probabilidades": {
-        "mandante": 31,
-        "empate": 40,
-        "visitante": 29
+        "mandante": 44,
+        "empate": 43,
+        "visitante": 13
       },
-      "obs": "Cálculo considerando forma atual, aproveitamento na competição e mandante estreando nessa fase/competição — usado o nível geral do time (últimos jogos e posição no campeonato nacional, 1 jogo(s) analisados), visitante estreando nessa fase/competição — usado o nível geral do time (últimos jogos e posição no campeonato nacional, 1 jogo(s) analisados), 10 confronto(s) direto(s) recente(s) considerado(s)."
+      "obs": "Modelo de Poisson sobre gols esperados (2.44 x 1.27). Placar mais provável: 2x1. Confiança: baixa. Baseado em: mandante em 1º lugar na competição, visitante em 3º lugar, 10 confronto(s) direto(s) considerado(s).",
+      "golsEsperados": {
+        "mandante": 2.44,
+        "visitante": 1.27
+      },
+      "placarMaisProvavel": "2x1",
+      "confianca": "baixa"
     },
     {
       "id": 561775,
@@ -5364,11 +5436,17 @@
       "placarMandante": null,
       "placarVisitante": null,
       "probabilidades": {
-        "mandante": 22,
-        "empate": 40,
-        "visitante": 38
+        "mandante": 17,
+        "empate": 43,
+        "visitante": 40
       },
-      "obs": "Cálculo considerando forma atual, aproveitamento na competição e mandante estreando nessa fase/competição — usado o nível geral do time (últimos jogos e posição no campeonato nacional, 1 jogo(s) analisados), visitante estreando nessa fase/competição — usado o nível geral do time (últimos jogos e posição no campeonato nacional, 1 jogo(s) analisados), 27 confronto(s) direto(s) recente(s) considerado(s)."
+      "obs": "Modelo de Poisson sobre gols esperados (1.62 x 2.54). Placar mais provável: 1x2. Confiança: baixa. Baseado em: mandante em 9º lugar na competição, visitante em 3º lugar, 27 confronto(s) direto(s) considerado(s).",
+      "golsEsperados": {
+        "mandante": 1.62,
+        "visitante": 2.54
+      },
+      "placarMaisProvavel": "1x2",
+      "confianca": "baixa"
     },
     {
       "id": 561780,
@@ -5386,11 +5464,17 @@
       "placarMandante": null,
       "placarVisitante": null,
       "probabilidades": {
-        "mandante": 22,
-        "empate": 40,
-        "visitante": 38
+        "mandante": 17,
+        "empate": 43,
+        "visitante": 40
       },
-      "obs": "Cálculo considerando forma atual, aproveitamento na competição e mandante estreando nessa fase/competição — usado o nível geral do time (últimos jogos e posição no campeonato nacional, 1 jogo(s) analisados), visitante estreando nessa fase/competição — usado o nível geral do time (últimos jogos e posição no campeonato nacional, 1 jogo(s) analisados), 30 confronto(s) direto(s) recente(s) considerado(s)."
+      "obs": "Modelo de Poisson sobre gols esperados (1.62 x 2.54). Placar mais provável: 1x2. Confiança: baixa. Baseado em: mandante em 9º lugar na competição, visitante em 3º lugar, 30 confronto(s) direto(s) considerado(s).",
+      "golsEsperados": {
+        "mandante": 1.62,
+        "visitante": 2.54
+      },
+      "placarMaisProvavel": "1x2",
+      "confianca": "baixa"
     },
     {
       "id": 561774,
@@ -5408,11 +5492,17 @@
       "placarMandante": null,
       "placarVisitante": null,
       "probabilidades": {
-        "mandante": 44,
-        "empate": 40,
-        "visitante": 16
+        "mandante": 29,
+        "empate": 62,
+        "visitante": 9
       },
-      "obs": "Cálculo considerando forma atual, aproveitamento na competição e mandante estreando nessa fase/competição — usado o nível geral do time (últimos jogos e posição no campeonato nacional, 1 jogo(s) analisados), visitante estreando nessa fase/competição — usado o nível geral do time (últimos jogos e posição no campeonato nacional, 1 jogo(s) analisados), 14 confronto(s) direto(s) recente(s) considerado(s)."
+      "obs": "Modelo de Poisson sobre gols esperados (0.69 x 0.27). Placar mais provável: 0x0. Confiança: baixa. Baseado em: mandante em 3º lugar na competição, visitante em 15º lugar, 14 confronto(s) direto(s) considerado(s).",
+      "golsEsperados": {
+        "mandante": 0.69,
+        "visitante": 0.27
+      },
+      "placarMaisProvavel": "0x0",
+      "confianca": "baixa"
     },
     {
       "id": 561778,
@@ -5430,11 +5520,17 @@
       "placarMandante": null,
       "placarVisitante": null,
       "probabilidades": {
-        "mandante": 19,
-        "empate": 40,
-        "visitante": 41
+        "mandante": 17,
+        "empate": 43,
+        "visitante": 40
       },
-      "obs": "Cálculo considerando forma atual, aproveitamento na competição e mandante estreando nessa fase/competição — usado o nível geral do time (últimos jogos e posição no campeonato nacional, 1 jogo(s) analisados), visitante estreando nessa fase/competição — usado o nível geral do time (últimos jogos e posição no campeonato nacional, 1 jogo(s) analisados), 30 confronto(s) direto(s) recente(s) considerado(s)."
+      "obs": "Modelo de Poisson sobre gols esperados (1.62 x 2.54). Placar mais provável: 1x2. Confiança: baixa. Baseado em: mandante em 17º lugar na competição, visitante em 9º lugar, 30 confronto(s) direto(s) considerado(s).",
+      "golsEsperados": {
+        "mandante": 1.62,
+        "visitante": 2.54
+      },
+      "placarMaisProvavel": "1x2",
+      "confianca": "baixa"
     },
     {
       "id": 561779,
@@ -5452,11 +5548,17 @@
       "placarMandante": null,
       "placarVisitante": null,
       "probabilidades": {
-        "mandante": 25,
-        "empate": 24,
-        "visitante": 51
+        "mandante": 24,
+        "empate": 29,
+        "visitante": 47
       },
-      "obs": "Cálculo considerando forma atual, aproveitamento na competição e mandante estreando nessa fase/competição — usado o nível geral do time (últimos jogos e posição no campeonato nacional, 1 jogo(s) analisados), visitante estreando nessa fase/competição — usado o nível geral do time (últimos jogos e posição no campeonato nacional, 1 jogo(s) analisados), 2 confronto(s) direto(s) recente(s) considerado(s)."
+      "obs": "Modelo de Poisson sobre gols esperados (0.81 x 1.27). Placar mais provável: 0x1. Confiança: baixa. Baseado em: mandante em 13º lugar na competição, visitante em 3º lugar, 2 confronto(s) direto(s) considerado(s).",
+      "golsEsperados": {
+        "mandante": 0.81,
+        "visitante": 1.27
+      },
+      "placarMaisProvavel": "0x1",
+      "confianca": "baixa"
     },
     {
       "id": 561782,
@@ -5474,11 +5576,17 @@
       "placarMandante": null,
       "placarVisitante": null,
       "probabilidades": {
-        "mandante": 36,
-        "empate": 40,
-        "visitante": 24
+        "mandante": 32,
+        "empate": 47,
+        "visitante": 21
       },
-      "obs": "Cálculo considerando forma atual, aproveitamento na competição e mandante estreando nessa fase/competição — usado o nível geral do time (últimos jogos e posição no campeonato nacional, 1 jogo(s) analisados), visitante estreando nessa fase/competição — usado o nível geral do time (últimos jogos e posição no campeonato nacional, 1 jogo(s) analisados), 30 confronto(s) direto(s) recente(s) considerado(s)."
+      "obs": "Modelo de Poisson sobre gols esperados (1.62 x 1.27). Placar mais provável: 1x1. Confiança: baixa. Baseado em: mandante em 17º lugar na competição, visitante em 17º lugar, 30 confronto(s) direto(s) considerado(s).",
+      "golsEsperados": {
+        "mandante": 1.62,
+        "visitante": 1.27
+      },
+      "placarMaisProvavel": "1x1",
+      "confianca": "baixa"
     },
     {
       "id": 558232,
@@ -5496,11 +5604,17 @@
       "placarMandante": null,
       "placarVisitante": null,
       "probabilidades": {
-        "mandante": 27,
-        "empate": 40,
-        "visitante": 33
+        "mandante": 9,
+        "empate": 42,
+        "visitante": 49
       },
-      "obs": "Cálculo considerando forma atual, aproveitamento na competição e mandante estreando nessa fase/competição — usado o nível geral do time (últimos jogos e posição no campeonato nacional, 2 jogo(s) analisados), visitante estreando nessa fase/competição — usado o nível geral do time (últimos jogos e posição no campeonato nacional, 2 jogo(s) analisados), 30 confronto(s) direto(s) recente(s) considerado(s)."
+      "obs": "Modelo de Poisson sobre gols esperados (0.86 x 2.31). Placar mais provável: 0x2. Confiança: baixa. Baseado em: mandante em 4º lugar na competição, visitante em 1º lugar, 30 confronto(s) direto(s) considerado(s).",
+      "golsEsperados": {
+        "mandante": 0.86,
+        "visitante": 2.31
+      },
+      "placarMaisProvavel": "0x2",
+      "confianca": "baixa"
     },
     {
       "id": 567283,
@@ -5518,11 +5632,17 @@
       "placarMandante": null,
       "placarVisitante": null,
       "probabilidades": {
-        "mandante": 47,
-        "empate": 40,
-        "visitante": 13
+        "mandante": 51,
+        "empate": 45,
+        "visitante": 4
       },
-      "obs": "Cálculo considerando forma atual, aproveitamento na competição e mandante estreando nessa fase/competição — usado o nível geral do time (últimos jogos e posição no campeonato nacional, 2 jogo(s) analisados), visitante estreando nessa fase/competição — usado o nível geral do time (últimos jogos e posição no campeonato nacional, 2 jogo(s) analisados), 12 confronto(s) direto(s) recente(s) considerado(s)."
+      "obs": "Modelo de Poisson sobre gols esperados (1.73 x 0.3). Placar mais provável: 1x0. Confiança: baixa. Baseado em: mandante em 3º lugar na competição, visitante em 11º lugar, 12 confronto(s) direto(s) considerado(s).",
+      "golsEsperados": {
+        "mandante": 1.73,
+        "visitante": 0.3
+      },
+      "placarMaisProvavel": "1x0",
+      "confianca": "baixa"
     },
     {
       "id": 564641,
@@ -5540,11 +5660,17 @@
       "placarMandante": null,
       "placarVisitante": null,
       "probabilidades": {
-        "mandante": 23,
-        "empate": 40,
-        "visitante": 37
+        "mandante": 10,
+        "empate": 43,
+        "visitante": 47
       },
-      "obs": "Cálculo considerando forma atual, aproveitamento na competição e mandante estreando nessa fase/competição — usado o nível geral do time (últimos jogos e posição no campeonato nacional, 0 jogo(s) analisados), visitante estreando nessa fase/competição — usado o nível geral do time (últimos jogos e posição no campeonato nacional, 1 jogo(s) analisados), 30 confronto(s) direto(s) recente(s) considerado(s)."
+      "obs": "Modelo de Poisson sobre gols esperados (0.95 x 2.32). Placar mais provável: 0x2. Confiança: média. Baseado em: mandante estreando nessa fase/competição — usado o nível geral do time (8 jogo(s) analisados), visitante em 4º lugar, 30 confronto(s) direto(s) considerado(s).",
+      "golsEsperados": {
+        "mandante": 0.95,
+        "visitante": 2.32
+      },
+      "placarMaisProvavel": "0x2",
+      "confianca": "média"
     },
     {
       "id": 559712,
@@ -5562,11 +5688,17 @@
       "placarMandante": null,
       "placarVisitante": null,
       "probabilidades": {
-        "mandante": 32,
-        "empate": 40,
-        "visitante": 28
+        "mandante": 49,
+        "empate": 43,
+        "visitante": 8
       },
-      "obs": "Cálculo considerando forma atual, aproveitamento na competição e mandante estreando nessa fase/competição — usado o nível geral do time (últimos jogos e posição no campeonato nacional, 0 jogo(s) analisados), visitante estreando nessa fase/competição — usado o nível geral do time (últimos jogos e posição no campeonato nacional, 0 jogo(s) analisados), 30 confronto(s) direto(s) recente(s) considerado(s)."
+      "obs": "Modelo de Poisson sobre gols esperados (2.04 x 0.65). Placar mais provável: 2x0. Confiança: alta. Baseado em: mandante em 2º lugar na temporada passada (atual ainda não começou), visitante em 15º lugar na temporada passada (atual ainda não começou), 30 confronto(s) direto(s) considerado(s).",
+      "golsEsperados": {
+        "mandante": 2.04,
+        "visitante": 0.65
+      },
+      "placarMaisProvavel": "2x0",
+      "confianca": "alta"
     },
     {
       "id": 558632,
@@ -5584,11 +5716,17 @@
       "placarMandante": null,
       "placarVisitante": null,
       "probabilidades": {
-        "mandante": 32,
+        "mandante": 54,
         "empate": 40,
-        "visitante": 28
+        "visitante": 6
       },
-      "obs": "Cálculo considerando forma atual, aproveitamento na competição e mandante estreando nessa fase/competição — usado o nível geral do time (últimos jogos e posição no campeonato nacional, 0 jogo(s) analisados), visitante estreando nessa fase/competição — usado o nível geral do time (últimos jogos e posição no campeonato nacional, 0 jogo(s) analisados), 6 confronto(s) direto(s) recente(s) considerado(s)."
+      "obs": "Modelo de Poisson sobre gols esperados (2.69 x 0.83). Placar mais provável: 2x0. Confiança: baixa. Baseado em: mandante em 1º lugar na temporada passada (atual ainda não começou), 6 confronto(s) direto(s) considerado(s).",
+      "golsEsperados": {
+        "mandante": 2.69,
+        "visitante": 0.83
+      },
+      "placarMaisProvavel": "2x0",
+      "confianca": "baixa"
     },
     {
       "id": 558629,
@@ -5606,11 +5744,17 @@
       "placarMandante": null,
       "placarVisitante": null,
       "probabilidades": {
-        "mandante": 32,
-        "empate": 40,
-        "visitante": 28
+        "mandante": 14,
+        "empate": 48,
+        "visitante": 38
       },
-      "obs": "Cálculo considerando forma atual, aproveitamento na competição e mandante estreando nessa fase/competição — usado o nível geral do time (últimos jogos e posição no campeonato nacional, 0 jogo(s) analisados), visitante estreando nessa fase/competição — usado o nível geral do time (últimos jogos e posição no campeonato nacional, 0 jogo(s) analisados), 22 confronto(s) direto(s) recente(s) considerado(s)."
+      "obs": "Modelo de Poisson sobre gols esperados (0.86 x 1.6). Placar mais provável: 0x1. Confiança: alta. Baseado em: mandante em 10º lugar na temporada passada (atual ainda não começou), visitante em 4º lugar na temporada passada (atual ainda não começou), 22 confronto(s) direto(s) considerado(s).",
+      "golsEsperados": {
+        "mandante": 0.86,
+        "visitante": 1.6
+      },
+      "placarMaisProvavel": "0x1",
+      "confianca": "alta"
     },
     {
       "id": 560547,
@@ -5628,11 +5772,17 @@
       "placarMandante": null,
       "placarVisitante": null,
       "probabilidades": {
-        "mandante": 32,
-        "empate": 40,
-        "visitante": 28
+        "mandante": 37,
+        "empate": 46,
+        "visitante": 17
       },
-      "obs": "Cálculo considerando forma atual, aproveitamento na competição e mandante estreando nessa fase/competição — usado o nível geral do time (últimos jogos e posição no campeonato nacional, 0 jogo(s) analisados), visitante estreando nessa fase/competição — usado o nível geral do time (últimos jogos e posição no campeonato nacional, 0 jogo(s) analisados), 20 confronto(s) direto(s) recente(s) considerado(s)."
+      "obs": "Modelo de Poisson sobre gols esperados (1.82 x 1.13). Placar mais provável: 1x1. Confiança: alta. Baseado em: mandante em 9º lugar na temporada passada (atual ainda não começou), visitante em 17º lugar na temporada passada (atual ainda não começou), 20 confronto(s) direto(s) considerado(s).",
+      "golsEsperados": {
+        "mandante": 1.82,
+        "visitante": 1.13
+      },
+      "placarMaisProvavel": "1x1",
+      "confianca": "alta"
     },
     {
       "id": 558234,
@@ -5650,11 +5800,17 @@
       "placarMandante": null,
       "placarVisitante": null,
       "probabilidades": {
-        "mandante": 49,
-        "empate": 40,
-        "visitante": 11
+        "mandante": 60,
+        "empate": 37,
+        "visitante": 3
       },
-      "obs": "Cálculo considerando forma atual, aproveitamento na competição e mandante estreando nessa fase/competição — usado o nível geral do time (últimos jogos e posição no campeonato nacional, 2 jogo(s) analisados), visitante estreando nessa fase/competição — usado o nível geral do time (últimos jogos e posição no campeonato nacional, 2 jogo(s) analisados), 30 confronto(s) direto(s) recente(s) considerado(s)."
+      "obs": "Modelo de Poisson sobre gols esperados (2.96 x 0.51). Placar mais provável: 2x0. Confiança: baixa. Baseado em: mandante em 11º lugar na competição, visitante em 14º lugar, 30 confronto(s) direto(s) considerado(s).",
+      "golsEsperados": {
+        "mandante": 2.96,
+        "visitante": 0.51
+      },
+      "placarMaisProvavel": "2x0",
+      "confianca": "baixa"
     },
     {
       "id": 567279,
@@ -5672,11 +5828,17 @@
       "placarMandante": null,
       "placarVisitante": null,
       "probabilidades": {
-        "mandante": 54,
-        "empate": 40,
-        "visitante": 6
+        "mandante": 23,
+        "empate": 62,
+        "visitante": 15
       },
-      "obs": "Cálculo considerando forma atual, aproveitamento na competição e mandante estreando nessa fase/competição — usado o nível geral do time (últimos jogos e posição no campeonato nacional, 2 jogo(s) analisados), visitante estreando nessa fase/competição — usado o nível geral do time (últimos jogos e posição no campeonato nacional, 2 jogo(s) analisados), 30 confronto(s) direto(s) recente(s) considerado(s)."
+      "obs": "Modelo de Poisson sobre gols esperados (0.57 x 0.41). Placar mais provável: 0x0. Confiança: baixa. Baseado em: mandante em 14º lugar na competição, visitante em 17º lugar, 30 confronto(s) direto(s) considerado(s).",
+      "golsEsperados": {
+        "mandante": 0.57,
+        "visitante": 0.41
+      },
+      "placarMaisProvavel": "0x0",
+      "confianca": "baixa"
     },
     {
       "id": 564643,
@@ -5695,10 +5857,16 @@
       "placarVisitante": null,
       "probabilidades": {
         "mandante": 32,
-        "empate": 40,
-        "visitante": 28
+        "empate": 47,
+        "visitante": 21
       },
-      "obs": "Cálculo considerando forma atual, aproveitamento na competição e mandante estreando nessa fase/competição — usado o nível geral do time (últimos jogos e posição no campeonato nacional, 0 jogo(s) analisados), visitante estreando nessa fase/competição — usado o nível geral do time (últimos jogos e posição no campeonato nacional, 0 jogo(s) analisados), 30 confronto(s) direto(s) recente(s) considerado(s)."
+      "obs": "Modelo de Poisson sobre gols esperados (1.56 x 1.22). Placar mais provável: 1x1. Confiança: baixa. Baseado em: 30 confronto(s) direto(s) considerado(s).",
+      "golsEsperados": {
+        "mandante": 1.56,
+        "visitante": 1.22
+      },
+      "placarMaisProvavel": "1x1",
+      "confianca": "baixa"
     },
     {
       "id": 558631,
@@ -5716,11 +5884,17 @@
       "placarMandante": null,
       "placarVisitante": null,
       "probabilidades": {
-        "mandante": 32,
-        "empate": 40,
-        "visitante": 28
+        "mandante": 17,
+        "empate": 48,
+        "visitante": 35
       },
-      "obs": "Cálculo considerando forma atual, aproveitamento na competição e mandante estreando nessa fase/competição — usado o nível geral do time (últimos jogos e posição no campeonato nacional, 0 jogo(s) analisados), visitante estreando nessa fase/competição — usado o nível geral do time (últimos jogos e posição no campeonato nacional, 0 jogo(s) analisados), 30 confronto(s) direto(s) recente(s) considerado(s)."
+      "obs": "Modelo de Poisson sobre gols esperados (0.97 x 1.52). Placar mais provável: 0x1. Confiança: alta. Baseado em: mandante em 16º lugar na temporada passada (atual ainda não começou), visitante em 2º lugar na temporada passada (atual ainda não começou), 30 confronto(s) direto(s) considerado(s).",
+      "golsEsperados": {
+        "mandante": 0.97,
+        "visitante": 1.52
+      },
+      "placarMaisProvavel": "0x1",
+      "confianca": "alta"
     },
     {
       "id": 558636,
@@ -5738,11 +5912,17 @@
       "placarMandante": null,
       "placarVisitante": null,
       "probabilidades": {
-        "mandante": 32,
-        "empate": 40,
-        "visitante": 28
+        "mandante": 24,
+        "empate": 53,
+        "visitante": 23
       },
-      "obs": "Cálculo considerando forma atual, aproveitamento na competição e mandante estreando nessa fase/competição — usado o nível geral do time (últimos jogos e posição no campeonato nacional, 0 jogo(s) analisados), visitante estreando nessa fase/competição — usado o nível geral do time (últimos jogos e posição no campeonato nacional, 0 jogo(s) analisados), 30 confronto(s) direto(s) recente(s) considerado(s)."
+      "obs": "Modelo de Poisson sobre gols esperados (0.97 x 0.95). Placar mais provável: 0x0. Confiança: alta. Baseado em: mandante em 12º lugar na temporada passada (atual ainda não começou), visitante em 14º lugar na temporada passada (atual ainda não começou), 30 confronto(s) direto(s) considerado(s).",
+      "golsEsperados": {
+        "mandante": 0.97,
+        "visitante": 0.95
+      },
+      "placarMaisProvavel": "0x0",
+      "confianca": "alta"
     },
     {
       "id": 559716,
@@ -5760,11 +5940,17 @@
       "placarMandante": null,
       "placarVisitante": null,
       "probabilidades": {
-        "mandante": 32,
-        "empate": 40,
-        "visitante": 28
+        "mandante": 22,
+        "empate": 48,
+        "visitante": 30
       },
-      "obs": "Cálculo considerando forma atual, aproveitamento na competição e mandante estreando nessa fase/competição — usado o nível geral do time (últimos jogos e posição no campeonato nacional, 0 jogo(s) analisados), visitante estreando nessa fase/competição — usado o nível geral do time (últimos jogos e posição no campeonato nacional, 0 jogo(s) analisados), 30 confronto(s) direto(s) recente(s) considerado(s)."
+      "obs": "Modelo de Poisson sobre gols esperados (1.33 x 1.58). Placar mais provável: 1x1. Confiança: alta. Baseado em: mandante em 16º lugar na temporada passada (atual ainda não começou), visitante em 9º lugar na temporada passada (atual ainda não começou), 30 confronto(s) direto(s) considerado(s).",
+      "golsEsperados": {
+        "mandante": 1.33,
+        "visitante": 1.58
+      },
+      "placarMaisProvavel": "1x1",
+      "confianca": "alta"
     },
     {
       "id": 559714,
@@ -5782,11 +5968,17 @@
       "placarMandante": null,
       "placarVisitante": null,
       "probabilidades": {
-        "mandante": 32,
-        "empate": 40,
-        "visitante": 28
+        "mandante": 34,
+        "empate": 46,
+        "visitante": 20
       },
-      "obs": "Cálculo considerando forma atual, aproveitamento na competição e mandante estreando nessa fase/competição — usado o nível geral do time (últimos jogos e posição no campeonato nacional, 0 jogo(s) analisados), visitante estreando nessa fase/competição — usado o nível geral do time (últimos jogos e posição no campeonato nacional, 0 jogo(s) analisados), 12 confronto(s) direto(s) recente(s) considerado(s)."
+      "obs": "Modelo de Poisson sobre gols esperados (1.69 x 1.24). Placar mais provável: 1x1. Confiança: baixa. Baseado em: visitante em 11º lugar na temporada passada (atual ainda não começou), 12 confronto(s) direto(s) considerado(s).",
+      "golsEsperados": {
+        "mandante": 1.69,
+        "visitante": 1.24
+      },
+      "placarMaisProvavel": "1x1",
+      "confianca": "baixa"
     },
     {
       "id": 559718,
@@ -5805,10 +5997,16 @@
       "placarVisitante": null,
       "probabilidades": {
         "mandante": 26,
-        "empate": 40,
-        "visitante": 34
+        "empate": 48,
+        "visitante": 26
       },
-      "obs": "Cálculo considerando forma atual, aproveitamento na competição e mandante em 10º lugar na temporada passada (essa ainda não começou), visitante em 4º lugar na temporada passada (essa ainda não começou), 30 confronto(s) direto(s) recente(s) considerado(s)."
+      "obs": "Modelo de Poisson sobre gols esperados (1.36 x 1.38). Placar mais provável: 1x1. Confiança: alta. Baseado em: mandante em 10º lugar na temporada passada (atual ainda não começou), visitante em 4º lugar na temporada passada (atual ainda não começou), 30 confronto(s) direto(s) considerado(s).",
+      "golsEsperados": {
+        "mandante": 1.36,
+        "visitante": 1.38
+      },
+      "placarMaisProvavel": "1x1",
+      "confianca": "alta"
     },
     {
       "id": 559711,
@@ -5826,11 +6024,17 @@
       "placarMandante": null,
       "placarVisitante": null,
       "probabilidades": {
-        "mandante": 64,
-        "empate": 20,
-        "visitante": 16
+        "mandante": 54,
+        "empate": 23,
+        "visitante": 23
       },
-      "obs": "Cálculo considerando forma atual, aproveitamento na competição e mandante estreando nessa fase/competição — usado o nível geral do time (últimos jogos e posição no campeonato nacional, 0 jogo(s) analisados), visitante em 12º lugar na temporada passada (essa ainda não começou), 2 confronto(s) direto(s) recente(s) considerado(s)."
+      "obs": "Modelo de Poisson sobre gols esperados (1.86 x 1.14). Placar mais provável: 1x1. Confiança: baixa. Baseado em: visitante em 12º lugar na temporada passada (atual ainda não começou), 2 confronto(s) direto(s) considerado(s).",
+      "golsEsperados": {
+        "mandante": 1.86,
+        "visitante": 1.14
+      },
+      "placarMaisProvavel": "1x1",
+      "confianca": "baixa"
     },
     {
       "id": 554975,
@@ -5848,11 +6052,17 @@
       "placarMandante": null,
       "placarVisitante": null,
       "probabilidades": {
-        "mandante": 53,
-        "empate": 25,
-        "visitante": 22
+        "mandante": 63,
+        "empate": 20,
+        "visitante": 17
       },
-      "obs": "Cálculo considerando forma atual, aproveitamento na competição e mandante estreando nessa fase/competição — usado o nível geral do time (últimos jogos e posição no campeonato nacional, 10 jogo(s) analisados), visitante estreando nessa fase/competição — usado o nível geral do time (últimos jogos e posição no campeonato nacional, 10 jogo(s) analisados), 1 confronto(s) direto(s) recente(s) considerado(s)."
+      "obs": "Modelo de Poisson sobre gols esperados (2.1 x 0.99). Placar mais provável: 2x0. Confiança: média. Baseado em: mandante em 4º lugar na competição, visitante em 18º lugar, 1 confronto(s) direto(s) considerado(s).",
+      "golsEsperados": {
+        "mandante": 2.1,
+        "visitante": 0.99
+      },
+      "placarMaisProvavel": "2x0",
+      "confianca": "média"
     },
     {
       "id": 558235,
@@ -5870,11 +6080,17 @@
       "placarMandante": null,
       "placarVisitante": null,
       "probabilidades": {
-        "mandante": 54,
-        "empate": 40,
-        "visitante": 6
+        "mandante": 60,
+        "empate": 38,
+        "visitante": 2
       },
-      "obs": "Cálculo considerando forma atual, aproveitamento na competição e mandante estreando nessa fase/competição — usado o nível geral do time (últimos jogos e posição no campeonato nacional, 2 jogo(s) analisados), visitante estreando nessa fase/competição — usado o nível geral do time (últimos jogos e posição no campeonato nacional, 2 jogo(s) analisados), 30 confronto(s) direto(s) recente(s) considerado(s)."
+      "obs": "Modelo de Poisson sobre gols esperados (2.46 x 0.27). Placar mais provável: 2x0. Confiança: baixa. Baseado em: mandante em 7º lugar na competição, visitante em 15º lugar, 30 confronto(s) direto(s) considerado(s).",
+      "golsEsperados": {
+        "mandante": 2.46,
+        "visitante": 0.27
+      },
+      "placarMaisProvavel": "2x0",
+      "confianca": "baixa"
     },
     {
       "id": 564645,
@@ -5892,11 +6108,17 @@
       "placarMandante": null,
       "placarVisitante": null,
       "probabilidades": {
-        "mandante": 40,
-        "empate": 40,
-        "visitante": 20
+        "mandante": 63,
+        "empate": 35,
+        "visitante": 2
       },
-      "obs": "Cálculo considerando forma atual, aproveitamento na competição e mandante estreando nessa fase/competição — usado o nível geral do time (últimos jogos e posição no campeonato nacional, 1 jogo(s) analisados), visitante estreando nessa fase/competição — usado o nível geral do time (últimos jogos e posição no campeonato nacional, 0 jogo(s) analisados), 30 confronto(s) direto(s) recente(s) considerado(s)."
+      "obs": "Modelo de Poisson sobre gols esperados (3.81 x 0.71). Placar mais provável: 3x0. Confiança: média. Baseado em: mandante em 2º lugar na competição, visitante estreando nessa fase/competição — usado o nível geral do time (8 jogo(s) analisados), 30 confronto(s) direto(s) considerado(s).",
+      "golsEsperados": {
+        "mandante": 3.81,
+        "visitante": 0.71
+      },
+      "placarMaisProvavel": "3x0",
+      "confianca": "média"
     },
     {
       "id": 567275,
@@ -5914,11 +6136,17 @@
       "placarMandante": null,
       "placarVisitante": null,
       "probabilidades": {
-        "mandante": 47,
-        "empate": 40,
-        "visitante": 13
+        "mandante": 58,
+        "empate": 37,
+        "visitante": 5
       },
-      "obs": "Cálculo considerando forma atual, aproveitamento na competição e mandante estreando nessa fase/competição — usado o nível geral do time (últimos jogos e posição no campeonato nacional, 2 jogo(s) analisados), visitante estreando nessa fase/competição — usado o nível geral do time (últimos jogos e posição no campeonato nacional, 2 jogo(s) analisados), 13 confronto(s) direto(s) recente(s) considerado(s)."
+      "obs": "Modelo de Poisson sobre gols esperados (3.83 x 1.2). Placar mais provável: 3x1. Confiança: baixa. Baseado em: mandante em 6º lugar na competição, visitante em 13º lugar, 13 confronto(s) direto(s) considerado(s).",
+      "golsEsperados": {
+        "mandante": 3.83,
+        "visitante": 1.2
+      },
+      "placarMaisProvavel": "3x1",
+      "confianca": "baixa"
     },
     {
       "id": 554976,
@@ -5936,11 +6164,17 @@
       "placarMandante": null,
       "placarVisitante": null,
       "probabilidades": {
-        "mandante": 21,
-        "empate": 40,
-        "visitante": 39
+        "mandante": 25,
+        "empate": 50,
+        "visitante": 25
       },
-      "obs": "Cálculo considerando forma atual, aproveitamento na competição e mandante estreando nessa fase/competição — usado o nível geral do time (últimos jogos e posição no campeonato nacional, 10 jogo(s) analisados), visitante estreando nessa fase/competição — usado o nível geral do time (últimos jogos e posição no campeonato nacional, 10 jogo(s) analisados), 17 confronto(s) direto(s) recente(s) considerado(s)."
+      "obs": "Modelo de Poisson sobre gols esperados (1.13 x 1.15). Placar mais provável: 1x1. Confiança: alta. Baseado em: mandante em 16º lugar na competição, visitante em 8º lugar, 17 confronto(s) direto(s) considerado(s).",
+      "golsEsperados": {
+        "mandante": 1.13,
+        "visitante": 1.15
+      },
+      "placarMaisProvavel": "1x1",
+      "confianca": "alta"
     },
     {
       "id": 554974,
@@ -5958,11 +6192,17 @@
       "placarMandante": null,
       "placarVisitante": null,
       "probabilidades": {
-        "mandante": 30,
-        "empate": 40,
-        "visitante": 30
+        "mandante": 14,
+        "empate": 46,
+        "visitante": 40
       },
-      "obs": "Cálculo considerando forma atual, aproveitamento na competição e mandante estreando nessa fase/competição — usado o nível geral do time (últimos jogos e posição no campeonato nacional, 10 jogo(s) analisados), visitante estreando nessa fase/competição — usado o nível geral do time (últimos jogos e posição no campeonato nacional, 10 jogo(s) analisados), 15 confronto(s) direto(s) recente(s) considerado(s)."
+      "obs": "Modelo de Poisson sobre gols esperados (1.06 x 1.92). Placar mais provável: 1x1. Confiança: alta. Baseado em: mandante em 5º lugar na competição, visitante em 2º lugar, 15 confronto(s) direto(s) considerado(s).",
+      "golsEsperados": {
+        "mandante": 1.06,
+        "visitante": 1.92
+      },
+      "placarMaisProvavel": "1x1",
+      "confianca": "alta"
     },
     {
       "id": 558236,
@@ -6036,11 +6276,17 @@
       "placarMandante": null,
       "placarVisitante": null,
       "probabilidades": {
-        "mandante": 21,
-        "empate": 40,
-        "visitante": 39
+        "mandante": 15,
+        "empate": 43,
+        "visitante": 42
       },
-      "obs": "Cálculo considerando forma atual, aproveitamento na competição e mandante estreando nessa fase/competição — usado o nível geral do time (últimos jogos e posição no campeonato nacional, 2 jogo(s) analisados), visitante estreando nessa fase/competição — usado o nível geral do time (últimos jogos e posição no campeonato nacional, 2 jogo(s) analisados), 30 confronto(s) direto(s) recente(s) considerado(s)."
+      "obs": "Modelo de Poisson sobre gols esperados (1.31 x 2.31). Placar mais provável: 1x2. Confiança: baixa. Baseado em: mandante em 6º lugar na competição, visitante em 2º lugar, 30 confronto(s) direto(s) considerado(s).",
+      "golsEsperados": {
+        "mandante": 1.31,
+        "visitante": 2.31
+      },
+      "placarMaisProvavel": "1x2",
+      "confianca": "baixa"
     },
     {
       "id": 560548,
@@ -6058,11 +6304,17 @@
       "placarMandante": null,
       "placarVisitante": null,
       "probabilidades": {
-        "mandante": 32,
-        "empate": 40,
-        "visitante": 28
+        "mandante": 49,
+        "empate": 42,
+        "visitante": 9
       },
-      "obs": "Cálculo considerando forma atual, aproveitamento na competição e mandante estreando nessa fase/competição — usado o nível geral do time (últimos jogos e posição no campeonato nacional, 0 jogo(s) analisados), visitante estreando nessa fase/competição — usado o nível geral do time (últimos jogos e posição no campeonato nacional, 0 jogo(s) analisados), 20 confronto(s) direto(s) recente(s) considerado(s)."
+      "obs": "Modelo de Poisson sobre gols esperados (2.41 x 0.92). Placar mais provável: 2x0. Confiança: alta. Baseado em: mandante em 2º lugar na temporada passada (atual ainda não começou), visitante em 6º lugar na temporada passada (atual ainda não começou), 20 confronto(s) direto(s) considerado(s).",
+      "golsEsperados": {
+        "mandante": 2.41,
+        "visitante": 0.92
+      },
+      "placarMaisProvavel": "2x0",
+      "confianca": "alta"
     },
     {
       "id": 559717,
@@ -6080,11 +6332,17 @@
       "placarMandante": null,
       "placarVisitante": null,
       "probabilidades": {
-        "mandante": 19,
-        "empate": 40,
-        "visitante": 41
+        "mandante": 14,
+        "empate": 50,
+        "visitante": 36
       },
-      "obs": "Cálculo considerando forma atual, aproveitamento na competição e mandante em 13º lugar na temporada passada (essa ainda não começou), visitante em 3º lugar na temporada passada (essa ainda não começou), 30 confronto(s) direto(s) recente(s) considerado(s)."
+      "obs": "Modelo de Poisson sobre gols esperados (0.75 x 1.37). Placar mais provável: 0x1. Confiança: alta. Baseado em: mandante em 13º lugar na temporada passada (atual ainda não começou), visitante em 3º lugar na temporada passada (atual ainda não começou), 30 confronto(s) direto(s) considerado(s).",
+      "golsEsperados": {
+        "mandante": 0.75,
+        "visitante": 1.37
+      },
+      "placarMaisProvavel": "0x1",
+      "confianca": "alta"
     },
     {
       "id": 560549,
@@ -6102,11 +6360,73 @@
       "placarMandante": null,
       "placarVisitante": null,
       "probabilidades": {
-        "mandante": 28,
-        "empate": 40,
-        "visitante": 32
+        "mandante": 31,
+        "empate": 48,
+        "visitante": 21
       },
-      "obs": "Cálculo considerando forma atual, aproveitamento na competição e mandante em 8º lugar na temporada passada (essa ainda não começou), visitante em 4º lugar na temporada passada (essa ainda não começou), 27 confronto(s) direto(s) recente(s) considerado(s)."
+      "obs": "Modelo de Poisson sobre gols esperados (1.48 x 1.17). Placar mais provável: 1x1. Confiança: alta. Baseado em: mandante em 8º lugar na temporada passada (atual ainda não começou), visitante em 4º lugar na temporada passada (atual ainda não começou), 27 confronto(s) direto(s) considerado(s).",
+      "golsEsperados": {
+        "mandante": 1.48,
+        "visitante": 1.17
+      },
+      "placarMaisProvavel": "1x1",
+      "confianca": "alta"
+    },
+    {
+      "id": 567278,
+      "data": "2026-08-23T14:30:00Z",
+      "status": "TIMED",
+      "stage": "REGULAR_SEASON",
+      "competicao": "Primeira Liga",
+      "competicaoCodigo": "PPL",
+      "mandante": "Vitória SC",
+      "mandanteId": 5543,
+      "mandanteEscudo": "https://crests.football-data.org/5543.png",
+      "visitante": "CD Nacional",
+      "visitanteId": 5529,
+      "visitanteEscudo": "https://crests.football-data.org/5529.png",
+      "placarMandante": null,
+      "placarVisitante": null,
+      "probabilidades": {
+        "mandante": 7,
+        "empate": 41,
+        "visitante": 52
+      },
+      "golsEsperados": {
+        "mandante": 0.77,
+        "visitante": 2.4
+      },
+      "placarMaisProvavel": "0x2",
+      "confianca": "baixa",
+      "obs": "Modelo de Poisson sobre gols esperados (0.77 x 2.4). Placar mais provável: 0x2. Confiança: baixa. Baseado em: mandante em 16º lugar na competição, visitante em 5º lugar, 30 confronto(s) direto(s) considerado(s)."
+    },
+    {
+      "id": 558238,
+      "data": "2026-08-23T14:45:00Z",
+      "status": "TIMED",
+      "stage": "REGULAR_SEASON",
+      "competicao": "Eredivisie",
+      "competicaoCodigo": "DED",
+      "mandante": "SC Cambuur-Leeuwarden",
+      "mandanteId": 1909,
+      "mandanteEscudo": "https://crests.football-data.org/1909.png",
+      "visitante": "Feyenoord Rotterdam",
+      "visitanteId": 675,
+      "visitanteEscudo": "https://crests.football-data.org/675.png",
+      "placarMandante": null,
+      "placarVisitante": null,
+      "probabilidades": {
+        "mandante": 2,
+        "empate": 37,
+        "visitante": 61
+      },
+      "golsEsperados": {
+        "mandante": 0.35,
+        "visitante": 2.7
+      },
+      "placarMaisProvavel": "0x2",
+      "confianca": "baixa",
+      "obs": "Modelo de Poisson sobre gols esperados (0.35 x 2.7). Placar mais provável: 0x2. Confiança: baixa. Baseado em: mandante em 18º lugar na competição, visitante em 7º lugar, 19 confronto(s) direto(s) considerado(s)."
     },
     {
       "id": 564646,
@@ -6124,11 +6444,17 @@
       "placarMandante": null,
       "placarVisitante": null,
       "probabilidades": {
-        "mandante": 50,
-        "empate": 40,
-        "visitante": 10
+        "mandante": 63,
+        "empate": 35,
+        "visitante": 2
       },
-      "obs": "Cálculo considerando forma atual, aproveitamento na competição e mandante estreando nessa fase/competição — usado o nível geral do time (últimos jogos e posição no campeonato nacional, 1 jogo(s) analisados), visitante estreando nessa fase/competição — usado o nível geral do time (últimos jogos e posição no campeonato nacional, 1 jogo(s) analisados), 30 confronto(s) direto(s) recente(s) considerado(s)."
+      "obs": "Modelo de Poisson sobre gols esperados (3.39 x 0.54). Placar mais provável: 3x0. Confiança: baixa. Baseado em: mandante em 3º lugar na competição, visitante em 5º lugar, 30 confronto(s) direto(s) considerado(s).",
+      "golsEsperados": {
+        "mandante": 3.39,
+        "visitante": 0.54
+      },
+      "placarMaisProvavel": "3x0",
+      "confianca": "baixa"
     },
     {
       "id": 559719,
@@ -6146,11 +6472,45 @@
       "placarMandante": null,
       "placarVisitante": null,
       "probabilidades": {
-        "mandante": 26,
-        "empate": 40,
-        "visitante": 34
+        "mandante": 22,
+        "empate": 48,
+        "visitante": 30
       },
-      "obs": "Cálculo considerando forma atual, aproveitamento na competição e mandante em 14º lugar na temporada passada (essa ainda não começou), visitante em 7º lugar na temporada passada (essa ainda não começou), 30 confronto(s) direto(s) recente(s) considerado(s)."
+      "obs": "Modelo de Poisson sobre gols esperados (1.22 x 1.45). Placar mais provável: 1x1. Confiança: alta. Baseado em: mandante em 14º lugar na temporada passada (atual ainda não começou), visitante em 7º lugar na temporada passada (atual ainda não começou), 30 confronto(s) direto(s) considerado(s).",
+      "golsEsperados": {
+        "mandante": 1.22,
+        "visitante": 1.45
+      },
+      "placarMaisProvavel": "1x1",
+      "confianca": "alta"
+    },
+    {
+      "id": 560550,
+      "data": "2026-08-23T15:30:00Z",
+      "status": "TIMED",
+      "stage": "REGULAR_SEASON",
+      "competicao": "Premier League",
+      "competicaoCodigo": "PL",
+      "mandante": "Newcastle United FC",
+      "mandanteId": 67,
+      "mandanteEscudo": "https://crests.football-data.org/67.png",
+      "visitante": "Liverpool FC",
+      "visitanteId": 64,
+      "visitanteEscudo": "https://crests.football-data.org/64.png",
+      "placarMandante": null,
+      "placarVisitante": null,
+      "probabilidades": {
+        "mandante": 28,
+        "empate": 46,
+        "visitante": 26
+      },
+      "golsEsperados": {
+        "mandante": 1.63,
+        "visitante": 1.57
+      },
+      "placarMaisProvavel": "1x1",
+      "confianca": "alta",
+      "obs": "Modelo de Poisson sobre gols esperados (1.63 x 1.57). Placar mais provável: 1x1. Confiança: alta. Baseado em: mandante em 12º lugar na temporada passada (atual ainda não começou), visitante em 5º lugar na temporada passada (atual ainda não começou), 30 confronto(s) direto(s) considerado(s)."
     },
     {
       "id": 558635,
@@ -6252,55 +6612,17 @@
       "placarMandante": null,
       "placarVisitante": null,
       "probabilidades": {
-        "mandante": 9,
-        "empate": 40,
-        "visitante": 51
+        "mandante": 2,
+        "empate": 34,
+        "visitante": 64
       },
-      "obs": "Cálculo considerando forma atual, aproveitamento na competição e mandante estreando nessa fase/competição — usado o nível geral do time (últimos jogos e posição no campeonato nacional, 1 jogo(s) analisados), visitante estreando nessa fase/competição — usado o nível geral do time (últimos jogos e posição no campeonato nacional, 1 jogo(s) analisados), 18 confronto(s) direto(s) recente(s) considerado(s)."
-    },
-    {
-      "id": 558633,
-      "data": "2026-08-23T18:45:00Z",
-      "status": "TIMED",
-      "stage": "REGULAR_SEASON",
-      "competicao": "Serie A",
-      "competicaoCodigo": "SA",
-      "mandante": "Atalanta BC",
-      "mandanteId": 102,
-      "mandanteEscudo": "https://crests.football-data.org/102.png",
-      "visitante": "US Sassuolo Calcio",
-      "visitanteId": 471,
-      "visitanteEscudo": "https://crests.football-data.org/471.png",
-      "placarMandante": null,
-      "placarVisitante": null,
-      "probabilidades": {
-        "mandante": 37,
-        "empate": 40,
-        "visitante": 23
+      "obs": "Modelo de Poisson sobre gols esperados (0.69 x 3.98). Placar mais provável: 0x3. Confiança: baixa. Baseado em: mandante em 19º lugar na competição, visitante em 5º lugar, 18 confronto(s) direto(s) considerado(s).",
+      "golsEsperados": {
+        "mandante": 0.69,
+        "visitante": 3.98
       },
-      "obs": "Cálculo considerando forma atual, aproveitamento na competição e mandante em 7º lugar na temporada passada (essa ainda não começou), visitante em 11º lugar na temporada passada (essa ainda não começou), 28 confronto(s) direto(s) recente(s) considerado(s)."
-    },
-    {
-      "id": 558634,
-      "data": "2026-08-23T18:45:00Z",
-      "status": "TIMED",
-      "stage": "REGULAR_SEASON",
-      "competicao": "Serie A",
-      "competicaoCodigo": "SA",
-      "mandante": "Torino FC",
-      "mandanteId": 586,
-      "mandanteEscudo": "https://crests.football-data.org/586.png",
-      "visitante": "AC Milan",
-      "visitanteId": 98,
-      "visitanteEscudo": "https://crests.football-data.org/98.png",
-      "placarMandante": null,
-      "placarVisitante": null,
-      "probabilidades": {
-        "mandante": 27,
-        "empate": 40,
-        "visitante": 33
-      },
-      "obs": "Cálculo considerando forma atual, aproveitamento na competição e mandante em 13º lugar na temporada passada (essa ainda não começou), visitante em 5º lugar na temporada passada (essa ainda não começou), 30 confronto(s) direto(s) recente(s) considerado(s)."
+      "placarMaisProvavel": "0x3",
+      "confianca": "baixa"
     },
     {
       "id": 559713,
@@ -6331,26 +6653,60 @@
       "obs": "Modelo de Poisson sobre gols esperados (2.6 x 0.94). Placar mais provável: 2x0. Confiança: alta. Baseado em: mandante em 1º lugar na temporada passada (atual ainda não começou), visitante em 6º lugar na temporada passada (atual ainda não começou), 30 confronto(s) direto(s) considerado(s)."
     },
     {
-      "id": 554977,
-      "data": "2026-08-23T19:00:00Z",
+      "id": 558633,
+      "data": "2026-08-23T18:45:00Z",
       "status": "TIMED",
       "stage": "REGULAR_SEASON",
-      "competicao": "Campeonato Brasileiro Série A",
-      "competicaoCodigo": "BSA",
-      "mandante": "SE Palmeiras",
-      "mandanteId": 1769,
-      "mandanteEscudo": "https://crests.football-data.org/1769.png",
-      "visitante": "CR Vasco da Gama",
-      "visitanteId": 1780,
-      "visitanteEscudo": "https://crests.football-data.org/1780.png",
+      "competicao": "Serie A",
+      "competicaoCodigo": "SA",
+      "mandante": "Atalanta BC",
+      "mandanteId": 102,
+      "mandanteEscudo": "https://crests.football-data.org/102.png",
+      "visitante": "US Sassuolo Calcio",
+      "visitanteId": 471,
+      "visitanteEscudo": "https://crests.football-data.org/471.png",
       "placarMandante": null,
       "placarVisitante": null,
       "probabilidades": {
-        "mandante": 53,
-        "empate": 40,
-        "visitante": 7
+        "mandante": 40,
+        "empate": 47,
+        "visitante": 13
       },
-      "obs": "Cálculo considerando forma atual, aproveitamento na competição e mandante estreando nessa fase/competição — usado o nível geral do time (últimos jogos e posição no campeonato nacional, 10 jogo(s) analisados), visitante estreando nessa fase/competição — usado o nível geral do time (últimos jogos e posição no campeonato nacional, 10 jogo(s) analisados), 15 confronto(s) direto(s) recente(s) considerado(s)."
+      "obs": "Modelo de Poisson sobre gols esperados (1.67 x 0.85). Placar mais provável: 1x0. Confiança: alta. Baseado em: mandante em 7º lugar na temporada passada (atual ainda não começou), visitante em 11º lugar na temporada passada (atual ainda não começou), 28 confronto(s) direto(s) considerado(s).",
+      "golsEsperados": {
+        "mandante": 1.67,
+        "visitante": 0.85
+      },
+      "placarMaisProvavel": "1x0",
+      "confianca": "alta"
+    },
+    {
+      "id": 558634,
+      "data": "2026-08-23T18:45:00Z",
+      "status": "TIMED",
+      "stage": "REGULAR_SEASON",
+      "competicao": "Serie A",
+      "competicaoCodigo": "SA",
+      "mandante": "Torino FC",
+      "mandanteId": 586,
+      "mandanteEscudo": "https://crests.football-data.org/586.png",
+      "visitante": "AC Milan",
+      "visitanteId": 98,
+      "visitanteEscudo": "https://crests.football-data.org/98.png",
+      "placarMandante": null,
+      "placarVisitante": null,
+      "probabilidades": {
+        "mandante": 16,
+        "empate": 46,
+        "visitante": 38
+      },
+      "obs": "Modelo de Poisson sobre gols esperados (1.01 x 1.72). Placar mais provável: 1x1. Confiança: alta. Baseado em: mandante em 13º lugar na temporada passada (atual ainda não começou), visitante em 5º lugar na temporada passada (atual ainda não começou), 30 confronto(s) direto(s) considerado(s).",
+      "golsEsperados": {
+        "mandante": 1.01,
+        "visitante": 1.72
+      },
+      "placarMaisProvavel": "1x1",
+      "confianca": "alta"
     },
     {
       "id": 554971,
@@ -6407,6 +6763,34 @@
       "placarMaisProvavel": "1x1",
       "confianca": "alta",
       "obs": "Modelo de Poisson sobre gols esperados (1.08 x 1.38). Placar mais provável: 1x1. Confiança: alta. Baseado em: mandante em 12º lugar na competição, visitante em 6º lugar, 9 confronto(s) direto(s) considerado(s)."
+    },
+    {
+      "id": 554977,
+      "data": "2026-08-23T19:00:00Z",
+      "status": "TIMED",
+      "stage": "REGULAR_SEASON",
+      "competicao": "Campeonato Brasileiro Série A",
+      "competicaoCodigo": "BSA",
+      "mandante": "SE Palmeiras",
+      "mandanteId": 1769,
+      "mandanteEscudo": "https://crests.football-data.org/1769.png",
+      "visitante": "CR Vasco da Gama",
+      "visitanteId": 1780,
+      "visitanteEscudo": "https://crests.football-data.org/1780.png",
+      "placarMandante": null,
+      "placarVisitante": null,
+      "probabilidades": {
+        "mandante": 54,
+        "empate": 41,
+        "visitante": 5
+      },
+      "obs": "Modelo de Poisson sobre gols esperados (2.37 x 0.6). Placar mais provável: 2x0. Confiança: alta. Baseado em: mandante em 1º lugar na competição, visitante em 19º lugar, 15 confronto(s) direto(s) considerado(s).",
+      "golsEsperados": {
+        "mandante": 2.37,
+        "visitante": 0.6
+      },
+      "placarMaisProvavel": "2x0",
+      "confianca": "alta"
     },
     {
       "id": 567280,
@@ -6493,6 +6877,34 @@
       "obs": "Modelo de Poisson sobre gols esperados (2.04 x 1.25). Placar mais provável: 2x1. Confiança: alta. Baseado em: mandante em 14º lugar na competição, visitante em 17º lugar, 5 confronto(s) direto(s) considerado(s)."
     },
     {
+      "id": 554972,
+      "data": "2026-08-23T21:30:00Z",
+      "status": "TIMED",
+      "stage": "REGULAR_SEASON",
+      "competicao": "Campeonato Brasileiro Série A",
+      "competicaoCodigo": "BSA",
+      "mandante": "Chapecoense AF",
+      "mandanteId": 1772,
+      "mandanteEscudo": "https://crests.football-data.org/1772_large.png",
+      "visitante": "São Paulo FC",
+      "visitanteId": 1776,
+      "visitanteEscudo": "https://crests.football-data.org/1776.png",
+      "placarMandante": null,
+      "placarVisitante": null,
+      "probabilidades": {
+        "mandante": 16,
+        "empate": 47,
+        "visitante": 37
+      },
+      "golsEsperados": {
+        "mandante": 1.09,
+        "visitante": 1.77
+      },
+      "placarMaisProvavel": "1x1",
+      "confianca": "alta",
+      "obs": "Modelo de Poisson sobre gols esperados (1.09 x 1.77). Placar mais provável: 1x1. Confiança: alta. Baseado em: mandante em 20º lugar na competição, visitante em 13º lugar, 9 confronto(s) direto(s) considerado(s)."
+    },
+    {
       "id": 554973,
       "data": "2026-08-23T22:30:00Z",
       "status": "TIMED",
@@ -6521,6 +6933,34 @@
       "obs": "Modelo de Poisson sobre gols esperados (1.03 x 0.98). Placar mais provável: 1x0. Confiança: alta. Baseado em: mandante em 10º lugar na competição, visitante em 9º lugar, 9 confronto(s) direto(s) considerado(s)."
     },
     {
+      "id": 564639,
+      "data": "2026-08-24T17:30:00Z",
+      "status": "TIMED",
+      "stage": "REGULAR_SEASON",
+      "competicao": "Primera Division",
+      "competicaoCodigo": "PD",
+      "mandante": "CA Osasuna",
+      "mandanteId": 79,
+      "mandanteEscudo": "https://crests.football-data.org/79.png",
+      "visitante": "Levante UD",
+      "visitanteId": 88,
+      "visitanteEscudo": "https://crests.football-data.org/88.png",
+      "placarMandante": null,
+      "placarVisitante": null,
+      "probabilidades": {
+        "mandante": 65,
+        "empate": 34,
+        "visitante": 1
+      },
+      "golsEsperados": {
+        "mandante": 3.45,
+        "visitante": 0.37
+      },
+      "placarMaisProvavel": "3x0",
+      "confianca": "baixa",
+      "obs": "Modelo de Poisson sobre gols esperados (3.45 x 0.37). Placar mais provável: 3x0. Confiança: baixa. Baseado em: visitante em 19º lugar, 24 confronto(s) direto(s) considerado(s)."
+    },
+    {
       "id": 560551,
       "data": "2026-08-24T19:00:00Z",
       "status": "TIMED",
@@ -6536,11 +6976,45 @@
       "placarMandante": null,
       "placarVisitante": null,
       "probabilidades": {
-        "mandante": 32,
-        "empate": 40,
-        "visitante": 28
+        "mandante": 27,
+        "empate": 48,
+        "visitante": 25
       },
-      "obs": "Cálculo considerando forma atual, aproveitamento na competição e mandante estreando nessa fase/competição — usado o nível geral do time (últimos jogos e posição no campeonato nacional, 0 jogo(s) analisados), visitante estreando nessa fase/competição — usado o nível geral do time (últimos jogos e posição no campeonato nacional, 0 jogo(s) analisados), 30 confronto(s) direto(s) recente(s) considerado(s)."
+      "obs": "Modelo de Poisson sobre gols esperados (1.42 x 1.34). Placar mais provável: 1x1. Confiança: alta. Baseado em: mandante em 11º lugar na temporada passada (atual ainda não começou), visitante em 10º lugar na temporada passada (atual ainda não começou), 30 confronto(s) direto(s) considerado(s).",
+      "golsEsperados": {
+        "mandante": 1.42,
+        "visitante": 1.34
+      },
+      "placarMaisProvavel": "1x1",
+      "confianca": "alta"
+    },
+    {
+      "id": 554970,
+      "data": "2026-08-24T23:00:00Z",
+      "status": "TIMED",
+      "stage": "REGULAR_SEASON",
+      "competicao": "Campeonato Brasileiro Série A",
+      "competicaoCodigo": "BSA",
+      "mandante": "Botafogo FR",
+      "mandanteId": 1770,
+      "mandanteEscudo": "https://crests.football-data.org/1770.png",
+      "visitante": "CA Paranaense",
+      "visitanteId": 1768,
+      "visitanteEscudo": "https://crests.football-data.org/1768.png",
+      "placarMandante": null,
+      "placarVisitante": null,
+      "probabilidades": {
+        "mandante": 22,
+        "empate": 49,
+        "visitante": 29
+      },
+      "golsEsperados": {
+        "mandante": 1.22,
+        "visitante": 1.44
+      },
+      "placarMaisProvavel": "1x1",
+      "confianca": "alta",
+      "obs": "Modelo de Poisson sobre gols esperados (1.22 x 1.44). Placar mais provável: 1x1. Confiança: alta. Baseado em: mandante em 11º lugar na competição, visitante em 3º lugar, 17 confronto(s) direto(s) considerado(s)."
     }
   ],
   "avisos": []
