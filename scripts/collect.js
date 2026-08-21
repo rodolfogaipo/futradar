@@ -670,19 +670,35 @@ async function main() {
   const anterior = carregarDadosAnteriores();
   const agora = new Date();
 
-  const analisesPersistidas = (anterior?.analises || []).filter((a) => {
+  const aindaNaoTerminaram = (anterior?.analises || []).filter((a) => {
     const estimativaFim = new Date(new Date(a.data).getTime() + DURACAO_ESTIMADA_JOGO_MS);
     return estimativaFim > agora;
   });
-  const idsJaAnalisados = new Set(analisesPersistidas.map((a) => a.id));
 
-  console.log(`Análises mantidas da coleta anterior (ainda não terminaram): ${analisesPersistidas.length}`);
+  // Migração: análises calculadas pela fórmula antiga (sem "golsEsperados")
+  // são reaproveitadas como PARTIDA (não sorteiam de novo, é o mesmo
+  // confronto) mas entram na fila pra recalcular com o modelo novo.
+  const analisesPersistidas = aindaNaoTerminaram.filter((a) => a.golsEsperados);
+  const paraReanalisar = aindaNaoTerminaram.filter((a) => !a.golsEsperados);
+
+  if (paraReanalisar.length > 0) {
+    console.log(`${paraReanalisar.length} análise(s) no formato antigo — recalculando com o modelo novo...`);
+  }
+
+  const idsJaAnalisados = new Set([...analisesPersistidas, ...paraReanalisar].map((a) => a.id));
+
+  console.log(`Análises mantidas sem mudança: ${analisesPersistidas.length}`);
 
   const candidatos = result.proximosJogos.filter((m) => !idsJaAnalisados.has(m.id));
   const sorteadas = selecionarPartidasProximas(candidatos, QTD_PARTIDAS_SORTEADAS);
 
+  // Junta os jogos novos sorteados com os que precisam ser recalculados
+  // pelo modelo novo (usando os próprios dados já salvos como base do
+  // "match", já que eles têm todos os campos necessários).
+  const partidasParaAnalisar = [...sorteadas, ...paraReanalisar];
+
   const novasAnalises = [];
-  for (const match of sorteadas) {
+  for (const match of partidasParaAnalisar) {
     try {
       console.log(`Analisando: ${match.mandante} x ${match.visitante}...`);
       const h2h = await collectHeadToHead(match);
