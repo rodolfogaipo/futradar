@@ -1,5 +1,5 @@
 {
-  "geradoEm": "2026-09-26T16:06:54.620Z",
+  "geradoEm": "2026-09-26T20:52:05.211Z",
   "fonte": "football-data.org",
   "proximosJogos": [],
   "resultadosRecentes": [
@@ -356,6 +356,22 @@
       "placarVisitante": 4
     },
     {
+      "id": 560588,
+      "data": "2026-09-19T14:00:00Z",
+      "status": "FINISHED",
+      "stage": "REGULAR_SEASON",
+      "competicao": "Premier League",
+      "competicaoCodigo": "PL",
+      "mandante": "Newcastle United FC",
+      "mandanteId": 67,
+      "mandanteEscudo": "https://crests.football-data.org/67.png",
+      "visitante": "Hull City AFC",
+      "visitanteId": 322,
+      "visitanteEscudo": "https://crests.football-data.org/322.png",
+      "placarMandante": 2,
+      "placarVisitante": 1
+    },
+    {
       "id": 561856,
       "data": "2026-09-19T14:00:00Z",
       "status": "FINISHED",
@@ -448,22 +464,6 @@
       "visitante": "Southampton FC",
       "visitanteId": 340,
       "visitanteEscudo": "https://crests.football-data.org/340.png",
-      "placarMandante": 2,
-      "placarVisitante": 1
-    },
-    {
-      "id": 560588,
-      "data": "2026-09-19T14:00:00Z",
-      "status": "FINISHED",
-      "stage": "REGULAR_SEASON",
-      "competicao": "Premier League",
-      "competicaoCodigo": "PL",
-      "mandante": "Newcastle United FC",
-      "mandanteId": 67,
-      "mandanteEscudo": "https://crests.football-data.org/67.png",
-      "visitante": "Hull City AFC",
-      "visitanteId": 322,
-      "visitanteEscudo": "https://crests.football-data.org/322.png",
       "placarMandante": 2,
       "placarVisitante": 1
     },
