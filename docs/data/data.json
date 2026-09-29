@@ -1,5 +1,5 @@
 {
-  "geradoEm": "2026-09-29T12:28:44.923Z",
+  "geradoEm": "2026-09-29T19:53:01.773Z",
   "fonte": "football-data.org",
   "proximosJogos": [
     {
@@ -133,22 +133,6 @@
       "placarVisitante": 4
     },
     {
-      "id": 558884,
-      "data": "2026-09-20T12:30:00Z",
-      "status": "FINISHED",
-      "stage": "REGULAR_SEASON",
-      "competicao": "Eredivisie",
-      "competicaoCodigo": "DED",
-      "mandante": "AZ",
-      "mandanteId": 682,
-      "mandanteEscudo": "https://crests.football-data.org/682.png",
-      "visitante": "Telstar 1963",
-      "visitanteId": 1912,
-      "visitanteEscudo": "https://crests.football-data.org/1912.png",
-      "placarMandante": 1,
-      "placarVisitante": 0
-    },
-    {
       "id": 558882,
       "data": "2026-09-20T12:30:00Z",
       "status": "FINISHED",
@@ -165,20 +149,20 @@
       "placarVisitante": 2
     },
     {
-      "id": 559676,
-      "data": "2026-09-20T13:00:00Z",
+      "id": 558884,
+      "data": "2026-09-20T12:30:00Z",
       "status": "FINISHED",
       "stage": "REGULAR_SEASON",
-      "competicao": "Ligue 1",
-      "competicaoCodigo": "FL1",
-      "mandante": "AJ Auxerre",
-      "mandanteId": 519,
-      "mandanteEscudo": "https://crests.football-data.org/519.png",
-      "visitante": "Stade Brestois 29",
-      "visitanteId": 512,
-      "visitanteEscudo": "https://crests.football-data.org/512.png",
-      "placarMandante": 2,
-      "placarVisitante": 1
+      "competicao": "Eredivisie",
+      "competicaoCodigo": "DED",
+      "mandante": "AZ",
+      "mandanteId": 682,
+      "mandanteEscudo": "https://crests.football-data.org/682.png",
+      "visitante": "Telstar 1963",
+      "visitanteId": 1912,
+      "visitanteEscudo": "https://crests.football-data.org/1912.png",
+      "placarMandante": 1,
+      "placarVisitante": 0
     },
     {
       "id": 560590,
@@ -197,36 +181,20 @@
       "placarVisitante": 3
     },
     {
-      "id": 560582,
+      "id": 559676,
       "data": "2026-09-20T13:00:00Z",
       "status": "FINISHED",
       "stage": "REGULAR_SEASON",
-      "competicao": "Premier League",
-      "competicaoCodigo": "PL",
-      "mandante": "AFC Bournemouth",
-      "mandanteId": 1044,
-      "mandanteEscudo": "https://crests.football-data.org/bournemouth.png",
-      "visitante": "Liverpool FC",
-      "visitanteId": 64,
-      "visitanteEscudo": "https://crests.football-data.org/64.png",
-      "placarMandante": 0,
-      "placarVisitante": 1
-    },
-    {
-      "id": 558592,
-      "data": "2026-09-20T13:00:00Z",
-      "status": "FINISHED",
-      "stage": "REGULAR_SEASON",
-      "competicao": "Serie A",
-      "competicaoCodigo": "SA",
-      "mandante": "Frosinone Calcio",
-      "mandanteId": 470,
-      "mandanteEscudo": "https://crests.football-data.org/470.png",
-      "visitante": "Como 1907",
-      "visitanteId": 7397,
-      "visitanteEscudo": "https://crests.football-data.org/7397.png",
+      "competicao": "Ligue 1",
+      "competicaoCodigo": "FL1",
+      "mandante": "AJ Auxerre",
+      "mandanteId": 519,
+      "mandanteEscudo": "https://crests.football-data.org/519.png",
+      "visitante": "Stade Brestois 29",
+      "visitanteId": 512,
+      "visitanteEscudo": "https://crests.football-data.org/512.png",
       "placarMandante": 2,
-      "placarVisitante": 0
+      "placarVisitante": 1
     },
     {
       "id": 560585,
@@ -259,6 +227,38 @@
       "visitanteEscudo": "https://crests.football-data.org/107.png",
       "placarMandante": 2,
       "placarVisitante": 1
+    },
+    {
+      "id": 560582,
+      "data": "2026-09-20T13:00:00Z",
+      "status": "FINISHED",
+      "stage": "REGULAR_SEASON",
+      "competicao": "Premier League",
+      "competicaoCodigo": "PL",
+      "mandante": "AFC Bournemouth",
+      "mandanteId": 1044,
+      "mandanteEscudo": "https://crests.football-data.org/bournemouth.png",
+      "visitante": "Liverpool FC",
+      "visitanteId": 64,
+      "visitanteEscudo": "https://crests.football-data.org/64.png",
+      "placarMandante": 0,
+      "placarVisitante": 1
+    },
+    {
+      "id": 558592,
+      "data": "2026-09-20T13:00:00Z",
+      "status": "FINISHED",
+      "stage": "REGULAR_SEASON",
+      "competicao": "Serie A",
+      "competicaoCodigo": "SA",
+      "mandante": "Frosinone Calcio",
+      "mandanteId": 470,
+      "mandanteEscudo": "https://crests.football-data.org/470.png",
+      "visitante": "Como 1907",
+      "visitanteId": 7397,
+      "visitanteEscudo": "https://crests.football-data.org/7397.png",
+      "placarMandante": 2,
+      "placarVisitante": 0
     },
     {
       "id": 565807,
