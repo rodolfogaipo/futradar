@@ -1,5 +1,5 @@
 {
-  "geradoEm": "2026-09-29T05:07:55.298Z",
+  "geradoEm": "2026-09-29T12:28:44.923Z",
   "fonte": "football-data.org",
   "proximosJogos": [
     {
@@ -133,22 +133,6 @@
       "placarVisitante": 4
     },
     {
-      "id": 558882,
-      "data": "2026-09-20T12:30:00Z",
-      "status": "FINISHED",
-      "stage": "REGULAR_SEASON",
-      "competicao": "Eredivisie",
-      "competicaoCodigo": "DED",
-      "mandante": "FC Twente '65",
-      "mandanteId": 666,
-      "mandanteEscudo": "https://crests.football-data.org/666.png",
-      "visitante": "PSV",
-      "visitanteId": 674,
-      "visitanteEscudo": "https://crests.football-data.org/674.png",
-      "placarMandante": 3,
-      "placarVisitante": 2
-    },
-    {
       "id": 558884,
       "data": "2026-09-20T12:30:00Z",
       "status": "FINISHED",
@@ -165,20 +149,20 @@
       "placarVisitante": 0
     },
     {
-      "id": 560590,
-      "data": "2026-09-20T13:00:00Z",
+      "id": 558882,
+      "data": "2026-09-20T12:30:00Z",
       "status": "FINISHED",
       "stage": "REGULAR_SEASON",
-      "competicao": "Premier League",
-      "competicaoCodigo": "PL",
-      "mandante": "Manchester City FC",
-      "mandanteId": 65,
-      "mandanteEscudo": "https://crests.football-data.org/65.png",
-      "visitante": "Sunderland AFC",
-      "visitanteId": 71,
-      "visitanteEscudo": "https://crests.football-data.org/71.png",
-      "placarMandante": 5,
-      "placarVisitante": 3
+      "competicao": "Eredivisie",
+      "competicaoCodigo": "DED",
+      "mandante": "FC Twente '65",
+      "mandanteId": 666,
+      "mandanteEscudo": "https://crests.football-data.org/666.png",
+      "visitante": "PSV",
+      "visitanteId": 674,
+      "visitanteEscudo": "https://crests.football-data.org/674.png",
+      "placarMandante": 3,
+      "placarVisitante": 2
     },
     {
       "id": 559676,
@@ -197,20 +181,20 @@
       "placarVisitante": 1
     },
     {
-      "id": 558590,
+      "id": 560590,
       "data": "2026-09-20T13:00:00Z",
       "status": "FINISHED",
       "stage": "REGULAR_SEASON",
-      "competicao": "Serie A",
-      "competicaoCodigo": "SA",
-      "mandante": "Parma Calcio 1913",
-      "mandanteId": 112,
-      "mandanteEscudo": "https://crests.football-data.org/112.png",
-      "visitante": "Genoa CFC",
-      "visitanteId": 107,
-      "visitanteEscudo": "https://crests.football-data.org/107.png",
-      "placarMandante": 2,
-      "placarVisitante": 1
+      "competicao": "Premier League",
+      "competicaoCodigo": "PL",
+      "mandante": "Manchester City FC",
+      "mandanteId": 65,
+      "mandanteEscudo": "https://crests.football-data.org/65.png",
+      "visitante": "Sunderland AFC",
+      "visitanteId": 71,
+      "visitanteEscudo": "https://crests.football-data.org/71.png",
+      "placarMandante": 5,
+      "placarVisitante": 3
     },
     {
       "id": 560582,
@@ -259,6 +243,22 @@
       "visitanteEscudo": "https://crests.football-data.org/354.png",
       "placarMandante": 0,
       "placarVisitante": 0
+    },
+    {
+      "id": 558590,
+      "data": "2026-09-20T13:00:00Z",
+      "status": "FINISHED",
+      "stage": "REGULAR_SEASON",
+      "competicao": "Serie A",
+      "competicaoCodigo": "SA",
+      "mandante": "Parma Calcio 1913",
+      "mandanteId": 112,
+      "mandanteEscudo": "https://crests.football-data.org/112.png",
+      "visitante": "Genoa CFC",
+      "visitanteId": 107,
+      "visitanteEscudo": "https://crests.football-data.org/107.png",
+      "placarMandante": 2,
+      "placarVisitante": 1
     },
     {
       "id": 565807,
