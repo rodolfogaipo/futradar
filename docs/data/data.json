@@ -1,5 +1,5 @@
 {
-  "geradoEm": "2026-10-01T20:13:40.651Z",
+  "geradoEm": "2026-10-02T00:36:36.868Z",
   "fonte": "football-data.org",
   "proximosJogos": [
     {
@@ -31,6 +31,86 @@
       "visitante": "RB Bragantino",
       "visitanteId": 4286,
       "visitanteEscudo": "https://crests.football-data.org/4286.png",
+      "placarMandante": null,
+      "placarVisitante": null
+    },
+    {
+      "id": 555025,
+      "data": "2026-10-07T22:30:00Z",
+      "status": "TIMED",
+      "stage": "REGULAR_SEASON",
+      "competicao": "Campeonato Brasileiro Série A",
+      "competicaoCodigo": "BSA",
+      "mandante": "SC Internacional",
+      "mandanteId": 6684,
+      "mandanteEscudo": "https://crests.football-data.org/6684.png",
+      "visitante": "SC Corinthians Paulista",
+      "visitanteId": 1779,
+      "visitanteEscudo": "https://crests.football-data.org/1779.png",
+      "placarMandante": null,
+      "placarVisitante": null
+    },
+    {
+      "id": 555022,
+      "data": "2026-10-07T22:30:00Z",
+      "status": "TIMED",
+      "stage": "REGULAR_SEASON",
+      "competicao": "Campeonato Brasileiro Série A",
+      "competicaoCodigo": "BSA",
+      "mandante": "RB Bragantino",
+      "mandanteId": 4286,
+      "mandanteEscudo": "https://crests.football-data.org/4286.png",
+      "visitante": "Mirassol FC",
+      "visitanteId": 4364,
+      "visitanteEscudo": "https://crests.football-data.org/4364.png",
+      "placarMandante": null,
+      "placarVisitante": null
+    },
+    {
+      "id": 555027,
+      "data": "2026-10-07T22:30:00Z",
+      "status": "TIMED",
+      "stage": "REGULAR_SEASON",
+      "competicao": "Campeonato Brasileiro Série A",
+      "competicaoCodigo": "BSA",
+      "mandante": "Clube do Remo",
+      "mandanteId": 4287,
+      "mandanteEscudo": "https://crests.football-data.org/4287.png",
+      "visitante": "Grêmio FBPA",
+      "visitanteId": 1767,
+      "visitanteEscudo": "https://crests.football-data.org/1767.png",
+      "placarMandante": null,
+      "placarVisitante": null
+    },
+    {
+      "id": 555029,
+      "data": "2026-10-07T23:00:00Z",
+      "status": "TIMED",
+      "stage": "REGULAR_SEASON",
+      "competicao": "Campeonato Brasileiro Série A",
+      "competicaoCodigo": "BSA",
+      "mandante": "EC Vitória",
+      "mandanteId": 1782,
+      "mandanteEscudo": "https://crests.football-data.org/1782.png",
+      "visitante": "Chapecoense AF",
+      "visitanteId": 1772,
+      "visitanteEscudo": "https://crests.football-data.org/1772_large.png",
+      "placarMandante": null,
+      "placarVisitante": null
+    },
+    {
+      "id": 555021,
+      "data": "2026-10-07T23:30:00Z",
+      "status": "TIMED",
+      "stage": "REGULAR_SEASON",
+      "competicao": "Campeonato Brasileiro Série A",
+      "competicaoCodigo": "BSA",
+      "mandante": "Botafogo FR",
+      "mandanteId": 1770,
+      "mandanteEscudo": "https://crests.football-data.org/1770.png",
+      "visitante": "CR Vasco da Gama",
+      "visitanteId": 1780,
+      "visitanteEscudo": "https://crests.football-data.org/1780.png",
       "placarMandante": null,
       "placarVisitante": null
     }
@@ -2920,6 +3000,146 @@
       "placarMaisProvavel": "1x0",
       "confianca": "alta",
       "obs": "Modelo de Poisson sobre gols esperados (1.32 x 0.98). Placar mais provável: 1x0. Confiança: alta. Baseado em: mandante em 7º lugar na competição, visitante em 10º lugar, 15 confronto(s) direto(s) considerado(s)."
+    },
+    {
+      "id": 555025,
+      "data": "2026-10-07T22:30:00Z",
+      "status": "TIMED",
+      "stage": "REGULAR_SEASON",
+      "competicao": "Campeonato Brasileiro Série A",
+      "competicaoCodigo": "BSA",
+      "mandante": "SC Internacional",
+      "mandanteId": 6684,
+      "mandanteEscudo": "https://crests.football-data.org/6684.png",
+      "visitante": "SC Corinthians Paulista",
+      "visitanteId": 1779,
+      "visitanteEscudo": "https://crests.football-data.org/1779.png",
+      "placarMandante": null,
+      "placarVisitante": null,
+      "probabilidades": {
+        "mandante": 27,
+        "empate": 52,
+        "visitante": 21
+      },
+      "golsEsperados": {
+        "mandante": 1.06,
+        "visitante": 0.9
+      },
+      "placarMaisProvavel": "1x0",
+      "confianca": "alta",
+      "obs": "Modelo de Poisson sobre gols esperados (1.06 x 0.9). Placar mais provável: 1x0. Confiança: alta. Baseado em: mandante em 18º lugar na competição, visitante em 14º lugar, 19 confronto(s) direto(s) considerado(s)."
+    },
+    {
+      "id": 555022,
+      "data": "2026-10-07T22:30:00Z",
+      "status": "TIMED",
+      "stage": "REGULAR_SEASON",
+      "competicao": "Campeonato Brasileiro Série A",
+      "competicaoCodigo": "BSA",
+      "mandante": "RB Bragantino",
+      "mandanteId": 4286,
+      "mandanteEscudo": "https://crests.football-data.org/4286.png",
+      "visitante": "Mirassol FC",
+      "visitanteId": 4364,
+      "visitanteEscudo": "https://crests.football-data.org/4364.png",
+      "placarMandante": null,
+      "placarVisitante": null,
+      "probabilidades": {
+        "mandante": 37,
+        "empate": 48,
+        "visitante": 15
+      },
+      "golsEsperados": {
+        "mandante": 1.58,
+        "visitante": 0.91
+      },
+      "placarMaisProvavel": "1x0",
+      "confianca": "alta",
+      "obs": "Modelo de Poisson sobre gols esperados (1.58 x 0.91). Placar mais provável: 1x0. Confiança: alta. Baseado em: mandante em 10º lugar na competição, visitante em 15º lugar, 4 confronto(s) direto(s) considerado(s)."
+    },
+    {
+      "id": 555027,
+      "data": "2026-10-07T22:30:00Z",
+      "status": "TIMED",
+      "stage": "REGULAR_SEASON",
+      "competicao": "Campeonato Brasileiro Série A",
+      "competicaoCodigo": "BSA",
+      "mandante": "Clube do Remo",
+      "mandanteId": 4287,
+      "mandanteEscudo": "https://crests.football-data.org/4287.png",
+      "visitante": "Grêmio FBPA",
+      "visitanteId": 1767,
+      "visitanteEscudo": "https://crests.football-data.org/1767.png",
+      "placarMandante": null,
+      "placarVisitante": null,
+      "probabilidades": {
+        "mandante": 39,
+        "empate": 27,
+        "visitante": 34
+      },
+      "golsEsperados": {
+        "mandante": 1.34,
+        "visitante": 1.21
+      },
+      "placarMaisProvavel": "1x1",
+      "confianca": "média",
+      "obs": "Modelo de Poisson sobre gols esperados (1.34 x 1.21). Placar mais provável: 1x1. Confiança: média. Baseado em: mandante em 19º lugar na competição, visitante em 17º lugar, 1 confronto(s) direto(s) considerado(s)."
+    },
+    {
+      "id": 555029,
+      "data": "2026-10-07T23:00:00Z",
+      "status": "TIMED",
+      "stage": "REGULAR_SEASON",
+      "competicao": "Campeonato Brasileiro Série A",
+      "competicaoCodigo": "BSA",
+      "mandante": "EC Vitória",
+      "mandanteId": 1782,
+      "mandanteEscudo": "https://crests.football-data.org/1782.png",
+      "visitante": "Chapecoense AF",
+      "visitanteId": 1772,
+      "visitanteEscudo": "https://crests.football-data.org/1772_large.png",
+      "placarMandante": null,
+      "placarVisitante": null,
+      "probabilidades": {
+        "mandante": 36,
+        "empate": 47,
+        "visitante": 17
+      },
+      "golsEsperados": {
+        "mandante": 1.69,
+        "visitante": 1.09
+      },
+      "placarMaisProvavel": "1x1",
+      "confianca": "alta",
+      "obs": "Modelo de Poisson sobre gols esperados (1.69 x 1.09). Placar mais provável: 1x1. Confiança: alta. Baseado em: mandante em 13º lugar na competição, visitante em 20º lugar, 9 confronto(s) direto(s) considerado(s)."
+    },
+    {
+      "id": 555021,
+      "data": "2026-10-07T23:30:00Z",
+      "status": "TIMED",
+      "stage": "REGULAR_SEASON",
+      "competicao": "Campeonato Brasileiro Série A",
+      "competicaoCodigo": "BSA",
+      "mandante": "Botafogo FR",
+      "mandanteId": 1770,
+      "mandanteEscudo": "https://crests.football-data.org/1770.png",
+      "visitante": "CR Vasco da Gama",
+      "visitanteId": 1780,
+      "visitanteEscudo": "https://crests.football-data.org/1780.png",
+      "placarMandante": null,
+      "placarVisitante": null,
+      "probabilidades": {
+        "mandante": 35,
+        "empate": 46,
+        "visitante": 19
+      },
+      "golsEsperados": {
+        "mandante": 1.92,
+        "visitante": 1.37
+      },
+      "placarMaisProvavel": "1x1",
+      "confianca": "alta",
+      "obs": "Modelo de Poisson sobre gols esperados (1.92 x 1.37). Placar mais provável: 1x1. Confiança: alta. Baseado em: mandante em 12º lugar na competição, visitante em 16º lugar, 21 confronto(s) direto(s) considerado(s)."
     }
   ],
   "avisos": []
