@@ -1,5 +1,5 @@
 {
-  "geradoEm": "2026-10-03T11:21:56.223Z",
+  "geradoEm": "2026-10-03T16:00:02.528Z",
   "fonte": "football-data.org",
   "proximosJogos": [
     {
@@ -19,18 +19,18 @@
       "placarVisitante": null
     },
     {
-      "id": 555027,
+      "id": 555025,
       "data": "2026-10-07T22:30:00Z",
       "status": "TIMED",
       "stage": "REGULAR_SEASON",
       "competicao": "Campeonato Brasileiro Série A",
       "competicaoCodigo": "BSA",
-      "mandante": "Clube do Remo",
-      "mandanteId": 4287,
-      "mandanteEscudo": "https://crests.football-data.org/4287.png",
-      "visitante": "Grêmio FBPA",
-      "visitanteId": 1767,
-      "visitanteEscudo": "https://crests.football-data.org/1767.png",
+      "mandante": "SC Internacional",
+      "mandanteId": 6684,
+      "mandanteEscudo": "https://crests.football-data.org/6684.png",
+      "visitante": "SC Corinthians Paulista",
+      "visitanteId": 1779,
+      "visitanteEscudo": "https://crests.football-data.org/1779.png",
       "placarMandante": null,
       "placarVisitante": null
     },
@@ -51,18 +51,18 @@
       "placarVisitante": null
     },
     {
-      "id": 555025,
+      "id": 555027,
       "data": "2026-10-07T22:30:00Z",
       "status": "TIMED",
       "stage": "REGULAR_SEASON",
       "competicao": "Campeonato Brasileiro Série A",
       "competicaoCodigo": "BSA",
-      "mandante": "SC Internacional",
-      "mandanteId": 6684,
-      "mandanteEscudo": "https://crests.football-data.org/6684.png",
-      "visitante": "SC Corinthians Paulista",
-      "visitanteId": 1779,
-      "visitanteEscudo": "https://crests.football-data.org/1779.png",
+      "mandante": "Clube do Remo",
+      "mandanteId": 4287,
+      "mandanteEscudo": "https://crests.football-data.org/4287.png",
+      "visitante": "Grêmio FBPA",
+      "visitanteId": 1767,
+      "visitanteEscudo": "https://crests.football-data.org/1767.png",
       "placarMandante": null,
       "placarVisitante": null
     },
