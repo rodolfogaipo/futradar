@@ -1,23 +1,7 @@
 {
-  "geradoEm": "2026-10-02T22:00:13.060Z",
+  "geradoEm": "2026-10-03T04:40:49.854Z",
   "fonte": "football-data.org",
   "proximosJogos": [
-    {
-      "id": 554948,
-      "data": "2026-10-02T23:00:00Z",
-      "status": "TIMED",
-      "stage": "REGULAR_SEASON",
-      "competicao": "Campeonato Brasileiro Série A",
-      "competicaoCodigo": "BSA",
-      "mandante": "São Paulo FC",
-      "mandanteId": 1776,
-      "mandanteEscudo": "https://crests.football-data.org/1776.png",
-      "visitante": "Santos FC",
-      "visitanteId": 6685,
-      "visitanteEscudo": "https://crests.football-data.org/6685.png",
-      "placarMandante": null,
-      "placarVisitante": null
-    },
     {
       "id": 554940,
       "data": "2026-10-03T21:30:00Z",
@@ -35,22 +19,6 @@
       "placarVisitante": null
     },
     {
-      "id": 555025,
-      "data": "2026-10-07T22:30:00Z",
-      "status": "TIMED",
-      "stage": "REGULAR_SEASON",
-      "competicao": "Campeonato Brasileiro Série A",
-      "competicaoCodigo": "BSA",
-      "mandante": "SC Internacional",
-      "mandanteId": 6684,
-      "mandanteEscudo": "https://crests.football-data.org/6684.png",
-      "visitante": "SC Corinthians Paulista",
-      "visitanteId": 1779,
-      "visitanteEscudo": "https://crests.football-data.org/1779.png",
-      "placarMandante": null,
-      "placarVisitante": null
-    },
-    {
       "id": 555022,
       "data": "2026-10-07T22:30:00Z",
       "status": "TIMED",
@@ -63,6 +31,22 @@
       "visitante": "Mirassol FC",
       "visitanteId": 4364,
       "visitanteEscudo": "https://crests.football-data.org/4364.png",
+      "placarMandante": null,
+      "placarVisitante": null
+    },
+    {
+      "id": 555025,
+      "data": "2026-10-07T22:30:00Z",
+      "status": "TIMED",
+      "stage": "REGULAR_SEASON",
+      "competicao": "Campeonato Brasileiro Série A",
+      "competicaoCodigo": "BSA",
+      "mandante": "SC Internacional",
+      "mandanteId": 6684,
+      "mandanteEscudo": "https://crests.football-data.org/6684.png",
+      "visitante": "SC Corinthians Paulista",
+      "visitanteId": 1779,
+      "visitanteEscudo": "https://crests.football-data.org/1779.png",
       "placarMandante": null,
       "placarVisitante": null
     },
@@ -113,9 +97,74 @@
       "visitanteEscudo": "https://crests.football-data.org/1780.png",
       "placarMandante": null,
       "placarVisitante": null
+    },
+    {
+      "id": 555023,
+      "data": "2026-10-08T00:30:00Z",
+      "status": "TIMED",
+      "stage": "REGULAR_SEASON",
+      "competicao": "Campeonato Brasileiro Série A",
+      "competicaoCodigo": "BSA",
+      "mandante": "Cruzeiro EC",
+      "mandanteId": 1771,
+      "mandanteEscudo": "https://crests.football-data.org/1771.png",
+      "visitante": "São Paulo FC",
+      "visitanteId": 1776,
+      "visitanteEscudo": "https://crests.football-data.org/1776.png",
+      "placarMandante": null,
+      "placarVisitante": null
+    },
+    {
+      "id": 555028,
+      "data": "2026-10-08T22:30:00Z",
+      "status": "TIMED",
+      "stage": "REGULAR_SEASON",
+      "competicao": "Campeonato Brasileiro Série A",
+      "competicaoCodigo": "BSA",
+      "mandante": "Santos FC",
+      "mandanteId": 6685,
+      "mandanteEscudo": "https://crests.football-data.org/6685.png",
+      "visitante": "CR Flamengo",
+      "visitanteId": 1783,
+      "visitanteEscudo": "https://crests.football-data.org/1783.png",
+      "placarMandante": null,
+      "placarVisitante": null
+    },
+    {
+      "id": 555020,
+      "data": "2026-10-08T23:00:00Z",
+      "status": "TIMED",
+      "stage": "REGULAR_SEASON",
+      "competicao": "Campeonato Brasileiro Série A",
+      "competicaoCodigo": "BSA",
+      "mandante": "CA Paranaense",
+      "mandanteId": 1768,
+      "mandanteEscudo": "https://crests.football-data.org/1768.png",
+      "visitante": "CA Mineiro",
+      "visitanteId": 1766,
+      "visitanteEscudo": "https://crests.football-data.org/1766.png",
+      "placarMandante": null,
+      "placarVisitante": null
     }
   ],
-  "resultadosRecentes": [],
+  "resultadosRecentes": [
+    {
+      "id": 554948,
+      "data": "2026-10-02T23:00:00Z",
+      "status": "FINISHED",
+      "stage": "REGULAR_SEASON",
+      "competicao": "Campeonato Brasileiro Série A",
+      "competicaoCodigo": "BSA",
+      "mandante": "São Paulo FC",
+      "mandanteId": 1776,
+      "mandanteEscudo": "https://crests.football-data.org/1776.png",
+      "visitante": "Santos FC",
+      "visitanteId": 6685,
+      "visitanteEscudo": "https://crests.football-data.org/6685.png",
+      "placarMandante": 1,
+      "placarVisitante": 2
+    }
+  ],
   "competicoes": [
     {
       "codigo": "WC",
@@ -1160,6 +1209,19 @@
         },
         {
           "posicao": 7,
+          "time": "Santos FC",
+          "escudo": "https://crests.football-data.org/6685.png",
+          "pontos": 41,
+          "jogos": 28,
+          "vitorias": 11,
+          "empates": 8,
+          "derrotas": 9,
+          "golsPro": 43,
+          "golsContra": 41,
+          "saldoGols": 2
+        },
+        {
+          "posicao": 8,
           "time": "CA Mineiro",
           "escudo": "https://crests.football-data.org/1766.png",
           "pontos": 40,
@@ -1170,19 +1232,6 @@
           "golsPro": 36,
           "golsContra": 32,
           "saldoGols": 4
-        },
-        {
-          "posicao": 8,
-          "time": "Santos FC",
-          "escudo": "https://crests.football-data.org/6685.png",
-          "pontos": 38,
-          "jogos": 27,
-          "vitorias": 10,
-          "empates": 8,
-          "derrotas": 9,
-          "golsPro": 41,
-          "golsContra": 40,
-          "saldoGols": 1
         },
         {
           "posicao": 9,
@@ -1215,13 +1264,13 @@
           "time": "São Paulo FC",
           "escudo": "https://crests.football-data.org/1776.png",
           "pontos": 36,
-          "jogos": 27,
+          "jogos": 28,
           "vitorias": 10,
           "empates": 6,
-          "derrotas": 11,
-          "golsPro": 32,
-          "golsContra": 30,
-          "saldoGols": 2
+          "derrotas": 12,
+          "golsPro": 33,
+          "golsContra": 32,
+          "saldoGols": 1
         },
         {
           "posicao": 12,
@@ -2946,34 +2995,6 @@
   ],
   "analises": [
     {
-      "id": 554948,
-      "data": "2026-10-02T23:00:00Z",
-      "status": "TIMED",
-      "stage": "REGULAR_SEASON",
-      "competicao": "Campeonato Brasileiro Série A",
-      "competicaoCodigo": "BSA",
-      "mandante": "São Paulo FC",
-      "mandanteId": 1776,
-      "mandanteEscudo": "https://crests.football-data.org/1776.png",
-      "visitante": "Santos FC",
-      "visitanteId": 6685,
-      "visitanteEscudo": "https://crests.football-data.org/6685.png",
-      "placarMandante": null,
-      "placarVisitante": null,
-      "probabilidades": {
-        "mandante": 32,
-        "empate": 48,
-        "visitante": 20
-      },
-      "golsEsperados": {
-        "mandante": 1.51,
-        "visitante": 1.14
-      },
-      "placarMaisProvavel": "1x1",
-      "confianca": "alta",
-      "obs": "Modelo de Poisson sobre gols esperados (1.51 x 1.14). Placar mais provável: 1x1. Confiança: alta. Baseado em: mandante em 11º lugar na competição, visitante em 8º lugar, 17 confronto(s) direto(s) considerado(s)."
-    },
-    {
       "id": 554940,
       "data": "2026-10-03T21:30:00Z",
       "status": "TIMED",
@@ -3140,6 +3161,90 @@
       "placarMaisProvavel": "1x1",
       "confianca": "alta",
       "obs": "Modelo de Poisson sobre gols esperados (1.92 x 1.37). Placar mais provável: 1x1. Confiança: alta. Baseado em: mandante em 12º lugar na competição, visitante em 16º lugar, 21 confronto(s) direto(s) considerado(s)."
+    },
+    {
+      "id": 555023,
+      "data": "2026-10-08T00:30:00Z",
+      "status": "TIMED",
+      "stage": "REGULAR_SEASON",
+      "competicao": "Campeonato Brasileiro Série A",
+      "competicaoCodigo": "BSA",
+      "mandante": "Cruzeiro EC",
+      "mandanteId": 1771,
+      "mandanteEscudo": "https://crests.football-data.org/1771.png",
+      "visitante": "São Paulo FC",
+      "visitanteId": 1776,
+      "visitanteEscudo": "https://crests.football-data.org/1776.png",
+      "placarMandante": null,
+      "placarVisitante": null,
+      "probabilidades": {
+        "mandante": 32,
+        "empate": 48,
+        "visitante": 20
+      },
+      "golsEsperados": {
+        "mandante": 1.48,
+        "visitante": 1.14
+      },
+      "placarMaisProvavel": "1x1",
+      "confianca": "alta",
+      "obs": "Modelo de Poisson sobre gols esperados (1.48 x 1.14). Placar mais provável: 1x1. Confiança: alta. Baseado em: mandante em 6º lugar na competição, visitante em 11º lugar, 13 confronto(s) direto(s) considerado(s)."
+    },
+    {
+      "id": 555028,
+      "data": "2026-10-08T22:30:00Z",
+      "status": "TIMED",
+      "stage": "REGULAR_SEASON",
+      "competicao": "Campeonato Brasileiro Série A",
+      "competicaoCodigo": "BSA",
+      "mandante": "Santos FC",
+      "mandanteId": 6685,
+      "mandanteEscudo": "https://crests.football-data.org/6685.png",
+      "visitante": "CR Flamengo",
+      "visitanteId": 1783,
+      "visitanteEscudo": "https://crests.football-data.org/1783.png",
+      "placarMandante": null,
+      "placarVisitante": null,
+      "probabilidades": {
+        "mandante": 15,
+        "empate": 45,
+        "visitante": 40
+      },
+      "golsEsperados": {
+        "mandante": 1.09,
+        "visitante": 1.94
+      },
+      "placarMaisProvavel": "1x1",
+      "confianca": "alta",
+      "obs": "Modelo de Poisson sobre gols esperados (1.09 x 1.94). Placar mais provável: 1x1. Confiança: alta. Baseado em: mandante em 7º lugar na competição, visitante em 1º lugar, 17 confronto(s) direto(s) considerado(s)."
+    },
+    {
+      "id": 555020,
+      "data": "2026-10-08T23:00:00Z",
+      "status": "TIMED",
+      "stage": "REGULAR_SEASON",
+      "competicao": "Campeonato Brasileiro Série A",
+      "competicaoCodigo": "BSA",
+      "mandante": "CA Paranaense",
+      "mandanteId": 1768,
+      "mandanteEscudo": "https://crests.football-data.org/1768.png",
+      "visitante": "CA Mineiro",
+      "visitanteId": 1766,
+      "visitanteEscudo": "https://crests.football-data.org/1766.png",
+      "placarMandante": null,
+      "placarVisitante": null,
+      "probabilidades": {
+        "mandante": 35,
+        "empate": 48,
+        "visitante": 17
+      },
+      "golsEsperados": {
+        "mandante": 1.57,
+        "visitante": 1.03
+      },
+      "placarMaisProvavel": "1x1",
+      "confianca": "alta",
+      "obs": "Modelo de Poisson sobre gols esperados (1.57 x 1.03). Placar mais provável: 1x1. Confiança: alta. Baseado em: mandante em 3º lugar na competição, visitante em 8º lugar, 19 confronto(s) direto(s) considerado(s)."
     }
   ],
   "avisos": []
