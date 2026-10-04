@@ -1,5 +1,5 @@
 {
-  "geradoEm": "2026-10-04T12:03:37.933Z",
+  "geradoEm": "2026-10-04T18:34:24.771Z",
   "fonte": "football-data.org",
   "proximosJogos": [
     {
@@ -131,22 +131,6 @@
       "placarVisitante": null
     },
     {
-      "id": 555026,
-      "data": "2026-10-09T00:30:00Z",
-      "status": "TIMED",
-      "stage": "REGULAR_SEASON",
-      "competicao": "Campeonato Brasileiro Série A",
-      "competicaoCodigo": "BSA",
-      "mandante": "SE Palmeiras",
-      "mandanteId": 1769,
-      "mandanteEscudo": "https://crests.football-data.org/1769.png",
-      "visitante": "EC Bahia",
-      "visitanteId": 1777,
-      "visitanteEscudo": "https://crests.football-data.org/1777.png",
-      "placarMandante": null,
-      "placarVisitante": null
-    },
-    {
       "id": 555024,
       "data": "2026-10-09T00:30:00Z",
       "status": "TIMED",
@@ -159,6 +143,22 @@
       "visitante": "Coritiba FBC",
       "visitanteId": 4241,
       "visitanteEscudo": "https://crests.football-data.org/4241.png",
+      "placarMandante": null,
+      "placarVisitante": null
+    },
+    {
+      "id": 555026,
+      "data": "2026-10-09T00:30:00Z",
+      "status": "TIMED",
+      "stage": "REGULAR_SEASON",
+      "competicao": "Campeonato Brasileiro Série A",
+      "competicaoCodigo": "BSA",
+      "mandante": "SE Palmeiras",
+      "mandanteId": 1769,
+      "mandanteEscudo": "https://crests.football-data.org/1769.png",
+      "visitante": "EC Bahia",
+      "visitanteId": 1777,
+      "visitanteEscudo": "https://crests.football-data.org/1777.png",
       "placarMandante": null,
       "placarVisitante": null
     },
@@ -227,22 +227,6 @@
       "placarVisitante": null
     },
     {
-      "id": 564706,
-      "data": "2026-10-09T19:00:00Z",
-      "status": "TIMED",
-      "stage": "REGULAR_SEASON",
-      "competicao": "Primera Division",
-      "competicaoCodigo": "PD",
-      "mandante": "Málaga CF",
-      "mandanteId": 84,
-      "mandanteEscudo": "https://crests.football-data.org/84.png",
-      "visitante": "RCD Espanyol de Barcelona",
-      "visitanteId": 80,
-      "visitanteEscudo": "https://crests.football-data.org/80.png",
-      "placarMandante": null,
-      "placarVisitante": null
-    },
-    {
       "id": 561862,
       "data": "2026-10-09T19:00:00Z",
       "status": "TIMED",
@@ -255,6 +239,22 @@
       "visitante": "Queens Park Rangers FC",
       "visitanteId": 69,
       "visitanteEscudo": "https://crests.football-data.org/69.png",
+      "placarMandante": null,
+      "placarVisitante": null
+    },
+    {
+      "id": 564706,
+      "data": "2026-10-09T19:00:00Z",
+      "status": "TIMED",
+      "stage": "REGULAR_SEASON",
+      "competicao": "Primera Division",
+      "competicaoCodigo": "PD",
+      "mandante": "Málaga CF",
+      "mandanteId": 84,
+      "mandanteEscudo": "https://crests.football-data.org/84.png",
+      "visitante": "RCD Espanyol de Barcelona",
+      "visitanteId": 80,
+      "visitanteEscudo": "https://crests.football-data.org/80.png",
       "placarMandante": null,
       "placarVisitante": null
     },
