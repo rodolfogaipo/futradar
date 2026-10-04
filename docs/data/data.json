@@ -1,5 +1,5 @@
 {
-  "geradoEm": "2026-10-04T18:34:24.771Z",
+  "geradoEm": "2026-10-04T23:53:25.430Z",
   "fonte": "football-data.org",
   "proximosJogos": [
     {
@@ -19,22 +19,6 @@
       "placarVisitante": null
     },
     {
-      "id": 555025,
-      "data": "2026-10-07T22:30:00Z",
-      "status": "TIMED",
-      "stage": "REGULAR_SEASON",
-      "competicao": "Campeonato Brasileiro Série A",
-      "competicaoCodigo": "BSA",
-      "mandante": "SC Internacional",
-      "mandanteId": 6684,
-      "mandanteEscudo": "https://crests.football-data.org/6684.png",
-      "visitante": "SC Corinthians Paulista",
-      "visitanteId": 1779,
-      "visitanteEscudo": "https://crests.football-data.org/1779.png",
-      "placarMandante": null,
-      "placarVisitante": null
-    },
-    {
       "id": 555027,
       "data": "2026-10-07T22:30:00Z",
       "status": "TIMED",
@@ -47,6 +31,22 @@
       "visitante": "Grêmio FBPA",
       "visitanteId": 1767,
       "visitanteEscudo": "https://crests.football-data.org/1767.png",
+      "placarMandante": null,
+      "placarVisitante": null
+    },
+    {
+      "id": 555025,
+      "data": "2026-10-07T22:30:00Z",
+      "status": "TIMED",
+      "stage": "REGULAR_SEASON",
+      "competicao": "Campeonato Brasileiro Série A",
+      "competicaoCodigo": "BSA",
+      "mandante": "SC Internacional",
+      "mandanteId": 6684,
+      "mandanteEscudo": "https://crests.football-data.org/6684.png",
+      "visitante": "SC Corinthians Paulista",
+      "visitanteId": 1779,
+      "visitanteEscudo": "https://crests.football-data.org/1779.png",
       "placarMandante": null,
       "placarVisitante": null
     },
