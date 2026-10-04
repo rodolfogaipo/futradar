@@ -1,20 +1,20 @@
 {
-  "geradoEm": "2026-10-04T05:12:07.953Z",
+  "geradoEm": "2026-10-04T12:03:37.933Z",
   "fonte": "football-data.org",
   "proximosJogos": [
     {
-      "id": 555027,
+      "id": 555022,
       "data": "2026-10-07T22:30:00Z",
       "status": "TIMED",
       "stage": "REGULAR_SEASON",
       "competicao": "Campeonato Brasileiro Série A",
       "competicaoCodigo": "BSA",
-      "mandante": "Clube do Remo",
-      "mandanteId": 4287,
-      "mandanteEscudo": "https://crests.football-data.org/4287.png",
-      "visitante": "Grêmio FBPA",
-      "visitanteId": 1767,
-      "visitanteEscudo": "https://crests.football-data.org/1767.png",
+      "mandante": "RB Bragantino",
+      "mandanteId": 4286,
+      "mandanteEscudo": "https://crests.football-data.org/4286.png",
+      "visitante": "Mirassol FC",
+      "visitanteId": 4364,
+      "visitanteEscudo": "https://crests.football-data.org/4364.png",
       "placarMandante": null,
       "placarVisitante": null
     },
@@ -35,18 +35,18 @@
       "placarVisitante": null
     },
     {
-      "id": 555022,
+      "id": 555027,
       "data": "2026-10-07T22:30:00Z",
       "status": "TIMED",
       "stage": "REGULAR_SEASON",
       "competicao": "Campeonato Brasileiro Série A",
       "competicaoCodigo": "BSA",
-      "mandante": "RB Bragantino",
-      "mandanteId": 4286,
-      "mandanteEscudo": "https://crests.football-data.org/4286.png",
-      "visitante": "Mirassol FC",
-      "visitanteId": 4364,
-      "visitanteEscudo": "https://crests.football-data.org/4364.png",
+      "mandante": "Clube do Remo",
+      "mandanteId": 4287,
+      "mandanteEscudo": "https://crests.football-data.org/4287.png",
+      "visitante": "Grêmio FBPA",
+      "visitanteId": 1767,
+      "visitanteEscudo": "https://crests.football-data.org/1767.png",
       "placarMandante": null,
       "placarVisitante": null
     },
@@ -227,22 +227,6 @@
       "placarVisitante": null
     },
     {
-      "id": 561862,
-      "data": "2026-10-09T19:00:00Z",
-      "status": "TIMED",
-      "stage": "REGULAR_SEASON",
-      "competicao": "Championship",
-      "competicaoCodigo": "ELC",
-      "mandante": "West Ham United FC",
-      "mandanteId": 563,
-      "mandanteEscudo": "https://crests.football-data.org/563.png",
-      "visitante": "Queens Park Rangers FC",
-      "visitanteId": 69,
-      "visitanteEscudo": "https://crests.football-data.org/69.png",
-      "placarMandante": null,
-      "placarVisitante": null
-    },
-    {
       "id": 564706,
       "data": "2026-10-09T19:00:00Z",
       "status": "TIMED",
@@ -255,6 +239,22 @@
       "visitante": "RCD Espanyol de Barcelona",
       "visitanteId": 80,
       "visitanteEscudo": "https://crests.football-data.org/80.png",
+      "placarMandante": null,
+      "placarVisitante": null
+    },
+    {
+      "id": 561862,
+      "data": "2026-10-09T19:00:00Z",
+      "status": "TIMED",
+      "stage": "REGULAR_SEASON",
+      "competicao": "Championship",
+      "competicaoCodigo": "ELC",
+      "mandante": "West Ham United FC",
+      "mandanteId": 563,
+      "mandanteEscudo": "https://crests.football-data.org/563.png",
+      "visitante": "Queens Park Rangers FC",
+      "visitanteId": 69,
+      "visitanteEscudo": "https://crests.football-data.org/69.png",
       "placarMandante": null,
       "placarVisitante": null
     },
@@ -3391,6 +3391,34 @@
       "obs": "Modelo de Poisson sobre gols esperados (1.81 x 0.78). Placar mais provável: 1x0. Confiança: alta. Baseado em: mandante em 2º lugar na competição, visitante em 5º lugar, 19 confronto(s) direto(s) considerado(s)."
     },
     {
+      "id": 555024,
+      "data": "2026-10-09T00:30:00Z",
+      "status": "TIMED",
+      "stage": "REGULAR_SEASON",
+      "competicao": "Campeonato Brasileiro Série A",
+      "competicaoCodigo": "BSA",
+      "mandante": "Fluminense FC",
+      "mandanteId": 1765,
+      "mandanteEscudo": "https://crests.football-data.org/1765.png",
+      "visitante": "Coritiba FBC",
+      "visitanteId": 4241,
+      "visitanteEscudo": "https://crests.football-data.org/4241.png",
+      "placarMandante": null,
+      "placarVisitante": null,
+      "probabilidades": {
+        "mandante": 41,
+        "empate": 45,
+        "visitante": 14
+      },
+      "golsEsperados": {
+        "mandante": 2.08,
+        "visitante": 1.15
+      },
+      "placarMaisProvavel": "2x1",
+      "confianca": "alta",
+      "obs": "Modelo de Poisson sobre gols esperados (2.08 x 1.15). Placar mais provável: 2x1. Confiança: alta. Baseado em: mandante em 4º lugar na competição, visitante em 9º lugar, 9 confronto(s) direto(s) considerado(s)."
+    },
+    {
       "id": 567327,
       "data": "2026-10-09T17:45:00Z",
       "status": "TIMED",
@@ -3445,6 +3473,62 @@
       "placarMaisProvavel": "2x1",
       "confianca": "alta",
       "obs": "Modelo de Poisson sobre gols esperados (2.66 x 1.06). Placar mais provável: 2x1. Confiança: alta. Baseado em: mandante em 3º lugar na competição, visitante em 10º lugar, 30 confronto(s) direto(s) considerado(s)."
+    },
+    {
+      "id": 565820,
+      "data": "2026-10-09T18:30:00Z",
+      "status": "TIMED",
+      "stage": "REGULAR_SEASON",
+      "competicao": "Bundesliga",
+      "competicaoCodigo": "BL1",
+      "mandante": "Borussia Dortmund",
+      "mandanteId": 4,
+      "mandanteEscudo": "https://crests.football-data.org/4.png",
+      "visitante": "SV Werder Bremen",
+      "visitanteId": 12,
+      "visitanteEscudo": "https://crests.football-data.org/12.png",
+      "placarMandante": null,
+      "placarVisitante": null,
+      "probabilidades": {
+        "mandante": 58,
+        "empate": 38,
+        "visitante": 4
+      },
+      "golsEsperados": {
+        "mandante": 2.72,
+        "visitante": 0.54
+      },
+      "placarMaisProvavel": "2x0",
+      "confianca": "média",
+      "obs": "Modelo de Poisson sobre gols esperados (2.72 x 0.54). Placar mais provável: 2x0. Confiança: média. Baseado em: mandante em 1º lugar na competição, visitante em 8º lugar, 30 confronto(s) direto(s) considerado(s)."
+    },
+    {
+      "id": 559669,
+      "data": "2026-10-09T18:45:00Z",
+      "status": "TIMED",
+      "stage": "REGULAR_SEASON",
+      "competicao": "Ligue 1",
+      "competicaoCodigo": "FL1",
+      "mandante": "Racing Club de Lens",
+      "mandanteId": 546,
+      "mandanteEscudo": "https://crests.football-data.org/546.png",
+      "visitante": "Olympique Lyonnais",
+      "visitanteId": 523,
+      "visitanteEscudo": "https://crests.football-data.org/523.png",
+      "placarMandante": null,
+      "placarVisitante": null,
+      "probabilidades": {
+        "mandante": 6,
+        "empate": 42,
+        "visitante": 52
+      },
+      "golsEsperados": {
+        "mandante": 0.62,
+        "visitante": 2.28
+      },
+      "placarMaisProvavel": "0x2",
+      "confianca": "alta",
+      "obs": "Modelo de Poisson sobre gols esperados (0.62 x 2.28). Placar mais provável: 0x2. Confiança: alta. Baseado em: mandante em 15º lugar na competição, visitante em 2º lugar, 30 confronto(s) direto(s) considerado(s)."
     },
     {
       "id": 561862,
