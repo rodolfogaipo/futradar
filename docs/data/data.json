@@ -1,5 +1,5 @@
 {
-  "geradoEm": "2026-10-10T00:37:30.773Z",
+  "geradoEm": "2026-10-10T09:36:50.048Z",
   "fonte": "football-data.org",
   "proximosJogos": [
     {
@@ -371,22 +371,6 @@
       "placarVisitante": null
     },
     {
-      "id": 567321,
-      "data": "2026-10-10T14:30:00Z",
-      "status": "TIMED",
-      "stage": "REGULAR_SEASON",
-      "competicao": "Primeira Liga",
-      "competicaoCodigo": "PPL",
-      "mandante": "Casa Pia AC",
-      "mandanteId": 6618,
-      "mandanteEscudo": "https://crests.football-data.org/6618.png",
-      "visitante": "CD Santa Clara",
-      "visitanteId": 5530,
-      "visitanteEscudo": "https://crests.football-data.org/5530.png",
-      "placarMandante": null,
-      "placarVisitante": null
-    },
-    {
       "id": 558880,
       "data": "2026-10-10T14:30:00Z",
       "status": "TIMED",
@@ -531,6 +515,22 @@
       "placarVisitante": null
     },
     {
+      "id": 559666,
+      "data": "2026-10-10T18:45:00Z",
+      "status": "TIMED",
+      "stage": "REGULAR_SEASON",
+      "competicao": "Ligue 1",
+      "competicaoCodigo": "FL1",
+      "mandante": "Stade Brestois 29",
+      "mandanteId": 512,
+      "mandanteEscudo": "https://crests.football-data.org/512.png",
+      "visitante": "Angers SCO",
+      "visitanteId": 532,
+      "visitanteEscudo": "https://crests.football-data.org/532.png",
+      "placarMandante": null,
+      "placarVisitante": null
+    },
+    {
       "id": 559673,
       "data": "2026-10-10T18:45:00Z",
       "status": "TIMED",
@@ -563,18 +563,18 @@
       "placarVisitante": null
     },
     {
-      "id": 559666,
+      "id": 559672,
       "data": "2026-10-10T18:45:00Z",
       "status": "TIMED",
       "stage": "REGULAR_SEASON",
       "competicao": "Ligue 1",
       "competicaoCodigo": "FL1",
-      "mandante": "Stade Brestois 29",
-      "mandanteId": 512,
-      "mandanteEscudo": "https://crests.football-data.org/512.png",
-      "visitante": "Angers SCO",
-      "visitanteId": 532,
-      "visitanteEscudo": "https://crests.football-data.org/532.png",
+      "mandante": "Paris Saint-Germain FC",
+      "mandanteId": 524,
+      "mandanteEscudo": "https://crests.football-data.org/524.png",
+      "visitante": "Le Mans FC",
+      "visitanteId": 535,
+      "visitanteEscudo": "https://crests.football-data.org/535.png",
       "placarMandante": null,
       "placarVisitante": null
     },
@@ -591,22 +591,6 @@
       "visitante": "Frosinone Calcio",
       "visitanteId": 470,
       "visitanteEscudo": "https://crests.football-data.org/470.png",
-      "placarMandante": null,
-      "placarVisitante": null
-    },
-    {
-      "id": 559672,
-      "data": "2026-10-10T18:45:00Z",
-      "status": "TIMED",
-      "stage": "REGULAR_SEASON",
-      "competicao": "Ligue 1",
-      "competicaoCodigo": "FL1",
-      "mandante": "Paris Saint-Germain FC",
-      "mandanteId": 524,
-      "mandanteEscudo": "https://crests.football-data.org/524.png",
-      "visitante": "Le Mans FC",
-      "visitanteId": 535,
-      "visitanteEscudo": "https://crests.football-data.org/535.png",
       "placarMandante": null,
       "placarVisitante": null
     },
@@ -639,6 +623,22 @@
       "visitante": "Villarreal CF",
       "visitanteId": 94,
       "visitanteEscudo": "https://crests.football-data.org/94.png",
+      "placarMandante": null,
+      "placarVisitante": null
+    },
+    {
+      "id": 567321,
+      "data": "2026-10-10T19:30:00Z",
+      "status": "TIMED",
+      "stage": "REGULAR_SEASON",
+      "competicao": "Primeira Liga",
+      "competicaoCodigo": "PPL",
+      "mandante": "Casa Pia AC",
+      "mandanteId": 6618,
+      "mandanteEscudo": "https://crests.football-data.org/6618.png",
+      "visitante": "CD Santa Clara",
+      "visitanteId": 5530,
+      "visitanteEscudo": "https://crests.football-data.org/5530.png",
       "placarMandante": null,
       "placarVisitante": null
     },
@@ -1957,22 +1957,6 @@
       "placarVisitante": 2
     },
     {
-      "id": 555024,
-      "data": "2026-10-09T00:30:00Z",
-      "status": "FINISHED",
-      "stage": "REGULAR_SEASON",
-      "competicao": "Campeonato Brasileiro Série A",
-      "competicaoCodigo": "BSA",
-      "mandante": "Fluminense FC",
-      "mandanteId": 1765,
-      "mandanteEscudo": "https://crests.football-data.org/1765.png",
-      "visitante": "Coritiba FBC",
-      "visitanteId": 4241,
-      "visitanteEscudo": "https://crests.football-data.org/4241.png",
-      "placarMandante": 4,
-      "placarVisitante": 0
-    },
-    {
       "id": 555026,
       "data": "2026-10-09T00:30:00Z",
       "status": "FINISHED",
@@ -1986,6 +1970,22 @@
       "visitanteId": 1777,
       "visitanteEscudo": "https://crests.football-data.org/1777.png",
       "placarMandante": 1,
+      "placarVisitante": 0
+    },
+    {
+      "id": 555024,
+      "data": "2026-10-09T00:30:00Z",
+      "status": "FINISHED",
+      "stage": "REGULAR_SEASON",
+      "competicao": "Campeonato Brasileiro Série A",
+      "competicaoCodigo": "BSA",
+      "mandante": "Fluminense FC",
+      "mandanteId": 1765,
+      "mandanteEscudo": "https://crests.football-data.org/1765.png",
+      "visitante": "Coritiba FBC",
+      "visitanteId": 4241,
+      "visitanteEscudo": "https://crests.football-data.org/4241.png",
+      "placarMandante": 4,
       "placarVisitante": 0
     },
     {
@@ -7227,6 +7227,34 @@
       "obs": "Modelo de Poisson sobre gols esperados (1.8 x 2.82). Placar mais provável: 1x2. Confiança: baixa. Baseado em: mandante em 9º lugar na competição, visitante em 6º lugar, sem confrontos diretos no histórico."
     },
     {
+      "id": 575342,
+      "data": "2026-10-13T16:45:00Z",
+      "status": "TIMED",
+      "stage": "LEAGUE_STAGE",
+      "competicao": "UEFA Champions League",
+      "competicaoCodigo": "CL",
+      "mandante": "Sabah FK",
+      "mandanteId": 10233,
+      "mandanteEscudo": "https://crests.football-data.org/10233.png",
+      "visitante": "SK Slavia Praha",
+      "visitanteId": 930,
+      "visitanteEscudo": "https://crests.football-data.org/930.png",
+      "placarMandante": null,
+      "placarVisitante": null,
+      "probabilidades": {
+        "mandante": 6,
+        "empate": 9,
+        "visitante": 85
+      },
+      "golsEsperados": {
+        "mandante": 1.03,
+        "visitante": 3.76
+      },
+      "placarMaisProvavel": "1x3",
+      "confianca": "baixa",
+      "obs": "Modelo de Poisson sobre gols esperados (1.03 x 3.76). Placar mais provável: 1x3. Confiança: baixa. Baseado em: mandante em 34º lugar na competição, visitante em 22º lugar, sem confrontos diretos no histórico."
+    },
+    {
       "id": 561872,
       "data": "2026-10-13T18:45:00Z",
       "status": "TIMED",
@@ -7365,6 +7393,34 @@
       "placarMaisProvavel": "1x1",
       "confianca": "alta",
       "obs": "Modelo de Poisson sobre gols esperados (1.11 x 1.15). Placar mais provável: 1x1. Confiança: alta. Baseado em: mandante em 24º lugar na competição, visitante em 9º lugar, 25 confronto(s) direto(s) considerado(s)."
+    },
+    {
+      "id": 561871,
+      "data": "2026-10-13T18:45:00Z",
+      "status": "TIMED",
+      "stage": "REGULAR_SEASON",
+      "competicao": "Championship",
+      "competicaoCodigo": "ELC",
+      "mandante": "Millwall FC",
+      "mandanteId": 384,
+      "mandanteEscudo": "https://crests.football-data.org/384.png",
+      "visitante": "Swansea City AFC",
+      "visitanteId": 72,
+      "visitanteEscudo": "https://crests.football-data.org/72.png",
+      "placarMandante": null,
+      "placarVisitante": null,
+      "probabilidades": {
+        "mandante": 16,
+        "empate": 45,
+        "visitante": 39
+      },
+      "golsEsperados": {
+        "mandante": 1.11,
+        "visitante": 1.88
+      },
+      "placarMaisProvavel": "1x1",
+      "confianca": "alta",
+      "obs": "Modelo de Poisson sobre gols esperados (1.11 x 1.88). Placar mais provável: 1x1. Confiança: alta. Baseado em: mandante em 11º lugar na competição, visitante em 1º lugar, 23 confronto(s) direto(s) considerado(s)."
     },
     {
       "id": 575344,
@@ -7617,6 +7673,118 @@
       "placarMaisProvavel": "1x1",
       "confianca": "alta",
       "obs": "Modelo de Poisson sobre gols esperados (1.92 x 1.85). Placar mais provável: 1x1. Confiança: alta. Baseado em: mandante em 7º lugar na competição, visitante em 3º lugar, 30 confronto(s) direto(s) considerado(s)."
+    },
+    {
+      "id": 575351,
+      "data": "2026-10-14T16:45:00Z",
+      "status": "TIMED",
+      "stage": "LEAGUE_STAGE",
+      "competicao": "UEFA Champions League",
+      "competicaoCodigo": "CL",
+      "mandante": "Feyenoord Rotterdam",
+      "mandanteId": 675,
+      "mandanteEscudo": "https://crests.football-data.org/675.png",
+      "visitante": "Como 1907",
+      "visitanteId": 7397,
+      "visitanteEscudo": "https://crests.football-data.org/7397.png",
+      "placarMandante": null,
+      "placarVisitante": null,
+      "probabilidades": {
+        "mandante": 1,
+        "empate": 4,
+        "visitante": 95
+      },
+      "golsEsperados": {
+        "mandante": 0.6,
+        "visitante": 4.5
+      },
+      "placarMaisProvavel": "0x4",
+      "confianca": "baixa",
+      "obs": "Modelo de Poisson sobre gols esperados (0.6 x 4.5). Placar mais provável: 0x4. Confiança: baixa. Baseado em: mandante em 33º lugar na competição, visitante em 5º lugar, sem confrontos diretos no histórico."
+    },
+    {
+      "id": 575350,
+      "data": "2026-10-14T16:45:00Z",
+      "status": "TIMED",
+      "stage": "LEAGUE_STAGE",
+      "competicao": "UEFA Champions League",
+      "competicaoCodigo": "CL",
+      "mandante": "LASK Linz",
+      "mandanteId": 2016,
+      "mandanteEscudo": "https://crests.football-data.org/2016.png",
+      "visitante": "Liverpool FC",
+      "visitanteId": 64,
+      "visitanteEscudo": "https://crests.football-data.org/64.png",
+      "placarMandante": null,
+      "placarVisitante": null,
+      "probabilidades": {
+        "mandante": 13,
+        "empate": 37,
+        "visitante": 50
+      },
+      "golsEsperados": {
+        "mandante": 0.35,
+        "visitante": 0.94
+      },
+      "placarMaisProvavel": "0x0",
+      "confianca": "baixa",
+      "obs": "Modelo de Poisson sobre gols esperados (0.35 x 0.94). Placar mais provável: 0x0. Confiança: baixa. Baseado em: mandante em 27º lugar na competição, visitante em 13º lugar, 2 confronto(s) direto(s) considerado(s)."
+    },
+    {
+      "id": 575352,
+      "data": "2026-10-14T19:00:00Z",
+      "status": "TIMED",
+      "stage": "LEAGUE_STAGE",
+      "competicao": "UEFA Champions League",
+      "competicaoCodigo": "CL",
+      "mandante": "AS Roma",
+      "mandanteId": 100,
+      "mandanteEscudo": "https://crests.football-data.org/100.png",
+      "visitante": "Real Madrid CF",
+      "visitanteId": 86,
+      "visitanteEscudo": "https://crests.football-data.org/86.png",
+      "placarMandante": null,
+      "placarVisitante": null,
+      "probabilidades": {
+        "mandante": 16,
+        "empate": 55,
+        "visitante": 29
+      },
+      "golsEsperados": {
+        "mandante": 0.6,
+        "visitante": 0.94
+      },
+      "placarMaisProvavel": "0x0",
+      "confianca": "baixa",
+      "obs": "Modelo de Poisson sobre gols esperados (0.6 x 0.94). Placar mais provável: 0x0. Confiança: baixa. Baseado em: mandante em 17º lugar na competição, visitante em 13º lugar, 11 confronto(s) direto(s) considerado(s)."
+    },
+    {
+      "id": 575353,
+      "data": "2026-10-14T19:00:00Z",
+      "status": "TIMED",
+      "stage": "LEAGUE_STAGE",
+      "competicao": "UEFA Champions League",
+      "competicaoCodigo": "CL",
+      "mandante": "Manchester City FC",
+      "mandanteId": 65,
+      "mandanteEscudo": "https://crests.football-data.org/65.png",
+      "visitante": "Paris Saint-Germain FC",
+      "visitanteId": 524,
+      "visitanteEscudo": "https://crests.football-data.org/524.png",
+      "placarMandante": null,
+      "placarVisitante": null,
+      "probabilidades": {
+        "mandante": 24,
+        "empate": 49,
+        "visitante": 27
+      },
+      "golsEsperados": {
+        "mandante": 1.2,
+        "visitante": 1.29
+      },
+      "placarMaisProvavel": "1x1",
+      "confianca": "baixa",
+      "obs": "Modelo de Poisson sobre gols esperados (1.2 x 1.29). Placar mais provável: 1x1. Confiança: baixa. Baseado em: mandante em 8º lugar na competição, visitante em 1º lugar, 7 confronto(s) direto(s) considerado(s)."
     }
   ],
   "avisos": []
