@@ -1,5 +1,5 @@
 {
-  "geradoEm": "2026-11-16T10:50:29.637Z",
+  "geradoEm": "2026-11-16T21:49:35.783Z",
   "fonte": "football-data.org",
   "proximosJogos": [
     {
@@ -949,6 +949,22 @@
       "placarVisitante": 2
     },
     {
+      "id": 558534,
+      "data": "2026-11-07T14:00:00Z",
+      "status": "FINISHED",
+      "stage": "REGULAR_SEASON",
+      "competicao": "Serie A",
+      "competicaoCodigo": "SA",
+      "mandante": "Cagliari Calcio",
+      "mandanteId": 104,
+      "mandanteEscudo": "https://crests.football-data.org/104.png",
+      "visitante": "Frosinone Calcio",
+      "visitanteId": 470,
+      "visitanteEscudo": "https://crests.football-data.org/470.png",
+      "placarMandante": 1,
+      "placarVisitante": 0
+    },
+    {
       "id": 558532,
       "data": "2026-11-07T14:00:00Z",
       "status": "FINISHED",
@@ -965,20 +981,20 @@
       "placarVisitante": 1
     },
     {
-      "id": 558534,
-      "data": "2026-11-07T14:00:00Z",
+      "id": 565848,
+      "data": "2026-11-07T14:30:00Z",
       "status": "FINISHED",
       "stage": "REGULAR_SEASON",
-      "competicao": "Serie A",
-      "competicaoCodigo": "SA",
-      "mandante": "Cagliari Calcio",
-      "mandanteId": 104,
-      "mandanteEscudo": "https://crests.football-data.org/104.png",
-      "visitante": "Frosinone Calcio",
-      "visitanteId": 470,
-      "visitanteEscudo": "https://crests.football-data.org/470.png",
-      "placarMandante": 1,
-      "placarVisitante": 0
+      "competicao": "Bundesliga",
+      "competicaoCodigo": "BL1",
+      "mandante": "RB Leipzig",
+      "mandanteId": 721,
+      "mandanteEscudo": "https://crests.football-data.org/721.png",
+      "visitante": "FC Augsburg",
+      "visitanteId": 16,
+      "visitanteEscudo": "https://crests.football-data.org/16.png",
+      "placarMandante": 5,
+      "placarVisitante": 2
     },
     {
       "id": 565850,
@@ -1013,22 +1029,6 @@
       "placarVisitante": 2
     },
     {
-      "id": 565848,
-      "data": "2026-11-07T14:30:00Z",
-      "status": "FINISHED",
-      "stage": "REGULAR_SEASON",
-      "competicao": "Bundesliga",
-      "competicaoCodigo": "BL1",
-      "mandante": "RB Leipzig",
-      "mandanteId": 721,
-      "mandanteEscudo": "https://crests.football-data.org/721.png",
-      "visitante": "FC Augsburg",
-      "visitanteId": 16,
-      "visitanteEscudo": "https://crests.football-data.org/16.png",
-      "placarMandante": 5,
-      "placarVisitante": 2
-    },
-    {
       "id": 565851,
       "data": "2026-11-07T14:30:00Z",
       "status": "FINISHED",
@@ -1045,22 +1045,6 @@
       "placarVisitante": 2
     },
     {
-      "id": 560640,
-      "data": "2026-11-07T15:00:00Z",
-      "status": "FINISHED",
-      "stage": "REGULAR_SEASON",
-      "competicao": "Premier League",
-      "competicaoCodigo": "PL",
-      "mandante": "Arsenal FC",
-      "mandanteId": 57,
-      "mandanteEscudo": "https://crests.football-data.org/57.png",
-      "visitante": "Hull City AFC",
-      "visitanteId": 322,
-      "visitanteEscudo": "https://crests.football-data.org/322.png",
-      "placarMandante": 1,
-      "placarVisitante": 0
-    },
-    {
       "id": 560633,
       "data": "2026-11-07T15:00:00Z",
       "status": "FINISHED",
@@ -1075,6 +1059,22 @@
       "visitanteEscudo": "https://crests.football-data.org/67.png",
       "placarMandante": 1,
       "placarVisitante": 1
+    },
+    {
+      "id": 560640,
+      "data": "2026-11-07T15:00:00Z",
+      "status": "FINISHED",
+      "stage": "REGULAR_SEASON",
+      "competicao": "Premier League",
+      "competicaoCodigo": "PL",
+      "mandante": "Arsenal FC",
+      "mandanteId": 57,
+      "mandanteEscudo": "https://crests.football-data.org/57.png",
+      "visitante": "Hull City AFC",
+      "visitanteId": 322,
+      "visitanteEscudo": "https://crests.football-data.org/322.png",
+      "placarMandante": 1,
+      "placarVisitante": 0
     },
     {
       "id": 564745,
@@ -1365,6 +1365,22 @@
       "placarVisitante": 2
     },
     {
+      "id": 559636,
+      "data": "2026-11-08T14:00:00Z",
+      "status": "FINISHED",
+      "stage": "REGULAR_SEASON",
+      "competicao": "Ligue 1",
+      "competicaoCodigo": "FL1",
+      "mandante": "Stade Rennais FC 1901",
+      "mandanteId": 529,
+      "mandanteEscudo": "https://crests.football-data.org/529.png",
+      "visitante": "Lille OSC",
+      "visitanteId": 521,
+      "visitanteEscudo": "https://crests.football-data.org/521.png",
+      "placarMandante": 1,
+      "placarVisitante": 2
+    },
+    {
       "id": 560636,
       "data": "2026-11-08T14:00:00Z",
       "status": "FINISHED",
@@ -1411,22 +1427,6 @@
       "visitanteEscudo": "https://crests.football-data.org/402.png",
       "placarMandante": 2,
       "placarVisitante": 0
-    },
-    {
-      "id": 559636,
-      "data": "2026-11-08T14:00:00Z",
-      "status": "FINISHED",
-      "stage": "REGULAR_SEASON",
-      "competicao": "Ligue 1",
-      "competicaoCodigo": "FL1",
-      "mandante": "Stade Rennais FC 1901",
-      "mandanteId": 529,
-      "mandanteEscudo": "https://crests.football-data.org/529.png",
-      "visitante": "Lille OSC",
-      "visitanteId": 521,
-      "visitanteEscudo": "https://crests.football-data.org/521.png",
-      "placarMandante": 1,
-      "placarVisitante": 2
     },
     {
       "id": 560635,
@@ -1605,22 +1605,6 @@
       "placarVisitante": 2
     },
     {
-      "id": 559633,
-      "data": "2026-11-08T16:15:00Z",
-      "status": "FINISHED",
-      "stage": "REGULAR_SEASON",
-      "competicao": "Ligue 1",
-      "competicaoCodigo": "FL1",
-      "mandante": "Le Havre AC",
-      "mandanteId": 533,
-      "mandanteEscudo": "https://crests.football-data.org/533.png",
-      "visitante": "FC Lorient",
-      "visitanteId": 525,
-      "visitanteEscudo": "https://crests.football-data.org/525.png",
-      "placarMandante": 0,
-      "placarVisitante": 2
-    },
-    {
       "id": 559631,
       "data": "2026-11-08T16:15:00Z",
       "status": "FINISHED",
@@ -1635,6 +1619,22 @@
       "visitanteEscudo": "https://crests.football-data.org/548.png",
       "placarMandante": 1,
       "placarVisitante": 1
+    },
+    {
+      "id": 559633,
+      "data": "2026-11-08T16:15:00Z",
+      "status": "FINISHED",
+      "stage": "REGULAR_SEASON",
+      "competicao": "Ligue 1",
+      "competicaoCodigo": "FL1",
+      "mandante": "Le Havre AC",
+      "mandanteId": 533,
+      "mandanteEscudo": "https://crests.football-data.org/533.png",
+      "visitante": "FC Lorient",
+      "visitanteId": 525,
+      "visitanteEscudo": "https://crests.football-data.org/525.png",
+      "placarMandante": 0,
+      "placarVisitante": 2
     },
     {
       "id": 560639,
@@ -1765,22 +1765,6 @@
       "placarVisitante": 3
     },
     {
-      "id": 559630,
-      "data": "2026-11-08T19:45:00Z",
-      "status": "FINISHED",
-      "stage": "REGULAR_SEASON",
-      "competicao": "Ligue 1",
-      "competicaoCodigo": "FL1",
-      "mandante": "Racing Club de Lens",
-      "mandanteId": 546,
-      "mandanteEscudo": "https://crests.football-data.org/546.png",
-      "visitante": "Olympique de Marseille",
-      "visitanteId": 516,
-      "visitanteEscudo": "https://crests.football-data.org/516.png",
-      "placarMandante": 1,
-      "placarVisitante": 2
-    },
-    {
       "id": 558529,
       "data": "2026-11-08T19:45:00Z",
       "status": "FINISHED",
@@ -1794,6 +1778,22 @@
       "visitanteId": 109,
       "visitanteEscudo": "https://crests.football-data.org/109.png",
       "placarMandante": 2,
+      "placarVisitante": 2
+    },
+    {
+      "id": 559630,
+      "data": "2026-11-08T19:45:00Z",
+      "status": "FINISHED",
+      "stage": "REGULAR_SEASON",
+      "competicao": "Ligue 1",
+      "competicaoCodigo": "FL1",
+      "mandante": "Racing Club de Lens",
+      "mandanteId": 546,
+      "mandanteEscudo": "https://crests.football-data.org/546.png",
+      "visitante": "Olympique de Marseille",
+      "visitanteId": 516,
+      "visitanteEscudo": "https://crests.football-data.org/516.png",
+      "placarMandante": 1,
       "placarVisitante": 2
     },
     {
@@ -5155,6 +5155,34 @@
       "obs": "Modelo de Poisson sobre gols esperados (0.69 x 2.55). Placar mais provável: 0x2. Confiança: alta. Baseado em: mandante em 18º lugar na competição, visitante em 2º lugar, 30 confronto(s) direto(s) considerado(s)."
     },
     {
+      "id": 565865,
+      "data": "2026-11-21T14:30:00Z",
+      "status": "TIMED",
+      "stage": "REGULAR_SEASON",
+      "competicao": "Bundesliga",
+      "competicaoCodigo": "BL1",
+      "mandante": "Eintracht Frankfurt",
+      "mandanteId": 19,
+      "mandanteEscudo": "https://crests.football-data.org/19.png",
+      "visitante": "TSG 1899 Hoffenheim",
+      "visitanteId": 2,
+      "visitanteEscudo": "https://crests.football-data.org/2.png",
+      "placarMandante": null,
+      "placarVisitante": null,
+      "probabilidades": {
+        "mandante": 28,
+        "empate": 45,
+        "visitante": 27
+      },
+      "golsEsperados": {
+        "mandante": 2.08,
+        "visitante": 2.04
+      },
+      "placarMaisProvavel": "2x2",
+      "confianca": "alta",
+      "obs": "Modelo de Poisson sobre gols esperados (2.08 x 2.04). Placar mais provável: 2x2. Confiança: alta. Baseado em: mandante em 10º lugar na competição, visitante em 9º lugar, 30 confronto(s) direto(s) considerado(s)."
+    },
+    {
       "id": 561942,
       "data": "2026-11-21T15:00:00Z",
       "status": "SCHEDULED",
@@ -5267,6 +5295,90 @@
       "obs": "Modelo de Poisson sobre gols esperados (0.55 x 2.52). Placar mais provável: 0x2. Confiança: alta. Baseado em: mandante em 16º lugar na competição, visitante em 3º lugar, 30 confronto(s) direto(s) considerado(s)."
     },
     {
+      "id": 565861,
+      "data": "2026-11-21T17:30:00Z",
+      "status": "TIMED",
+      "stage": "REGULAR_SEASON",
+      "competicao": "Bundesliga",
+      "competicaoCodigo": "BL1",
+      "mandante": "FC Schalke 04",
+      "mandanteId": 6,
+      "mandanteEscudo": "https://crests.football-data.org/6.png",
+      "visitante": "VfB Stuttgart",
+      "visitanteId": 10,
+      "visitanteEscudo": "https://crests.football-data.org/10.png",
+      "placarMandante": null,
+      "placarVisitante": null,
+      "probabilidades": {
+        "mandante": 15,
+        "empate": 53,
+        "visitante": 32
+      },
+      "golsEsperados": {
+        "mandante": 0.61,
+        "visitante": 1.05
+      },
+      "placarMaisProvavel": "0x1",
+      "confianca": "alta",
+      "obs": "Modelo de Poisson sobre gols esperados (0.61 x 1.05). Placar mais provável: 0x1. Confiança: alta. Baseado em: mandante em 17º lugar na competição, visitante em 8º lugar, 30 confronto(s) direto(s) considerado(s)."
+    },
+    {
+      "id": 560651,
+      "data": "2026-11-21T17:30:00Z",
+      "status": "TIMED",
+      "stage": "REGULAR_SEASON",
+      "competicao": "Premier League",
+      "competicaoCodigo": "PL",
+      "mandante": "Newcastle United FC",
+      "mandanteId": 67,
+      "mandanteEscudo": "https://crests.football-data.org/67.png",
+      "visitante": "Arsenal FC",
+      "visitanteId": 57,
+      "visitanteEscudo": "https://crests.football-data.org/57.png",
+      "placarMandante": null,
+      "placarVisitante": null,
+      "probabilidades": {
+        "mandante": 9,
+        "empate": 47,
+        "visitante": 44
+      },
+      "golsEsperados": {
+        "mandante": 0.55,
+        "visitante": 1.58
+      },
+      "placarMaisProvavel": "0x1",
+      "confianca": "alta",
+      "obs": "Modelo de Poisson sobre gols esperados (0.55 x 1.58). Placar mais provável: 0x1. Confiança: alta. Baseado em: mandante em 12º lugar na competição, visitante em 1º lugar, 30 confronto(s) direto(s) considerado(s)."
+    },
+    {
+      "id": 564756,
+      "data": "2026-11-21T17:30:00Z",
+      "status": "TIMED",
+      "stage": "REGULAR_SEASON",
+      "competicao": "Primera Division",
+      "competicaoCodigo": "PD",
+      "mandante": "Sevilla FC",
+      "mandanteId": 559,
+      "mandanteEscudo": "https://crests.football-data.org/559.png",
+      "visitante": "Real Betis Balompié",
+      "visitanteId": 90,
+      "visitanteEscudo": "https://crests.football-data.org/90.png",
+      "placarMandante": null,
+      "placarVisitante": null,
+      "probabilidades": {
+        "mandante": 23,
+        "empate": 47,
+        "visitante": 30
+      },
+      "golsEsperados": {
+        "mandante": 1.41,
+        "visitante": 1.64
+      },
+      "placarMaisProvavel": "1x1",
+      "confianca": "alta",
+      "obs": "Modelo de Poisson sobre gols esperados (1.41 x 1.64). Placar mais provável: 1x1. Confiança: alta. Baseado em: mandante em 6º lugar na competição, visitante em 4º lugar, 30 confronto(s) direto(s) considerado(s)."
+    },
+    {
       "id": 559621,
       "data": "2026-11-21T19:45:00Z",
       "status": "TIMED",
@@ -5349,6 +5461,62 @@
       "placarMaisProvavel": "1x2",
       "confianca": "alta",
       "obs": "Modelo de Poisson sobre gols esperados (1.68 x 2.41). Placar mais provável: 1x2. Confiança: alta. Baseado em: mandante em 13º lugar na competição, visitante em 9º lugar, 30 confronto(s) direto(s) considerado(s)."
+    },
+    {
+      "id": 558834,
+      "data": "2026-11-21T20:00:00Z",
+      "status": "TIMED",
+      "stage": "REGULAR_SEASON",
+      "competicao": "Eredivisie",
+      "competicaoCodigo": "DED",
+      "mandante": "FC Groningen",
+      "mandanteId": 677,
+      "mandanteEscudo": "https://crests.football-data.org/677.png",
+      "visitante": "SC Heerenveen",
+      "visitanteId": 673,
+      "visitanteEscudo": "https://crests.football-data.org/673.png",
+      "placarMandante": null,
+      "placarVisitante": null,
+      "probabilidades": {
+        "mandante": 24,
+        "empate": 45,
+        "visitante": 31
+      },
+      "golsEsperados": {
+        "mandante": 1.91,
+        "visitante": 2.16
+      },
+      "placarMaisProvavel": "1x2",
+      "confianca": "alta",
+      "obs": "Modelo de Poisson sobre gols esperados (1.91 x 2.16). Placar mais provável: 1x2. Confiança: alta. Baseado em: mandante em 9º lugar na competição, visitante em 6º lugar, 30 confronto(s) direto(s) considerado(s)."
+    },
+    {
+      "id": 564754,
+      "data": "2026-11-21T20:00:00Z",
+      "status": "TIMED",
+      "stage": "REGULAR_SEASON",
+      "competicao": "Primera Division",
+      "competicaoCodigo": "PD",
+      "mandante": "Real Madrid CF",
+      "mandanteId": 86,
+      "mandanteEscudo": "https://crests.football-data.org/86.png",
+      "visitante": "RC Celta de Vigo",
+      "visitanteId": 558,
+      "visitanteEscudo": "https://crests.football-data.org/558.png",
+      "placarMandante": null,
+      "placarVisitante": null,
+      "probabilidades": {
+        "mandante": 49,
+        "empate": 45,
+        "visitante": 6
+      },
+      "golsEsperados": {
+        "mandante": 1.71,
+        "visitante": 0.43
+      },
+      "placarMaisProvavel": "1x0",
+      "confianca": "alta",
+      "obs": "Modelo de Poisson sobre gols esperados (1.71 x 0.43). Placar mais provável: 1x0. Confiança: alta. Baseado em: mandante em 2º lugar na competição, visitante em 11º lugar, 30 confronto(s) direto(s) considerado(s)."
     },
     {
       "id": 555092,
